@@ -1,0 +1,39 @@
+.navmenu {
+    min-width:300px;
+    max-width:400px;
+    background:white;
+
+}
+
+.navtitle {
+   margin-left: 10px;
+    float:left;
+    width:175px;
+   
+    
+}
+.navtitle-icon {
+  
+    margin-right: 10px;
+}
+.h {
+    min-height:40px;
+}
+.nav-item {
+    
+    padding-left:20px;
+    margin:3px;
+    height:30px;
+    width:100%;
+    transition:0.3s;
+}
+.nav-item:hover {
+    background: #f1f1f1;
+    
+}
+.nav-item:hover a {
+    color:black !important;
+}
+.menu {
+    height:60px;
+}

@@ -1,0 +1,29 @@
+{
+  "name": "gudof-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "homepage": "http://gudof.github.io",
+  "dependencies": {
+    "@ionic/react": "^5.3.3",
+    "@ionic/react-router": "^5.3.3",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "antd": "^4.6.6",
+    "next": "9.5.3",
+    "next-fonts": "^1.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-simple-sidenav": "^2.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
