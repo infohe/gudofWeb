@@ -2287,7 +2287,7 @@ export const conversion_fn= [
       }))
       
         return {
-            paths: paths, fallback: true // See the "fallback" section below
+            paths: paths, fallback: false // See the "fallback" section below
         };
       }
       export async function getStaticProps({ params }) {

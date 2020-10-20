@@ -150,7 +150,7 @@ export async function getStaticPaths() {
         paths:[
           { params: { id: '4', name:'zero'} },
       
-        ], fallback: true // See the "fallback" section below
+        ], fallback: false // See the "fallback" section below
     };
   }
   export async function getStaticProps({ params }) {

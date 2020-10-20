@@ -5,3 +5,13 @@ module.exports = withFonts({
     return config;
   }
 });
+const debug = process.env.NODE_ENV !== "production";
+module.exports = {
+  exportPathMap: function () {
+    return {
+      "/": { page: "/" },
+     
+    }
+  },
+  assetPrefix: !debug ? 'https://infohe.github.io/gudofWeb/index' : '',
+}

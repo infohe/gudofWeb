@@ -159,7 +159,7 @@ export async function getStaticPaths() {
           paths:[
             { params: { id: '30', name:'Color code Resistance'} },
         
-          ], fallback: true // See the "fallback" section below
+          ], fallback: false // See the "fallback" section below
       };
     }
     export async function getStaticProps({ params }) {
