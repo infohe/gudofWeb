@@ -144,16 +144,16 @@ return(
 }
 export default Zero;
 
-export async function getStaticPaths() {
+// export async function getStaticPaths() {
 
-    return {
-        paths:[
-          { params: { id: '4', name:'zero'} },
+//     return {
+//         paths:[
+//           { params: { id: '4', name:'zero'} },
       
-        ], fallback: false // See the "fallback" section below
-    };
-  }
-  export async function getStaticProps({ params }) {
+//         ], fallback: false // See the "fallback" section below
+//     };
+//   }
+  export async function getServerSideProps({ params }) {
   
       
     const tools =[ 

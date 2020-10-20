@@ -267,6 +267,13 @@ module.exports = require("next/router");
 
 /***/ }),
 
+/***/ "5rRV":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/card");
+
+/***/ }),
+
 /***/ "6D7l":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -398,10 +405,10 @@ function formatUrl(urlObj) {
 
 /***/ }),
 
-/***/ "Exp3":
+/***/ "7YAK":
 /***/ (function(module, exports) {
 
-module.exports = require("antd");
+module.exports = require("antd/lib/slider");
 
 /***/ }),
 
@@ -409,6 +416,13 @@ module.exports = require("antd");
 /***/ (function(module, exports) {
 
 module.exports = require("next/dist/next-server/lib/router-context.js");
+
+/***/ }),
+
+/***/ "PFYH":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -433,32 +447,65 @@ module.exports = _interopRequireDefault;
 
 /***/ }),
 
+/***/ "Uqqx":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/input");
+
+/***/ }),
+
 /***/ "VcBQ":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SideNav; });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("hr7U");
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("tI3Q");
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("mN36");
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("5rRV");
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 
 
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 const {
   TabPane
-} = antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"];
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
 
 function SideNav({
   names,
   toolType
 }) {
-  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(toolType);
+  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(toolType);
 
   const handleChangeTrue = () => {
     let newTooltype = ToolType;
@@ -473,8 +520,8 @@ function SideNav({
     console.log(array);
   };
 
-  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  return __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Layout"], null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"], {
+  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  return __jsx("div", null, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
     style: {
       marginTop: "60px"
     },
@@ -488,7 +535,7 @@ function SideNav({
       marginLeft: "20px",
       marginRight: "20px"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Input"], {
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     style: {
       marginLeft: "10px",
       marginRight: "30px"
@@ -501,28 +548,35 @@ function SideNav({
       className: "material-icons"
     }, "search"),
     onInput: e => handleSearch(e)
-  }), __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Row"], null, array.map(item => item.type === type.type && __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Card"], {
+  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "carditems",
     style: {
       flex: 1
     }
-  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `sliderTool/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `functions/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `conversion/${item.display}/${item.name}`,
     as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
-  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `colorcode/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
   }, __jsx("a", null, item.display)))))))))));
 }
+
+/***/ }),
+
+/***/ "VzA1":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/layout");
 
 /***/ }),
 
@@ -683,6 +737,20 @@ function getRouteRegex(normalizedRoute) {
     groups
   };
 }
+
+/***/ }),
+
+/***/ "Z8Mf":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "a5Fm":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/menu");
 
 /***/ }),
 
@@ -936,6 +1004,13 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "cUip":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "d12d":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -944,21 +1019,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Instrumentation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("4Q3z");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("zXOc");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("xnum");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _SideNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("VcBQ");
-/* harmony import */ var _DrawerNav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("mkpg");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_slider_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("tCGa");
+/* harmony import */ var antd_lib_slider_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_slider_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_slider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("7YAK");
+/* harmony import */ var antd_lib_slider__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_slider__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("dc+4");
+/* harmony import */ var antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_drawer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("wvHv");
+/* harmony import */ var antd_lib_drawer__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_drawer__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("zXOc");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("xnum");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _SideNav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("VcBQ");
+/* harmony import */ var _DrawerNav__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("mkpg");
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 
 
@@ -966,14 +1067,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 const {
   TabPane
-} = antd__WEBPACK_IMPORTED_MODULE_1__["Tabs"];
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
 function Instrumentation({
   params,
   functions,
   toolType,
   names
 }) {
-  const [visible, setVisible] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const [visible, setVisible] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(false);
 
   const showDrawer = () => {
     if (window.innerWidth <= 700) setVisible(true);
@@ -983,19 +1084,19 @@ function Instrumentation({
     setVisible(false);
   };
 
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+  react__WEBPACK_IMPORTED_MODULE_10___default.a.useEffect(() => {
     if (window.innerWidth > 700) setVisible(false);
   });
-  const [question, setQuestion] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [result, setResult] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
+  const [question, setQuestion] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [result, setResult] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(0);
   let vari;
-  const [queryid, setQueryId] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
+  const [queryid, setQueryId] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_11__["useRouter"])();
   const {
     id
   } = router.query;
-  const [array, setarray] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(names);
-  const [tooltype, setTooltype] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(toolType); // let vari=  functions.find(item => item.stringId === queryid.toString())
+  const [array, setarray] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  const [tooltype, setTooltype] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(toolType); // let vari=  functions.find(item => item.stringId === queryid.toString())
 
   const setFn = value => {
     // setQuestion(newValue)
@@ -1005,8 +1106,8 @@ function Instrumentation({
     document.getElementById('InputID').value = '';
   };
 
-  const [a, seta] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [b, setb] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
+  const [a, seta] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [b, setb] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
 
   const setIn = e => {
     console.log(e.target.value);
@@ -1029,20 +1130,20 @@ function Instrumentation({
     setQuestion(value * (b - a) / 100 + a);
   };
 
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+  react__WEBPACK_IMPORTED_MODULE_10___default.a.useEffect(() => {
     if (router && router.query) {
       setQueryId(id);
       console.log("router", router.query.id);
       console.log("queryid", id);
     }
   }, [router, router.query]);
-  const [marks, setMarks] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState({
+  const [marks, setMarks] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState({
     0: "0",
     100: "100"
   });
-  const [name, setName] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [title, setTitle] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+  const [name, setName] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [title, setTitle] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  react__WEBPACK_IMPORTED_MODULE_10___default.a.useEffect(() => {
     if (queryid !== undefined) {
       vari = functions.find(item => item.stringId === queryid.toString());
       seta(vari.a);
@@ -1052,7 +1153,7 @@ function Instrumentation({
       setQuestion(functions.find(item => item.stringId === queryid.toString()).a);
     }
   }, [queryid]);
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+  react__WEBPACK_IMPORTED_MODULE_10___default.a.useEffect(() => {
     if (a !== NaN && a !== undefined && b !== NaN && b !== undefined) {
       let anumber = parseInt(a);
       let astring = a.toString();
@@ -1064,33 +1165,33 @@ function Instrumentation({
       });
     }
   }, [a, b]);
-  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, __jsx("title", null, router.query.name), __jsx("link", {
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_13___default.a, null, __jsx("title", null, router.query.name), __jsx("link", {
     href: "https://fonts.googleapis.com/icon?family=Material+Icons",
     rel: "stylesheet"
   }), functions !== undefined && functions.map(item => item.stringId === router.query.id.toString() && __jsx("meta", {
     key: "description",
     name: "description",
     content: item.desc
-  }))), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }))), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_12__["default"], {
     showDrawer: showDrawer
   }), __jsx("div", {
     className: "tools-container"
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Drawer"], {
+  }, __jsx(antd_lib_drawer__WEBPACK_IMPORTED_MODULE_7___default.a, {
     width: 350,
     title: "gudofConvert",
     placement: "left",
     closable: true,
     onClose: onClose,
     visible: visible
-  }, __jsx(_DrawerNav__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_DrawerNav__WEBPACK_IMPORTED_MODULE_15__["default"], {
     names: names,
     toolType: toolType
   })), __jsx("div", {
     className: "tools-left"
-  }, __jsx(_SideNav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_SideNav__WEBPACK_IMPORTED_MODULE_14__["default"], {
     names: names,
     toolType: toolType
-  })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+  })), __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "toolbox-layout"
   }, __jsx("div", {
     className: "toolbox"
@@ -1110,7 +1211,7 @@ function Instrumentation({
       display: "flex",
       alignItems: "center"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_5___default.a, {
     style: {
       flex: 4,
       marginRight: "10px"
@@ -1128,7 +1229,7 @@ function Instrumentation({
     style: {
       float: "right"
     }
-  }, a, " ", name)), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Slider"], {
+  }, a, " ", name)), __jsx(antd_lib_slider__WEBPACK_IMPORTED_MODULE_3___default.a, {
     style: {
       flex: 10
     },
@@ -1145,7 +1246,7 @@ function Instrumentation({
       display: "flex",
       alignItems: "center"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_5___default.a, {
     style: {
       flex: 4,
       marginRight: "10px"
@@ -1164,7 +1265,7 @@ function Instrumentation({
     style: {
       float: "right"
     }
-  }, "0%")), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Slider"], {
+  }, "0%")), __jsx(antd_lib_slider__WEBPACK_IMPORTED_MODULE_3___default.a, {
     style: {
       flex: 10
     },
@@ -1759,6 +1860,13 @@ function mitt() {
 
   };
 }
+
+/***/ }),
+
+/***/ "dc+4":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -2764,32 +2872,72 @@ function parseRelativeUrl(url, base) {
 
 /***/ }),
 
+/***/ "hr7U":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "mN36":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "mkpg":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DrawerNav; });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("hr7U");
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("tI3Q");
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("mN36");
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("5rRV");
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 
 
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 const {
   TabPane
-} = antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"];
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
 
 function DrawerNav({
   names,
   toolType
 }) {
-  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(toolType);
+  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(toolType);
 
   const handleChangeTrue = () => {
     let newTooltype = ToolType;
@@ -2812,9 +2960,9 @@ function DrawerNav({
     console.log(array);
   };
 
-  const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(true);
-  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  return __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Layout"], null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Input"], {
+  const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(true);
+  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  return __jsx("div", null, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     placeholder: "Search",
     prefix: __jsx("i", {
       style: {
@@ -2843,25 +2991,25 @@ function DrawerNav({
       marginLeft: "20px",
       marginRight: "20px"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Row"], null, array.map(item => item.type === type.type && __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Card"], {
+  }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "carditems cardwidth",
     style: {
       width: "300px",
       flex: 1
     }
-  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `sliderTool/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `functions/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `conversion/${item.display}/${item.name}`,
     as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
-  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `colorcode/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
   }, __jsx("a", null, item.display))))))))));
@@ -3021,12 +3169,40 @@ function makePublicRouterInstance(router) {
 
 /***/ }),
 
+/***/ "ppZR":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "tCGa":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "tI3Q":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/row");
+
+/***/ }),
+
 /***/ "wkBG":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "wvHv":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/drawer");
 
 /***/ }),
 
@@ -3043,32 +3219,48 @@ module.exports = require("next/head");
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("PFYH");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("a5Fm");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
 
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 function Navbar({
   showDrawer
 }) {
-  return __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+  return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "navbar"
-  }, __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
+  }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "menu"
   }, __jsx("i", {
     onClick: () => showDrawer(),
     className: "material-icons menu-icon"
   }, "dehaze"), __jsx("h2", {
     className: "h2-nav"
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/"
   }, __jsx("a", null, "gudofConvert"))))));
 }
+
+/***/ }),
+
+/***/ "zkM6":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/tabs");
 
 /***/ })
 

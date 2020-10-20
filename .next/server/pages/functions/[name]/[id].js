@@ -143,6 +143,13 @@ function withRouter(ComposedComponent) {
 
 /***/ }),
 
+/***/ "0Iyw":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/image");
+
+/***/ }),
+
 /***/ 10:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -264,6 +271,13 @@ function assign(target, ...searchParamsList) {
 /***/ (function(module, exports) {
 
 module.exports = require("next/router");
+
+/***/ }),
+
+/***/ "5rRV":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/card");
 
 /***/ }),
 
@@ -403,21 +417,47 @@ function formatUrl(urlObj) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("4Q3z");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("xnum");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("zXOc");
-/* harmony import */ var _SideNav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("VcBQ");
-/* harmony import */ var _DrawerNav__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("mkpg");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_button_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("MaXC");
+/* harmony import */ var antd_lib_button_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("eGmO");
+/* harmony import */ var antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_button__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_image_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("UgFO");
+/* harmony import */ var antd_lib_image_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_image_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("0Iyw");
+/* harmony import */ var antd_lib_image__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_image__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("dc+4");
+/* harmony import */ var antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_drawer_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_drawer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("wvHv");
+/* harmony import */ var antd_lib_drawer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_drawer__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("xnum");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("zXOc");
+/* harmony import */ var _SideNav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("VcBQ");
+/* harmony import */ var _DrawerNav__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("mkpg");
 
+
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 
 
@@ -429,7 +469,7 @@ const Electrical = ({
   names,
   toolType
 }) => {
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_2__["useRouter"])();
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_11__["useRouter"])();
   const function_id = parseInt(router.query.id);
   const electricalList = [{
     display: "Linear mA to Square root mA",
@@ -1159,21 +1199,21 @@ const Electrical = ({
     a4: "d0",
     ad4: "Specific Gravity Tank leg h2"
   }];
-  const [answer1, setAnswer1] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [answer2, setAnswer2] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [answer3, setAnswer3] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [answer4, setAnswer4] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [answer5, setAnswer5] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q1, setQ1] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q2, setQ2] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q3, setQ3] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q4, setQ4] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q5, setQ5] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q6, setQ6] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q7, setQ7] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q8, setQ8] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [q9, setQ9] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState();
-  const [visible, setVisible] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const [answer1, setAnswer1] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [answer2, setAnswer2] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [answer3, setAnswer3] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [answer4, setAnswer4] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [answer5, setAnswer5] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q1, setQ1] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q2, setQ2] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q3, setQ3] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q4, setQ4] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q5, setQ5] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q6, setQ6] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q7, setQ7] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q8, setQ8] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [q9, setQ9] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState();
+  const [visible, setVisible] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(false);
 
   const showDrawer = () => {
     if (window.innerWidth <= 700) setVisible(true);
@@ -1183,7 +1223,7 @@ const Electrical = ({
     setVisible(false);
   };
 
-  react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(() => {
+  react__WEBPACK_IMPORTED_MODULE_10___default.a.useEffect(() => {
     if (window.innerWidth > 700) setVisible(false);
   });
 
@@ -1391,33 +1431,33 @@ const Electrical = ({
     a: 'a6',
     b: 'ad6'
   }];
-  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, null, __jsx("title", null, router !== undefined && router.query.name), __jsx("link", {
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_12___default.a, null, __jsx("title", null, router !== undefined && router.query.name), __jsx("link", {
     href: "https://fonts.googleapis.com/icon?family=Material+Icons",
     rel: "stylesheet"
   }), electricalList.map(item => item.id === router.query.id && __jsx("meta", {
     key: "description",
     name: "description",
     content: item.descp
-  }))), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }))), __jsx(_Navbar__WEBPACK_IMPORTED_MODULE_13__["default"], {
     showDrawer: showDrawer
   }), __jsx("div", {
     className: "tools-container"
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Drawer"], {
+  }, __jsx(antd_lib_drawer__WEBPACK_IMPORTED_MODULE_9___default.a, {
     width: 350,
     title: "gudofConvert",
     placement: "left",
     closable: true,
     onClose: onClose,
     visible: visible
-  }, __jsx(_DrawerNav__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(_DrawerNav__WEBPACK_IMPORTED_MODULE_15__["default"], {
     names: names,
     toolType: toolType
   })), __jsx("div", {
     className: "tools-left"
-  }, __jsx(_SideNav__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_SideNav__WEBPACK_IMPORTED_MODULE_14__["default"], {
     names: names,
     toolType: toolType
-  })), __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+  })), __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "toolbox-layout"
   }, router.query.id !== undefined && __jsx("div", {
     className: "toolbox"
@@ -1439,7 +1479,7 @@ const Electrical = ({
     style: {
       flex: 1
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     placeholder: "input",
     className: "input box",
     type: "number",
@@ -1454,7 +1494,7 @@ const Electrical = ({
   }, electricalList[electricalList.findIndex(item => item.id.toString() === router.query.id.toString())][item.b] || ""))))), electricalList[electricalList.findIndex(item => item.id.toString() === router.query.id.toString())].img !== undefined && //<Image src="/assets/11LT.png"/>
   __jsx("div", {
     className: "toolbox-calc"
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Image"], {
+  }, __jsx(antd_lib_image__WEBPACK_IMPORTED_MODULE_5___default.a, {
     style: {
       width: "90%"
     },
@@ -1476,7 +1516,7 @@ const Electrical = ({
     }
   }, details[details.findIndex(item => item.id.toString() === router.query.id.toString())][item.b])))), __jsx("div", {
     class: "toolbox-desc"
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+  }, __jsx(antd_lib_button__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "calculate-button",
     onClick: () => calculate(q1, q2, q3, q4, q5, q6, q7, q8, q9)
   }, "CALCULATE")), answer1 !== undefined && __jsx("div", {
@@ -1503,577 +1543,63 @@ const Electrical = ({
   }, electricalList[electricalList.findIndex(item => item.id.toString() === router.query.id.toString())][item.b]))))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Electrical);
-async function getStaticPaths() {
-  const tools = [{
-    display: "Linear mA to Square root mA",
-    id: 14
-  }, {
-    display: "Linear to Square root percentage",
-    id: 17
-  }, {
-    display: "Lb In to Nm",
-    id: 65
-  }, {
-    display: "Nm to LbIn",
-    id: 66
-  }, {
-    display: "Time (Speed)",
-    id: 28
-  }, {
-    display: "Speed",
-    id: 34
-  }, {
-    display: "Distance",
-    id: 35
-  }, {
-    display: "Aircore Inductance",
-    id: 21
-  }, {
-    display: "Velocity of Sound",
-    id: 25
-  }, {
-    display: "Wheatstone",
-    id: 29,
-    q1: "R1 (adjacent)",
-    qc1: "Ohm",
-    q2: "R2 (opposite)",
-    qc2: "Ohm",
-    q3: "R3 (adjacent)",
-    qc3: "Ohm",
-    a1: "R",
-    ac1: "Ohm"
-  }, {
-    display: "Power Factor 3 Phase",
-    id: 42,
-    q1: "Voltage (L-L)",
-    qc1: "V",
-    q2: "Current",
-    qc2: "A",
-    q3: "Aparent Power",
-    qc3: "Watt",
-    a1: "Powerfactor",
-    ac1: ""
-  }, {
-    display: "Power Factor Neutral",
-    id: 43,
-    q1: "Voltage (L-N)",
-    qc1: "V",
-    q2: "Current",
-    qc2: "A",
-    q3: "Aparent Power",
-    qc3: "Watt",
-    a1: "Powerfactor",
-    ac1: ""
-  }, {
-    display: "Power Factor Single Phase",
-    id: 44,
-    q1: "Voltage",
-    qc1: "V",
-    q2: "Current",
-    qc2: "A",
-    q3: "Aparent Power",
-    qc3: "Watt",
-    a1: "Powerfactor",
-    ac1: ""
-  }, {
-    display: "DC Motor Horsepower",
-    id: 67,
-    q1: "Volts",
-    qc1: "V",
-    q2: "Amps",
-    qc2: "",
-    q3: "Effs",
-    qc3: "",
-    a1: "Horsepower",
-    ac1: ""
-  }, {
-    display: "Ohms law (R)",
-    id: 19,
-    q1: "Voltage",
-    qc1: "V",
-    q2: "Current",
-    qc2: "A",
-    a1: " Resistance, R",
-    ac1: "Ohm"
-  }, {
-    display: "Ohms law (V)",
-    id: 20,
-    q1: "Current",
-    qc1: "A",
-    q2: "Resistance",
-    qc2: "Ohm",
-    a1: " Voltage ",
-    ac1: "V"
-  }, {
-    display: "Ohms law (I)",
-    id: 23,
-    q1: "Voltage",
-    qc1: "V",
-    q2: "Resistance",
-    qc2: "Ohm",
-    a1: " Current",
-    ac1: "A"
-  }, {
-    display: "Parallel Resistance",
-    id: 24,
-    q1: "R1",
-    qc1: "Ohm",
-    q2: "R2",
-    qc2: "Ohm",
-    a1: " R",
-    ac1: "Ohm"
-  }, {
-    display: "LC Resonance",
-    id: 26,
-    q1: "C",
-    qc1: "",
-    q2: "L",
-    qc2: "",
-    a1: " Frequency",
-    ac1: ""
-  }, {
-    display: "Power(I,V)",
-    id: 31,
-    q1: "Voltage",
-    qc1: "V",
-    q2: "Current",
-    qc2: "A",
-    a1: " P",
-    ac1: "Watts"
-  }, {
-    display: "Power(I,R)",
-    id: 32,
-    q1: "Current",
-    qc1: "A",
-    q2: "Resistance",
-    qc2: "Ohm",
-    a1: " P",
-    ac1: "Watts"
-  }, {
-    display: "Power (R,V)",
-    id: 33,
-    q1: "Voltage",
-    qc1: "V",
-    q2: "Resistance",
-    qc2: "Ohm",
-    a1: " P",
-    ac1: "Watts"
-  }, {
-    display: "Speed (Horsepower)",
-    id: 46,
-    q1: "Power",
-    qc1: "Horsepower",
-    q2: "Torque",
-    qc2: "PoundFoot",
-    a1: "Rotating speed",
-    ac1: "rpm"
-  }, {
-    display: "Torque (horsepower)",
-    id: 47,
-    q1: "Power",
-    qc1: "Horsepower",
-    q2: "Speed",
-    qc2: "rpm",
-    a1: "Torque",
-    ac1: "PoundFoot"
-  }, {
-    display: "Horse Power",
-    id: 48,
-    q1: "Torque",
-    qc1: "PoundFoot",
-    q2: "Speed",
-    qc2: "rpm",
-    a1: "Horsepower",
-    ac1: "horsePower"
-  }, {
-    display: "Effective Tension from HP & FPM",
-    id: 41,
-    q1: "HP",
-    qc1: "",
-    q2: "FPM",
-    qc2: "",
-    a1: "Effective Tension",
-    ac1: "lbs"
-  }, {
-    display: "Effective Tension from Torque & Radius",
-    id: 22,
-    q1: "Torque",
-    qc1: "",
-    q2: "Radius",
-    qc2: "",
-    a1: "Effective Tension",
-    ac1: "lbs"
-  }, {
-    display: "Resistance from temperature",
-    id: 13,
-    q1: "T(t)",
-    qc1: "",
-    q2: "R(0)",
-    qc2: "",
-    q3: "T(0)",
-    qc3: "",
-    q4: "C",
-    qc4: "",
-    a1: "Resistance",
-    ac1: "Ohm"
-  }, {
-    display: "Temperature from resistance",
-    id: 15,
-    descp: "As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",
-    q1: "R(t)",
-    qc1: "",
-    q2: "R(0)",
-    qc2: "",
-    q3: "Temp",
-    qc3: "",
-    q4: "C",
-    qc4: "",
-    a1: "Temperature",
-    ac1: "K"
-  }, {
-    display: "Level Measurement Two Seals",
-    img: "twoSeal.png",
-    id: 49,
-    q1: "h1",
-    qc1: "mm",
-    q2: "h0",
-    qc2: "mm",
-    q3: "d3",
-    qc3: "",
-    q4: "d2",
-    qc4: "",
-    q5: "d1",
-    qc5: "",
-    q6: "C",
-    qc6: "mm",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Level Measurement One Seal Above",
-    img: "onseSealAbove.png",
-    id: 50,
-    q1: "h2",
-    qc1: "mm",
-    q2: "h1",
-    qc2: "mm",
-    q3: "h0",
-    qc3: "mm",
-    q4: "d2",
-    qc4: "",
-    q5: "d1",
-    qc5: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Level Measurement One Seal Below",
-    img: "oneSealBelow.png",
-    id: 51,
-    q1: "h2",
-    qc1: "mm",
-    q2: "h1",
-    qc2: "mm",
-    q3: "h0",
-    qc3: "mm",
-    q4: "d2",
-    qc4: "",
-    q5: "d1",
-    qc5: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Bubble Level",
-    img: "bubblelevel.png",
-    id: 52,
-    q1: "h1",
-    qc1: "mm",
-    q2: "h0",
-    qc2: "mm",
-    q3: "d1",
-    qc3: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Bubble Interface",
-    img: "bubbleInterface.png",
-    id: 53,
-    q1: "h1",
-    qc1: "mm",
-    q2: "du",
-    qc2: "",
-    q3: "dl",
-    qc3: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Two Seal Interface",
-    img: "twoSealInterface.png",
-    id: 54,
-    q1: "h4",
-    qc1: "mm",
-    q2: "h1",
-    qc2: "mm",
-    q3: "h0",
-    qc3: "mm",
-    q4: "d3",
-    qc4: "",
-    q5: "d2",
-    qc5: "",
-    q6: "du",
-    qc6: "",
-    q7: "du",
-    qc7: "",
-    q8: "C",
-    qc8: "mm",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Open Tank",
-    img: "openTank.png",
-    id: 55,
-    q1: "h2",
-    qc1: "mm",
-    q2: "h1",
-    qc2: "mm",
-    q3: "h0",
-    qc3: "mm",
-    q4: "d1",
-    qc4: "",
-    q5: "d0",
-    qc5: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Interface Wet Leg",
-    img: "twoSealInterface.png",
-    id: 56,
-    q1: "h4",
-    qc1: "mm",
-    q2: "h3",
-    qc2: "mm",
-    q3: "h2",
-    qc3: "mm",
-    q4: "h1",
-    qc4: "mm",
-    q5: "h0",
-    qc5: "mm",
-    q6: "d2",
-    qc6: "",
-    q7: "d0",
-    qc7: "",
-    q8: "du",
-    qc8: "",
-    q9: "dl",
-    qc9: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Liquid Purge",
-    id: 57,
-    img: "liquidPurge.png",
-    q1: "h3",
-    qc1: "mm",
-    q2: "h2",
-    qc2: "mm",
-    q3: "h1",
-    qc3: "mm",
-    q4: "h0",
-    qc4: "mm",
-    q5: "d3",
-    qc5: "",
-    q6: "d2",
-    qc6: "",
-    q7: "d1",
-    qc7: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Level Transmission Closed Vessel",
-    img: "11LT.png",
-    id: 58,
-    descp: "Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",
-    q1: "h3",
-    qc1: "mm",
-    q2: "h2",
-    qc2: "mm",
-    q3: "h1",
-    qc3: "mm",
-    q4: "h0",
-    qc4: "mm",
-    q5: "d3",
-    qc5: "",
-    q6: "d2",
-    qc6: "",
-    q7: "d1",
-    qc7: "",
-    q8: "d0",
-    qc8: "",
-    a1: "HP Side/LRV/4mA",
-    ac1: "mmH20",
-    a2: "LP Side/URV/20mA",
-    ac2: "mmH20",
-    a3: "Span",
-    ac3: "mmH20"
-  }, {
-    display: "Flow Rate Calculation",
-    id: 62,
-    q1: "Pipe Diameter",
-    qc1: "mm",
-    q2: "Constricted Diameter",
-    qc2: "mm",
-    q3: "Measured Pressure Difference",
-    qc3: "kPa",
-    q4: "Fluid Density",
-    qc4: "kg/m3",
-    q5: "Meter Coefficient D",
-    qc5: "",
-    a1: "Constricted Area",
-    ac1: "",
-    a2: "Diameter Section",
-    ac2: "",
-    a3: "Pipe Flow Rate",
-    ac3: "m3/s"
-  }, {
-    display: "Hydrostatic Level",
-    id: 63,
-    descp: "Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",
-    q1: "Max URV",
-    qc1: "ft",
-    q2: "Min LRV",
-    qc2: "ft",
-    q3: "Process Liquid Density",
-    qc3: "",
-    q4: "Transmitter Height Offset",
-    qc4: "",
-    q5: "Impulse Line Fluid Density",
-    qc5: "lb/ft3",
-    q6: "Actual Liquid Level",
-    qc6: "ft",
-    a1: "Hydrostatic Pressure @ transmitter ",
-    ac1: "WC",
-    a2: "Transmitter LRV",
-    ac2: "",
-    a3: "Transmitter URV",
-    ac3: ""
-  }, {
-    display: "Orifice Plate Error",
-    id: 64,
-    q1: "Max Flow through orifice plate",
-    qc1: "GPM",
-    q2: "Differential pressure at that flow rate",
-    qc2: "WC",
-    q3: "Differential Pressure measurement errors",
-    qc3: "WC",
-    q4: "Current Flow",
-    qc4: "GPM",
-    a1: "Hydrostatic Pressure @ transmitter ",
-    ac1: "WC",
-    a2: "Transmitter LRV",
-    ac2: "",
-    a3: "Transmitter URV",
-    ac3: ""
-  }, {
-    display: "Short Circuit Calculation",
-    id: 59,
-    descp: "This tool is used to find Source Impedence andTotal impedence at time of short circuit.",
-    q1: "I",
-    qc1: "",
-    q2: "kVA",
-    qc2: "mm",
-    q3: "Zt",
-    qc3: "",
-    a1: "Source Impedence Zu",
-    ac1: "",
-    a2: "Total impedence Z",
-    ac2: ""
-  }, {
-    display: "Transformer Fault Current",
-    id: 60,
-    descp: "This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",
-    q1: "V",
-    qc1: "",
-    q2: "Z% ",
-    qc2: "%",
-    q3: "I",
-    qc3: "",
-    a1: "Maximum Fault Current",
-    ac1: "A",
-    a2: "Impedence Voltage",
-    ac2: ""
-  }, {
-    display: "DOL & Star Delta Starter",
-    id: 61,
-    descp: "DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",
-    q1: "System Voltage",
-    qc1: "V",
-    q2: "Phase",
-    qc2: "",
-    q3: "Motor Size",
-    qc3: "HP",
-    q4: "Motor rpm",
-    qc4: "",
-    q5: "Power Factor",
-    qc5: "",
-    a1: "Motor Rated Torque (Full Load)",
-    ac1: "lb-ft",
-    a2: "Motor Starting Torque",
-    ac2: "mmH20",
-    a3: "Lock Rotor Current IL(Min)",
-    ac3: "",
-    a4: "Lock Rotor Current IL(Max)",
-    ac4: "",
-    a5: "Motor Full load current (Live)",
-    ac5: ""
-  }];
-  const paths = tools.map(post => ({
-    params: {
-      name: post.display,
-      id: post.id.toString()
-    }
-  }));
-  return {
-    paths: paths,
-    fallback: false // See the "fallback" section below
+/* harmony default export */ __webpack_exports__["default"] = (Electrical); // export async function getStaticPaths() {
+//   const tools= [
+//     { display:"Linear mA to Square root mA",id:14},
+//     { display:"Linear to Square root percentage",id:17},
+//     { display:"Lb In to Nm",id:65},
+//     { display:"Nm to LbIn",id:66},
+//     { display:"Time (Speed)",id:28},
+//     { display:"Speed",id:34},
+//     { display:"Distance",id:35},
+//     { display:"Aircore Inductance",id:21},
+//     { display:"Velocity of Sound",id:25},
+//     { display:"Wheatstone",id:29,q1:"R1 (adjacent)",qc1:"Ohm",q2:"R2 (opposite)",qc2:"Ohm",q3:"R3 (adjacent)",qc3:"Ohm",a1:"R",ac1:"Ohm"},
+//     { display:"Power Factor 3 Phase",id:42,q1:"Voltage (L-L)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+//     { display:"Power Factor Neutral",id:43,q1:"Voltage (L-N)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+//     { display:"Power Factor Single Phase",id:44,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+//     { display:"DC Motor Horsepower",id:67,q1:"Volts",qc1:"V",q2:"Amps",qc2:"",q3:"Effs",qc3:"",a1:"Horsepower",ac1:""},
+//     { display:"Ohms law (R)",id:19,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" Resistance, R",ac1:"Ohm"},
+//     { display:"Ohms law (V)",id:20,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" Voltage ",ac1:"V"},
+//     { display:"Ohms law (I)",id:23,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
+//     { display:"Parallel Resistance",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
+//     { display:"LC Resonance",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
+//     { display:"Power(I,V)",id:31,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
+//     { display:"Power(I,R)",id:32,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+//     { display:"Power (R,V)",id:33,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+//     { display:"Speed (Horsepower)",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
+//     { display:"Torque (horsepower)",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
+//     { display:"Horse Power",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
+//     { display:"Effective Tension from HP & FPM",id:41,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+//     { display:"Effective Tension from Torque & Radius",id:22,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+//       { display:"Resistance from temperature",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
+//       { display:"Temperature from resistance",id:15,descp:"As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
+//       { display:"Level Measurement Two Seals",img:"twoSeal.png",id:49,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d3",qc3:"",q4:"d2",qc4:"",q5:"d1",qc5:"",q6:"C",qc6:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Level Measurement One Seal Above",img:"onseSealAbove.png",id:50,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Level Measurement One Seal Below",img:"oneSealBelow.png",id:51,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Bubble Level",img:"bubblelevel.png",id:52,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d1",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Bubble Interface",img:"bubbleInterface.png",id:53,q1:"h1",qc1:"mm",q2:"du",qc2:"",q3:"dl",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Two Seal Interface",img:"twoSealInterface.png",id:54,q1:"h4",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d3",qc4:"",q5:"d2",qc5:"",q6:"du",qc6:"",q7:"du",qc7:"",q8:"C",qc8:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Open Tank",img:"openTank.png",id:55,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d1",qc4:"",q5:"d0",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Interface Wet Leg",img:"twoSealInterface.png",id:56,q1:"h4",qc1:"mm",q2:"h3",qc2:"mm",q3:"h2",qc3:"mm",q4:"h1",qc4:"mm",q5:"h0",qc5:"mm",q6:"d2",qc6:"",q7:"d0",qc7:"",q8:"du",qc8:"",q9:"dl",qc9:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Liquid Purge",id:57,img:"liquidPurge.png",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Level Transmission Closed Vessel",img:"11LT.png",id:58,descp:"Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",q8:"d0",qc8:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+//       { display:"Flow Rate Calculation",id:62,q1:"Pipe Diameter",qc1:"mm",q2:"Constricted Diameter",qc2:"mm",q3:"Measured Pressure Difference",qc3:"kPa",q4:"Fluid Density",qc4:"kg/m3",q5:"Meter Coefficient D",qc5:"",a1:"Constricted Area",ac1:"",a2:"Diameter Section",ac2:"",a3:"Pipe Flow Rate",ac3:"m3/s"},
+//       { display:"Hydrostatic Level",id:63,descp:"Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",q1:"Max URV",qc1:"ft",q2:"Min LRV",qc2:"ft",q3:"Process Liquid Density",qc3:"",q4:"Transmitter Height Offset",qc4:"",q5:"Impulse Line Fluid Density",qc5:"lb/ft3",q6:"Actual Liquid Level",qc6:"ft",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
+//       { display:"Orifice Plate Error",id:64,q1:"Max Flow through orifice plate",qc1:"GPM",q2:"Differential pressure at that flow rate",qc2:"WC",q3:"Differential Pressure measurement errors",qc3:"WC",q4:"Current Flow",qc4:"GPM",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
+//       { display:"Short Circuit Calculation",id:59,descp:"This tool is used to find Source Impedence andTotal impedence at time of short circuit.",q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
+//       { display:"Transformer Fault Current",id:60,descp:"This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
+//       { display:"DOL & Star Delta Starter",id:61,descp:"DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
+//   ]
+//   const paths = tools.map((post) => ({
+//     params: {name :post.display, id: post.id.toString() }
+//   }))
+//     return {
+//         paths: paths, fallback: false // See the "fallback" section below
+//     };
+//   }
 
-  };
-}
-async function getStaticProps({
+async function getServerSideProps({
   params
 }) {
   // params contains the post `id`.
@@ -2533,10 +2059,10 @@ async function getStaticProps({
 
 /***/ }),
 
-/***/ "Exp3":
+/***/ "MaXC":
 /***/ (function(module, exports) {
 
-module.exports = require("antd");
+
 
 /***/ }),
 
@@ -2544,6 +2070,13 @@ module.exports = require("antd");
 /***/ (function(module, exports) {
 
 module.exports = require("next/dist/next-server/lib/router-context.js");
+
+/***/ }),
+
+/***/ "PFYH":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -2568,32 +2101,72 @@ module.exports = _interopRequireDefault;
 
 /***/ }),
 
+/***/ "UgFO":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "Uqqx":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/input");
+
+/***/ }),
+
 /***/ "VcBQ":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SideNav; });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("hr7U");
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("tI3Q");
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("mN36");
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("5rRV");
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 
 
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 const {
   TabPane
-} = antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"];
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
 
 function SideNav({
   names,
   toolType
 }) {
-  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(toolType);
+  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(toolType);
 
   const handleChangeTrue = () => {
     let newTooltype = ToolType;
@@ -2608,8 +2181,8 @@ function SideNav({
     console.log(array);
   };
 
-  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  return __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Layout"], null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"], {
+  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  return __jsx("div", null, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
     style: {
       marginTop: "60px"
     },
@@ -2623,7 +2196,7 @@ function SideNav({
       marginLeft: "20px",
       marginRight: "20px"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Input"], {
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     style: {
       marginLeft: "10px",
       marginRight: "30px"
@@ -2636,28 +2209,35 @@ function SideNav({
       className: "material-icons"
     }, "search"),
     onInput: e => handleSearch(e)
-  }), __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Row"], null, array.map(item => item.type === type.type && __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Card"], {
+  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "carditems",
     style: {
       flex: 1
     }
-  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `sliderTool/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `functions/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `conversion/${item.display}/${item.name}`,
     as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
-  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `colorcode/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
   }, __jsx("a", null, item.display)))))))))));
 }
+
+/***/ }),
+
+/***/ "VzA1":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/layout");
 
 /***/ }),
 
@@ -2818,6 +2398,20 @@ function getRouteRegex(normalizedRoute) {
     groups
   };
 }
+
+/***/ }),
+
+/***/ "Z8Mf":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "a5Fm":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/menu");
 
 /***/ }),
 
@@ -3071,6 +2665,13 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "cUip":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "dZ6Y":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3114,6 +2715,20 @@ function mitt() {
 
   };
 }
+
+/***/ }),
+
+/***/ "dc+4":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "eGmO":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/button");
 
 /***/ }),
 
@@ -4119,32 +3734,72 @@ function parseRelativeUrl(url, base) {
 
 /***/ }),
 
+/***/ "hr7U":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "mN36":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "mkpg":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DrawerNav; });
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("hr7U");
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("tI3Q");
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("mN36");
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("5rRV");
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
 
 
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 
 const {
   TabPane
-} = antd__WEBPACK_IMPORTED_MODULE_0__["Tabs"];
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
 
 function DrawerNav({
   names,
   toolType
 }) {
-  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(toolType);
+  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  const [ToolType, setTooltype] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(toolType);
 
   const handleChangeTrue = () => {
     let newTooltype = ToolType;
@@ -4167,9 +3822,9 @@ function DrawerNav({
     console.log(array);
   };
 
-  const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(true);
-  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_1___default.a.useState(names);
-  return __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Layout"], null, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Input"], {
+  const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(true);
+  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_10___default.a.useState(names);
+  return __jsx("div", null, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     placeholder: "Search",
     prefix: __jsx("i", {
       style: {
@@ -4198,25 +3853,25 @@ function DrawerNav({
       marginLeft: "20px",
       marginRight: "20px"
     }
-  }, __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Row"], null, array.map(item => item.type === type.type && __jsx(antd__WEBPACK_IMPORTED_MODULE_0__["Card"], {
+  }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "carditems cardwidth",
     style: {
       width: "300px",
       flex: 1
     }
-  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `sliderTool/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `functions/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
-  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `conversion/${item.display}/${item.name}`,
     as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
-  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `colorcode/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
   }, __jsx("a", null, item.display))))))))));
@@ -4376,12 +4031,33 @@ function makePublicRouterInstance(router) {
 
 /***/ }),
 
+/***/ "ppZR":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "tI3Q":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/row");
+
+/***/ }),
+
 /***/ "wkBG":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "wvHv":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/drawer");
 
 /***/ }),
 
@@ -4398,32 +4074,48 @@ module.exports = require("next/head");
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Navbar; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("Exp3");
-/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("PFYH");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("a5Fm");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
 
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 function Navbar({
   showDrawer
 }) {
-  return __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Layout"], {
+  return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "navbar"
-  }, __jsx("div", null, __jsx(antd__WEBPACK_IMPORTED_MODULE_1__["Menu"], {
+  }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "menu"
   }, __jsx("i", {
     onClick: () => showDrawer(),
     className: "material-icons menu-icon"
   }, "dehaze"), __jsx("h2", {
     className: "h2-nav"
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/"
   }, __jsx("a", null, "gudofConvert"))))));
 }
+
+/***/ }),
+
+/***/ "zkM6":
+/***/ (function(module, exports) {
+
+module.exports = require("antd/lib/tabs");
 
 /***/ })
 

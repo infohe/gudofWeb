@@ -1,8 +1,8 @@
 {
-  "/DrawerNav": "pages/DrawerNav.html",
-  "/Navbar": "pages/Navbar.html",
-  "/NavbarMain": "pages/NavbarMain.html",
-  "/SideNav": "pages/SideNav.html",
+  "/DrawerNav": "pages/DrawerNav.js",
+  "/Navbar": "pages/Navbar.js",
+  "/NavbarMain": "pages/NavbarMain.js",
+  "/SideNav": "pages/SideNav.js",
   "/_app": "pages/_app.js",
   "/api/slider": "pages/api/slider.js",
   "/api/tools": "pages/api/tools.js",
@@ -10,10 +10,9 @@
   "/colorcode/[name]/[id]": "pages/colorcode/[name]/[id].js",
   "/conversion/[name]/[id]": "pages/conversion/[name]/[id].js",
   "/functions/[name]/[id]": "pages/functions/[name]/[id].js",
-  "/": "pages/index.html",
+  "/": "pages/index.js",
   "/sliderTool/[name]/[id]": "pages/sliderTool/[name]/[id].js",
   "/zerotox/[name]/[id]": "pages/zerotox/[name]/[id].js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/404": "pages/404.html"
+  "/_document": "pages/_document.js"
 }
