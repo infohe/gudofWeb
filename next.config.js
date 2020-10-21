@@ -29,7 +29,7 @@ module.exports = withLess({
         },
         ...(typeof origExternals[0] === 'function' ? [] : origExternals),
       ]
-
+      
       config.module.rules.unshift({
         test: antStyles,
         use: 'null-loader',
@@ -38,3 +38,16 @@ module.exports = withLess({
     return config
   },
 })
+
+// const withCSS = require('@zeit/next-css');
+
+// module.exports = withCSS({
+  
+//   webpack: (config) => {
+//     config.module.rules.push({
+//       test: /\.css$/,
+//       loader: "style-loader!css-loader",
+//     });
+//   }
+// })
+

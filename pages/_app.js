@@ -1,9 +1,8 @@
-import '../styles/globals.css'
-import '../styles/tools.css'
-import '../styles/menu.css'
+// import '../styles/globals.css'
+// import '../styles/tools.css'
+// import '../styles/Homepage.module.css'
+// import '../styles/menu.module.css'
 
-import 'antd/dist/antd.css';
-import './homepage.css'
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
