@@ -417,7 +417,8 @@ function formatUrl(urlObj) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getServerSideProps", function() { return getServerSideProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticPaths", function() { return getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getStaticProps", function() { return getStaticProps; });
 /* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
 /* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
@@ -1543,63 +1544,577 @@ const Electrical = ({
   }, electricalList[electricalList.findIndex(item => item.id.toString() === router.query.id.toString())][item.b]))))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Electrical); // export async function getStaticPaths() {
-//   const tools= [
-//     { display:"Linear mA to Square root mA",id:14},
-//     { display:"Linear to Square root percentage",id:17},
-//     { display:"Lb In to Nm",id:65},
-//     { display:"Nm to LbIn",id:66},
-//     { display:"Time (Speed)",id:28},
-//     { display:"Speed",id:34},
-//     { display:"Distance",id:35},
-//     { display:"Aircore Inductance",id:21},
-//     { display:"Velocity of Sound",id:25},
-//     { display:"Wheatstone",id:29,q1:"R1 (adjacent)",qc1:"Ohm",q2:"R2 (opposite)",qc2:"Ohm",q3:"R3 (adjacent)",qc3:"Ohm",a1:"R",ac1:"Ohm"},
-//     { display:"Power Factor 3 Phase",id:42,q1:"Voltage (L-L)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-//     { display:"Power Factor Neutral",id:43,q1:"Voltage (L-N)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-//     { display:"Power Factor Single Phase",id:44,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-//     { display:"DC Motor Horsepower",id:67,q1:"Volts",qc1:"V",q2:"Amps",qc2:"",q3:"Effs",qc3:"",a1:"Horsepower",ac1:""},
-//     { display:"Ohms law (R)",id:19,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" Resistance, R",ac1:"Ohm"},
-//     { display:"Ohms law (V)",id:20,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" Voltage ",ac1:"V"},
-//     { display:"Ohms law (I)",id:23,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
-//     { display:"Parallel Resistance",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
-//     { display:"LC Resonance",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
-//     { display:"Power(I,V)",id:31,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
-//     { display:"Power(I,R)",id:32,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-//     { display:"Power (R,V)",id:33,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-//     { display:"Speed (Horsepower)",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
-//     { display:"Torque (horsepower)",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
-//     { display:"Horse Power",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
-//     { display:"Effective Tension from HP & FPM",id:41,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-//     { display:"Effective Tension from Torque & Radius",id:22,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-//       { display:"Resistance from temperature",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
-//       { display:"Temperature from resistance",id:15,descp:"As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
-//       { display:"Level Measurement Two Seals",img:"twoSeal.png",id:49,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d3",qc3:"",q4:"d2",qc4:"",q5:"d1",qc5:"",q6:"C",qc6:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Level Measurement One Seal Above",img:"onseSealAbove.png",id:50,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Level Measurement One Seal Below",img:"oneSealBelow.png",id:51,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Bubble Level",img:"bubblelevel.png",id:52,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d1",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Bubble Interface",img:"bubbleInterface.png",id:53,q1:"h1",qc1:"mm",q2:"du",qc2:"",q3:"dl",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Two Seal Interface",img:"twoSealInterface.png",id:54,q1:"h4",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d3",qc4:"",q5:"d2",qc5:"",q6:"du",qc6:"",q7:"du",qc7:"",q8:"C",qc8:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Open Tank",img:"openTank.png",id:55,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d1",qc4:"",q5:"d0",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Interface Wet Leg",img:"twoSealInterface.png",id:56,q1:"h4",qc1:"mm",q2:"h3",qc2:"mm",q3:"h2",qc3:"mm",q4:"h1",qc4:"mm",q5:"h0",qc5:"mm",q6:"d2",qc6:"",q7:"d0",qc7:"",q8:"du",qc8:"",q9:"dl",qc9:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Liquid Purge",id:57,img:"liquidPurge.png",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Level Transmission Closed Vessel",img:"11LT.png",id:58,descp:"Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",q8:"d0",qc8:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-//       { display:"Flow Rate Calculation",id:62,q1:"Pipe Diameter",qc1:"mm",q2:"Constricted Diameter",qc2:"mm",q3:"Measured Pressure Difference",qc3:"kPa",q4:"Fluid Density",qc4:"kg/m3",q5:"Meter Coefficient D",qc5:"",a1:"Constricted Area",ac1:"",a2:"Diameter Section",ac2:"",a3:"Pipe Flow Rate",ac3:"m3/s"},
-//       { display:"Hydrostatic Level",id:63,descp:"Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",q1:"Max URV",qc1:"ft",q2:"Min LRV",qc2:"ft",q3:"Process Liquid Density",qc3:"",q4:"Transmitter Height Offset",qc4:"",q5:"Impulse Line Fluid Density",qc5:"lb/ft3",q6:"Actual Liquid Level",qc6:"ft",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-//       { display:"Orifice Plate Error",id:64,q1:"Max Flow through orifice plate",qc1:"GPM",q2:"Differential pressure at that flow rate",qc2:"WC",q3:"Differential Pressure measurement errors",qc3:"WC",q4:"Current Flow",qc4:"GPM",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-//       { display:"Short Circuit Calculation",id:59,descp:"This tool is used to find Source Impedence andTotal impedence at time of short circuit.",q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
-//       { display:"Transformer Fault Current",id:60,descp:"This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
-//       { display:"DOL & Star Delta Starter",id:61,descp:"DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
-//   ]
-//   const paths = tools.map((post) => ({
-//     params: {name :post.display, id: post.id.toString() }
-//   }))
-//     return {
-//         paths: paths, fallback: false // See the "fallback" section below
-//     };
-//   }
+/* harmony default export */ __webpack_exports__["default"] = (Electrical);
+async function getStaticPaths() {
+  const tools = [{
+    display: "Linear mA to Square root mA",
+    id: 14
+  }, {
+    display: "Linear to Square root percentage",
+    id: 17
+  }, {
+    display: "Lb In to Nm",
+    id: 65
+  }, {
+    display: "Nm to LbIn",
+    id: 66
+  }, {
+    display: "Time (Speed)",
+    id: 28
+  }, {
+    display: "Speed",
+    id: 34
+  }, {
+    display: "Distance",
+    id: 35
+  }, {
+    display: "Aircore Inductance",
+    id: 21
+  }, {
+    display: "Velocity of Sound",
+    id: 25
+  }, {
+    display: "Wheatstone",
+    id: 29,
+    q1: "R1 (adjacent)",
+    qc1: "Ohm",
+    q2: "R2 (opposite)",
+    qc2: "Ohm",
+    q3: "R3 (adjacent)",
+    qc3: "Ohm",
+    a1: "R",
+    ac1: "Ohm"
+  }, {
+    display: "Power Factor 3 Phase",
+    id: 42,
+    q1: "Voltage (L-L)",
+    qc1: "V",
+    q2: "Current",
+    qc2: "A",
+    q3: "Aparent Power",
+    qc3: "Watt",
+    a1: "Powerfactor",
+    ac1: ""
+  }, {
+    display: "Power Factor Neutral",
+    id: 43,
+    q1: "Voltage (L-N)",
+    qc1: "V",
+    q2: "Current",
+    qc2: "A",
+    q3: "Aparent Power",
+    qc3: "Watt",
+    a1: "Powerfactor",
+    ac1: ""
+  }, {
+    display: "Power Factor Single Phase",
+    id: 44,
+    q1: "Voltage",
+    qc1: "V",
+    q2: "Current",
+    qc2: "A",
+    q3: "Aparent Power",
+    qc3: "Watt",
+    a1: "Powerfactor",
+    ac1: ""
+  }, {
+    display: "DC Motor Horsepower",
+    id: 67,
+    q1: "Volts",
+    qc1: "V",
+    q2: "Amps",
+    qc2: "",
+    q3: "Effs",
+    qc3: "",
+    a1: "Horsepower",
+    ac1: ""
+  }, {
+    display: "Ohms law (R)",
+    id: 19,
+    q1: "Voltage",
+    qc1: "V",
+    q2: "Current",
+    qc2: "A",
+    a1: " Resistance, R",
+    ac1: "Ohm"
+  }, {
+    display: "Ohms law (V)",
+    id: 20,
+    q1: "Current",
+    qc1: "A",
+    q2: "Resistance",
+    qc2: "Ohm",
+    a1: " Voltage ",
+    ac1: "V"
+  }, {
+    display: "Ohms law (I)",
+    id: 23,
+    q1: "Voltage",
+    qc1: "V",
+    q2: "Resistance",
+    qc2: "Ohm",
+    a1: " Current",
+    ac1: "A"
+  }, {
+    display: "Parallel Resistance",
+    id: 24,
+    q1: "R1",
+    qc1: "Ohm",
+    q2: "R2",
+    qc2: "Ohm",
+    a1: " R",
+    ac1: "Ohm"
+  }, {
+    display: "LC Resonance",
+    id: 26,
+    q1: "C",
+    qc1: "",
+    q2: "L",
+    qc2: "",
+    a1: " Frequency",
+    ac1: ""
+  }, {
+    display: "Power(I,V)",
+    id: 31,
+    q1: "Voltage",
+    qc1: "V",
+    q2: "Current",
+    qc2: "A",
+    a1: " P",
+    ac1: "Watts"
+  }, {
+    display: "Power(I,R)",
+    id: 32,
+    q1: "Current",
+    qc1: "A",
+    q2: "Resistance",
+    qc2: "Ohm",
+    a1: " P",
+    ac1: "Watts"
+  }, {
+    display: "Power (R,V)",
+    id: 33,
+    q1: "Voltage",
+    qc1: "V",
+    q2: "Resistance",
+    qc2: "Ohm",
+    a1: " P",
+    ac1: "Watts"
+  }, {
+    display: "Speed (Horsepower)",
+    id: 46,
+    q1: "Power",
+    qc1: "Horsepower",
+    q2: "Torque",
+    qc2: "PoundFoot",
+    a1: "Rotating speed",
+    ac1: "rpm"
+  }, {
+    display: "Torque (horsepower)",
+    id: 47,
+    q1: "Power",
+    qc1: "Horsepower",
+    q2: "Speed",
+    qc2: "rpm",
+    a1: "Torque",
+    ac1: "PoundFoot"
+  }, {
+    display: "Horse Power",
+    id: 48,
+    q1: "Torque",
+    qc1: "PoundFoot",
+    q2: "Speed",
+    qc2: "rpm",
+    a1: "Horsepower",
+    ac1: "horsePower"
+  }, {
+    display: "Effective Tension from HP & FPM",
+    id: 41,
+    q1: "HP",
+    qc1: "",
+    q2: "FPM",
+    qc2: "",
+    a1: "Effective Tension",
+    ac1: "lbs"
+  }, {
+    display: "Effective Tension from Torque & Radius",
+    id: 22,
+    q1: "Torque",
+    qc1: "",
+    q2: "Radius",
+    qc2: "",
+    a1: "Effective Tension",
+    ac1: "lbs"
+  }, {
+    display: "Resistance from temperature",
+    id: 13,
+    q1: "T(t)",
+    qc1: "",
+    q2: "R(0)",
+    qc2: "",
+    q3: "T(0)",
+    qc3: "",
+    q4: "C",
+    qc4: "",
+    a1: "Resistance",
+    ac1: "Ohm"
+  }, {
+    display: "Temperature from resistance",
+    id: 15,
+    descp: "As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",
+    q1: "R(t)",
+    qc1: "",
+    q2: "R(0)",
+    qc2: "",
+    q3: "Temp",
+    qc3: "",
+    q4: "C",
+    qc4: "",
+    a1: "Temperature",
+    ac1: "K"
+  }, {
+    display: "Level Measurement Two Seals",
+    img: "twoSeal.png",
+    id: 49,
+    q1: "h1",
+    qc1: "mm",
+    q2: "h0",
+    qc2: "mm",
+    q3: "d3",
+    qc3: "",
+    q4: "d2",
+    qc4: "",
+    q5: "d1",
+    qc5: "",
+    q6: "C",
+    qc6: "mm",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Level Measurement One Seal Above",
+    img: "onseSealAbove.png",
+    id: 50,
+    q1: "h2",
+    qc1: "mm",
+    q2: "h1",
+    qc2: "mm",
+    q3: "h0",
+    qc3: "mm",
+    q4: "d2",
+    qc4: "",
+    q5: "d1",
+    qc5: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Level Measurement One Seal Below",
+    img: "oneSealBelow.png",
+    id: 51,
+    q1: "h2",
+    qc1: "mm",
+    q2: "h1",
+    qc2: "mm",
+    q3: "h0",
+    qc3: "mm",
+    q4: "d2",
+    qc4: "",
+    q5: "d1",
+    qc5: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Bubble Level",
+    img: "bubblelevel.png",
+    id: 52,
+    q1: "h1",
+    qc1: "mm",
+    q2: "h0",
+    qc2: "mm",
+    q3: "d1",
+    qc3: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Bubble Interface",
+    img: "bubbleInterface.png",
+    id: 53,
+    q1: "h1",
+    qc1: "mm",
+    q2: "du",
+    qc2: "",
+    q3: "dl",
+    qc3: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Two Seal Interface",
+    img: "twoSealInterface.png",
+    id: 54,
+    q1: "h4",
+    qc1: "mm",
+    q2: "h1",
+    qc2: "mm",
+    q3: "h0",
+    qc3: "mm",
+    q4: "d3",
+    qc4: "",
+    q5: "d2",
+    qc5: "",
+    q6: "du",
+    qc6: "",
+    q7: "du",
+    qc7: "",
+    q8: "C",
+    qc8: "mm",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Open Tank",
+    img: "openTank.png",
+    id: 55,
+    q1: "h2",
+    qc1: "mm",
+    q2: "h1",
+    qc2: "mm",
+    q3: "h0",
+    qc3: "mm",
+    q4: "d1",
+    qc4: "",
+    q5: "d0",
+    qc5: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Interface Wet Leg",
+    img: "twoSealInterface.png",
+    id: 56,
+    q1: "h4",
+    qc1: "mm",
+    q2: "h3",
+    qc2: "mm",
+    q3: "h2",
+    qc3: "mm",
+    q4: "h1",
+    qc4: "mm",
+    q5: "h0",
+    qc5: "mm",
+    q6: "d2",
+    qc6: "",
+    q7: "d0",
+    qc7: "",
+    q8: "du",
+    qc8: "",
+    q9: "dl",
+    qc9: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Liquid Purge",
+    id: 57,
+    img: "liquidPurge.png",
+    q1: "h3",
+    qc1: "mm",
+    q2: "h2",
+    qc2: "mm",
+    q3: "h1",
+    qc3: "mm",
+    q4: "h0",
+    qc4: "mm",
+    q5: "d3",
+    qc5: "",
+    q6: "d2",
+    qc6: "",
+    q7: "d1",
+    qc7: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Level Transmission Closed Vessel",
+    img: "11LT.png",
+    id: 58,
+    descp: "Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",
+    q1: "h3",
+    qc1: "mm",
+    q2: "h2",
+    qc2: "mm",
+    q3: "h1",
+    qc3: "mm",
+    q4: "h0",
+    qc4: "mm",
+    q5: "d3",
+    qc5: "",
+    q6: "d2",
+    qc6: "",
+    q7: "d1",
+    qc7: "",
+    q8: "d0",
+    qc8: "",
+    a1: "HP Side/LRV/4mA",
+    ac1: "mmH20",
+    a2: "LP Side/URV/20mA",
+    ac2: "mmH20",
+    a3: "Span",
+    ac3: "mmH20"
+  }, {
+    display: "Flow Rate Calculation",
+    id: 62,
+    q1: "Pipe Diameter",
+    qc1: "mm",
+    q2: "Constricted Diameter",
+    qc2: "mm",
+    q3: "Measured Pressure Difference",
+    qc3: "kPa",
+    q4: "Fluid Density",
+    qc4: "kg/m3",
+    q5: "Meter Coefficient D",
+    qc5: "",
+    a1: "Constricted Area",
+    ac1: "",
+    a2: "Diameter Section",
+    ac2: "",
+    a3: "Pipe Flow Rate",
+    ac3: "m3/s"
+  }, {
+    display: "Hydrostatic Level",
+    id: 63,
+    descp: "Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",
+    q1: "Max URV",
+    qc1: "ft",
+    q2: "Min LRV",
+    qc2: "ft",
+    q3: "Process Liquid Density",
+    qc3: "",
+    q4: "Transmitter Height Offset",
+    qc4: "",
+    q5: "Impulse Line Fluid Density",
+    qc5: "lb/ft3",
+    q6: "Actual Liquid Level",
+    qc6: "ft",
+    a1: "Hydrostatic Pressure @ transmitter ",
+    ac1: "WC",
+    a2: "Transmitter LRV",
+    ac2: "",
+    a3: "Transmitter URV",
+    ac3: ""
+  }, {
+    display: "Orifice Plate Error",
+    id: 64,
+    q1: "Max Flow through orifice plate",
+    qc1: "GPM",
+    q2: "Differential pressure at that flow rate",
+    qc2: "WC",
+    q3: "Differential Pressure measurement errors",
+    qc3: "WC",
+    q4: "Current Flow",
+    qc4: "GPM",
+    a1: "Hydrostatic Pressure @ transmitter ",
+    ac1: "WC",
+    a2: "Transmitter LRV",
+    ac2: "",
+    a3: "Transmitter URV",
+    ac3: ""
+  }, {
+    display: "Short Circuit Calculation",
+    id: 59,
+    descp: "This tool is used to find Source Impedence andTotal impedence at time of short circuit.",
+    q1: "I",
+    qc1: "",
+    q2: "kVA",
+    qc2: "mm",
+    q3: "Zt",
+    qc3: "",
+    a1: "Source Impedence Zu",
+    ac1: "",
+    a2: "Total impedence Z",
+    ac2: ""
+  }, {
+    display: "Transformer Fault Current",
+    id: 60,
+    descp: "This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",
+    q1: "V",
+    qc1: "",
+    q2: "Z% ",
+    qc2: "%",
+    q3: "I",
+    qc3: "",
+    a1: "Maximum Fault Current",
+    ac1: "A",
+    a2: "Impedence Voltage",
+    ac2: ""
+  }, {
+    display: "DOL & Star Delta Starter",
+    id: 61,
+    descp: "DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",
+    q1: "System Voltage",
+    qc1: "V",
+    q2: "Phase",
+    qc2: "",
+    q3: "Motor Size",
+    qc3: "HP",
+    q4: "Motor rpm",
+    qc4: "",
+    q5: "Power Factor",
+    qc5: "",
+    a1: "Motor Rated Torque (Full Load)",
+    ac1: "lb-ft",
+    a2: "Motor Starting Torque",
+    ac2: "mmH20",
+    a3: "Lock Rotor Current IL(Min)",
+    ac3: "",
+    a4: "Lock Rotor Current IL(Max)",
+    ac4: "",
+    a5: "Motor Full load current (Live)",
+    ac5: ""
+  }];
+  const paths = tools.map(post => ({
+    params: {
+      name: post.display,
+      id: post.id.toString()
+    }
+  }));
+  return {
+    paths: paths,
+    fallback: false // See the "fallback" section below
 
-async function getServerSideProps({
+  };
+}
+async function getStaticProps({
   params
 }) {
   // params contains the post `id`.
@@ -2059,6 +2574,13 @@ async function getServerSideProps({
 
 /***/ }),
 
+/***/ "HJQg":
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
+
+/***/ }),
+
 /***/ "MaXC":
 /***/ (function(module, exports) {
 
@@ -2215,8 +2737,7 @@ function SideNav({
       flex: 1
     }
   }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `sliderTool/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
+    href: `sliderTool/${item.display}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
@@ -3860,8 +4381,7 @@ function DrawerNav({
       flex: 1
     }
   }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `sliderTool/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `sliderTool/${item.display}/${item.id}`
+    href: `sliderTool/${item.display}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
     href: `zerotox/${item.display}/${item.id}`,
     as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
@@ -4082,15 +4602,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("a5Fm");
 /* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("HJQg");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
 
 
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
 
 
 function Navbar({
@@ -4098,16 +4621,22 @@ function Navbar({
 }) {
   return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "navbar"
-  }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    id: "2980934111"
+  }, ["@font-face{font-family:'Nexabold';src:url('../public/fonts/Nexa\\ Bold.otf') format('opentype');}", "@font-face{font-family:'Nexalight';src:url('../public/fonts/Nexa\\ Light.otf') format('opentype');}", "html,body{padding:0;margin:0;overflow:auto;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen, Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;}", ".card{padding:20px;margin:10px;}", ".ant-tabs-ink-bar{background:#F73406 !important;}", ".ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{color:#F73406 !important;}", ".ant-tabs-tab:hover .ant-tabs-tab:hover .ant-tabs-tab-btn:hover{color:#F73406 !important;}", ".heading{font-size:larger;text-transform:uppercase;font-weight:bold;color:#F73406;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}", "html,.tools-container,.body{--antd-wave-shadow-color:#F73406 !important;--scroll-bar:0;font-family:'Nexalight' !important;}", ".h2{margin-left:20px;color:white;margin-top:10px !important;}", ".h2-nav{margin-left:20px;color:white;margin-top:20px !important;margin-bottom:20px !important;}", ".input{border:1px solid gray;padding:5px;margin-right:20px;}", ".result-heading{font-weight:bold;color:#F73406;text-transform:uppercase;}", ".result{margin:20px 0px;padding:20px;border:solid 1px #F73406;width:100%;}", "a{color:inherit;-webkit-text-decoration:none;text-decoration:none;}", "*{box-sizing:border-box;}", ".appbar{background:#F73406;}", ".descp{font-style:italic;}", ".contain{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".ant-tabs-content-holder{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".ant-tabs{width:100% !important;}", ".ant-input-affix-wrapper:hover,.ant-input-affix-wrapper:hover:focus{border:1px solid lightgray !important;box-shadow:0px 0px 0px 0px;}", "input[type=\"text\"]:focus{border:0 !important;box-shadow:0px 0px 0px 0px !important;}", ".ant-tabs-tab{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;margin-left:20px !important;}", ".input{margin-left:25px;margin-right:30px;}", ".input-col,.input-col input{min-width:60px;width:100px;margin-right:30px;}", ".slider{float:right;right:0;}", ".center{display:inline;}", ".icon-wrapper{position:relative;padding:0px 30px;}", ".ant-menu a{color:white !important;}", ".ant-layout{background:white !important;}", "a{color:black !important;}", ".ant-card:hover a{color:black !important;}", ".ant-card,.ant-card a{-webkit-transition:cubic-bezier(0.77,0,0.175,1) 0.5s;transition:cubic-bezier(0.77,0,0.175,1) 0.5s;}", ".ant-card{background:#fcfcfc !important;border-radius:10px !important;}", ".ant-input-affix-wrapper,.ant-input-affix-wrapper:hover,.ant-input-affix-wrapper:focus{box-shadow:0 !important;border:0 !important;}", ".ant-tabs-tab-btn:hover,.ant-tabs-tab:hover{color:#F73406 !important;}", ".ant-input:focus{border:1px solid gray !important;}", ".ant-card{margin-top:20px;}", ".card,.carditems,.ant-card-body,.ant-card{color:black !important;}", ".ant-slider-track{background:#F73406 !important;}", ".ant-slider-handle{border:2px solid #F73406 !important;}", ".appBar{background:red;color:red;}", ".taabs{color:red;display:inline;}", ".left{float:left;}", ".tab{float:left;width:50%;}", ".menu{background:red;color:white;width:100%;}", ".input{min-width:100px;}", ".contain{display:inline;}", ".carditems{max-width:90%;min-width:30%;width:350px;padding:10px;margin:10px;}", "@media only screen and (max-width:600px){.carditems{min-width:250px;}}", ".carditems:hover{box-shadow:0px 4px 8px 0px rgba(0,0,0,0.5);}", ".tool{width:100%;padding:50px 100px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;}", ".row{margin-bottom:20px;}", ".toolbox{width:100%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin:50px 70px;margin-top:20px;padding:0px !important;border-radius:30px;border:0px !important;}", ".ant-card-body{padding:0px !important;margin-top:20px;}", ".toolbox-heading{color:black;font-weight:bold;font-size:20px;padding:20px;}", ".toolbox-calc{padding:20px;background:white;font-size:15px !important;}", ".toolbox-desc{padding:20px;border-radius:0px 0px 20px 20px;}", ".toolbox-layout{background:white !important;height:100vh;margin-top:60px;color:black !important;font-size:17px;}", ".cardwidth{min-width:100% !important;}", ".hr{size:0.25px;width:95%;color:lightgray;}", ".tools-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".toolbox{width:100%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin:50px 70px;margin-top:20px;padding:0px !important;border-radius:30px;border:0px !important;}", ".ant-card-body{padding:0px !important;margin-top:20px;}", ".toolbox-heading{color:black;font-weight:bold;font-size:20px;padding:20px;}", ".toolbox-calc{padding:20px;background:white;font-size:15px !important;}", ".toolbox-desc{padding:20px;border-radius:0px 0px 20px 20px;}", ".toolbox-layout{background:white !important;height:100vh;margin-top:60px;color:black !important;font-size:17px;}", ".cardwidth{min-width:100% !important;}", ".hr{size:0.25px;width:95%;color:lightgray;}", ".tools-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".tools-left{height:100vh;min-width:300px;max-width:50%;overflow:auto;}", ".tools-container{height:90vh;}", ".menu{position:-webkit-sticky;position:sticky;}", "@media screen and (max-width:700px){.tools-left{display:none;}.menu-icon{display:block !important;}}", ".menu-icon{display:none;}", ".nav-surround{display:inline;}", ".ant-card-body{margin:0 !important;}", ".carditems{padding:10px !important;font-size:17px !important;}", "@media screen and (max-width:700px){.toolbox{margin:0px;border:0;border-radius:0;}.input,.input-col input{width:60px !important;margin-right:10px;}.input-col{min-width:10px;}.toolbox-heading{border-radius:0;}.card,.carditems,.ant-card-body,.ant-card-borde#F73406,.ant-card{width:100% !important;}}", ".menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".menu-icon{float:left;margin-left:20px;}", ".navbar{position:fixed;top:0;width:100%;overflow:hidden;z-index:1;height:60px;}", ".tools-container{margin-top:0px;}", ".h2-nav{font-family:'Nexabold' !important;}", ".ant-drawer-header,.ant-drawer-title{background:#F73406 !important;color:white !important;font-size:17px !important;font-weight:bold !important;}", ".calculate-button{background:#F73406 !important;color:white !important;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".toolbox-layout{height:100%;overflow:auto;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".tools-left{height:100vh;min-width:300px;max-width:50%;overflow:auto;}", ".tools-container{height:90vh;}", ".menu{position:-webkit-sticky;position:sticky;}", "@media screen and (max-width:700px){.tools-left{display:none;}.menu-icon{display:block !important;}}", ".menu-icon{display:none;}", ".nav-surround{display:inline;}", ".ant-card-body{margin:0 !important;}", ".carditems{padding:10px !important;font-size:17px !important;}", "@media screen and (max-width:700px){.toolbox{margin:0px;border:0;border-radius:0;}.input,.input-col input{width:60px !important;margin-right:10px;}.input-col{min-width:10px;}.toolbox-heading{border-radius:0;}.card,.carditems,.ant-card-body,.ant-card-borde#F73406,.ant-card{width:100% !important;}}", ".menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".menu-icon{float:left;margin-left:20px;}", ".navbar{position:fixed;top:0;width:100%;overflow:hidden;z-index:1;height:60px;}", ".tools-container{margin-top:0px;}", ".h2-nav{font-family:'Nexabold' !important;}", ".ant-drawer-header,.ant-drawer-title{background:#F73406 !important;color:white !important;font-size:17px !important;font-weight:bold !important;}", ".calculate-button{background:#F73406 !important;color:white !important;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".toolbox-layout{height:100%;overflow:auto;}"]), __jsx("div", {
+    className: "jsx-2980934111"
+  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
     className: "menu"
   }, __jsx("i", {
     onClick: () => showDrawer(),
-    className: "material-icons menu-icon"
+    className: "jsx-2980934111" + " " + "material-icons menu-icon"
   }, "dehaze"), __jsx("h2", {
-    className: "h2-nav"
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: "jsx-2980934111" + " " + "h2-nav"
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
     href: "/"
-  }, __jsx("a", null, "gudofConvert"))))));
+  }, __jsx("a", {
+    className: "jsx-2980934111"
+  }, "gudofConvert"))))));
 }
 
 /***/ }),

@@ -1,0 +1,249 @@
+.toolbox___uQ03n {
+    width:100%;
+    align-self: center;
+    margin:50px 70px;
+    margin-top:20px;
+    padding:0px !important;
+    border-radius: 30px;
+    border:0px !important;
+}
+.ant-card-body___3G6SD {
+    padding:0px !important;
+    margin-top:20px;
+}
+.toolbox-heading___23MFN {
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    padding:20px;
+}
+
+.toolbox-calc___1-YIo {
+    padding:20px;
+    background: white;
+    font-size:15px !important;
+}
+
+.toolbox-desc___3Muwz {
+    padding:20px;
+    
+    border-radius: 0px 0px 20px 20px;
+}
+
+.toolbox-layout___2YZT_ {
+    background: white !important;
+    height:100vh;
+    margin-top: 60px;
+    color:black !important;
+    font-size: 17px;
+
+}
+.cardwidth___1brjJ {
+    min-width:100% !important;
+}
+.hr___3Wj6E {
+    size:0.25px;
+    width:95%;
+    color:lightgray;
+}
+
+
+.tools-container___1zEgb {
+    display:flex;
+}
+
+
+.center___yUhEc {
+    display:flex;
+    align-items: center;
+}
+.tools-left___2eebG {
+    height:100vh;
+    min-width:300px;
+    max-width: 50%;
+    overflow:auto;
+}
+.tools-container___1zEgb {
+    height:90vh;
+}
+.menu___2GSeP {
+    position:sticky;
+}
+
+@media screen and (max-width:700px) {
+    .tools-left___2eebG {
+        display:none;
+    }
+  .menu-icon___1WmOK {
+      display: block !important;
+  }
+}
+.menu-icon___1WmOK {
+    display: none;
+}
+.nav-surround___1cXGj {   
+   display: inline;
+   
+}
+.ant-card-body___3G6SD {
+    margin:0 !important;
+}
+.carditems___r3BMW {
+    padding:10px !important;
+    font-size:17px !important;
+}
+@media screen and (max-width:700px) {
+    .toolbox___uQ03n {
+        margin:0px;
+        border:0;
+        border-radius:0;
+    }
+    .input___2YaRT,.input-col___FO8qK input{
+        width:60px !important;
+        margin-right:10px;
+    }
+    .input-col___FO8qK {
+        min-width:10px;
+    }
+    .toolbox-heading___23MFN {
+        border-radius:0;}
+
+        .card___1v3Ea , .carditems___r3BMW,.ant-card-body___3G6SD ,.ant-card-borde___v427d#F73406___162un,.ant-card___1OQFp{
+            width:100% !important;
+        }
+}
+.menu___2GSeP {
+    display:flex;
+    align-items: center;
+}
+.menu-icon___1WmOK {
+    float:left;
+    margin-left: 20px;
+}
+.navbar___2z_Wj {
+    position:fixed;
+    top:0;
+    width:100%;
+    overflow:hidden;
+    z-index:1;
+    height:60px;
+}
+.tools-container___1zEgb {
+    margin-top:0px;
+    /* overflow:hidden; */
+   
+}
+.h2-nav___2hW7d {
+    font-family: 'Nexabold' !important;
+}
+.ant-drawer-header___3U1v7 ,.ant-drawer-title___3pYfx  {
+    background:#F73406 !important;
+    color:white !important;
+    font-size: 17px  !important;
+    font-weight: bold  !important;
+}
+.calculate-button___3Gf1p {
+    background:#F73406 !important;
+    color:white !important;
+    display: flex;
+    align-items: center;
+}
+.toolbox-layout___2YZT_ {
+    height:100%;
+    overflow:auto;
+}
+.appBar___1TrzL  {
+    background:red;
+    color:red;
+  }
+
+  .taabs___1Xf01 {
+        color:red;
+        display: inline;
+  }
+
+  .left___3_U33 {
+      float:left;
+  }
+  .tab___TyJgy {
+      float:left;width:50%;
+  }
+
+  .menu___3EE0r {
+      background:red;
+      color:white;
+      width:100%;
+      
+  }
+  .input___2SCzb {
+      min-width:100px;
+  }
+  .contain___s4vjz {
+      display: inline;
+  }
+  .carditems___QFCD9 {
+      max-width:90%;
+      min-width: 30%;
+      width:350px;
+      padding:10px;
+      margin:10px;
+  }
+ 
+  @media only screen and (max-width: 600px) {
+    .carditems___QFCD9 {
+     min-width:250px;
+    }
+  }
+  .carditems___QFCD9:hover {
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+
+  }
+  .tool___neS3k {
+      width:100%;
+      padding:50px 100px;
+      display:flex;
+      align-self: center;
+  }
+
+  .row___1voTY {
+      margin-bottom:20px;
+  }
+.navmenu___HiOGF {
+    min-width:300px;
+    max-width:400px;
+    background:white;
+
+}
+
+.navtitle___2iDtK {
+   margin-left: 10px;
+    float:left;
+    width:175px;
+   
+    
+}
+.navtitle-icon___1hzjF {
+  
+    margin-right: 10px;
+}
+.h___2ziM7 {
+    min-height:40px;
+}
+.nav-item___2ECxz {
+    
+    padding-left:20px;
+    margin:3px;
+    height:30px;
+    width:100%;
+    transition:0.3s;
+}
+.nav-item___2ECxz:hover {
+    background: #f1f1f1;
+    
+}
+.nav-item___2ECxz:hover a {
+    color:black !important;
+}
+.menu___1ktbi {
+    height:60px;
+}

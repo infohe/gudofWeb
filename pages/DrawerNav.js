@@ -56,7 +56,7 @@ const handleShow = (id) => {
                     {array.map(item=> item.type === type.type &&
                      <Card className="carditems cardwidth" style={{width:"300px",flex:1}}>
                        {item.category === 'instrumentation' &&
-                      <Link href={`sliderTool/${item.display}/${item.id}`} as={ process.env.BACKEND_URL +`sliderTool/${item.display}/${item.id}`}>
+                      <Link href={`sliderTool/${item.display}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'zero' &&
