@@ -6,7 +6,7 @@ export default function NavbarMain() {
     return (
         <Layout className="navbar">
         <div >
-        <Menu className="menu">
+        <Menu style={{background:"#F73406"}} className="menu">
           
         {/* <i onClick={()=>showDrawer()} className="material-icons menu-icon">dehaze</i> */}
         <h2 className="h2-nav">

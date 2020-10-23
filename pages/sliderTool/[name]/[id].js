@@ -8,6 +8,7 @@ import Head from 'next/head'
 import { Tabs,Drawer } from 'antd';
 import SideNav from '../../SideNav';
 import DrawerNav from '../../DrawerNav';
+import { stringSpaceToHyphen } from '../..';
 
 const { TabPane } = Tabs;
 
@@ -201,7 +202,7 @@ export async function getStaticPaths() {
   {name:"0-25mA",display:"0-25 mA",id:3,type:"instrumentation",category:"instrumentation"}]
 
   const paths = tools!==undefined && tools.map((post) => ({
-    params: {name :post.display, id: post.id.toString() }
+    params: {name :stringSpaceToHyphen(post.display), id: post.id.toString() }
   }))
   
     return {

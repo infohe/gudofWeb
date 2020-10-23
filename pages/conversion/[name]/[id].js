@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { Tabs } from 'antd';
 
 import { useRouter } from 'next/router'
+import { stringSpaceToHyphen } from '../..';
 
 const Conversion= ({names,toolType}) => {
   const [visible, setVisible] = React.useState(false);
@@ -2283,7 +2284,7 @@ export const conversion_fn= [
       ]
       
       const paths = tools.map((post) =>  ({
-        params: {name :post.display , id: post.name }
+        params: {name :stringSpaceToHyphen( post.display) , id: post.name }
       }))
       
         return {

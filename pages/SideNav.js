@@ -4,6 +4,7 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 import Link from 'next/link'
+import { stringSpaceToHyphen } from '.';
 
 export default function SideNav({names , toolType}) {
   
@@ -43,24 +44,24 @@ export default function SideNav({names , toolType}) {
                       
                     {array.map(item=> item.type === type.type &&
                      <Card className="carditems" style={{flex:1}}>
-                        {item.category === 'instrumentation' &&
-                      <Link href={`sliderTool/${item.display}/${item.id}`}>
+                       {item.category === 'instrumentation' &&
+                      <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'zero' &&
-                      <Link href={`zerotox/${item.display}/${item.id}`} as={ process.env.BACKEND_URL +`zerotox/${item.display}/${item.id}`}>
+                      <Link href={`../../zerotox/zero/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'electrical' &&
-                      <Link href={`functions/${item.display}/${item.id}`} as={ process.env.BACKEND_URL +`functions/${item.display}/${item.id}`}>
+                      <Link href={`../../functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'conversion' &&
-                      <Link href={`conversion/${item.display}/${item.name}`} as={ process.env.BACKEND_URL +`conversion/${item.display}/${item.name}`}>
+                      <Link href={`../../conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'color' &&
-                      <Link href={`colorcode/${item.display}/${item.id}`} as={ process.env.BACKEND_URL +`colorcode/${item.display}/${item.id}`}>
+                      <Link href={`../../colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                      </Card>)}

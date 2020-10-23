@@ -6,7 +6,6 @@
           "libraryName": "antd",
           "style": true
         }
-      ],"babel-plugin-inline-import",
-      "babel-plugin-root-import"
+      ]
     ]
   }

@@ -100,13 +100,20 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _styles_Homepage_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("fXBL");
+/* harmony import */ var _styles_Homepage_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_Homepage_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _styles_menu_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("Jqpj");
+/* harmony import */ var _styles_menu_less__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_menu_less__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_tools_less__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("nk4b");
+/* harmony import */ var _styles_tools_less__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_tools_less__WEBPACK_IMPORTED_MODULE_3__);
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 // import '../styles/globals.css';
-// import '../styles/tools.css';
-// import '../styles/Homepage.css';
-// import '../styles/menu.css';
+
+ // import '../styles/Home.module.less';
+
+
+
 function MyApp({
   Component,
   pageProps
@@ -126,10 +133,31 @@ module.exports = __webpack_require__("1TCz");
 
 /***/ }),
 
+/***/ "Jqpj":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "cDcd":
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "fXBL":
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "nk4b":
+/***/ (function(module, exports) {
+
+
 
 /***/ })
 

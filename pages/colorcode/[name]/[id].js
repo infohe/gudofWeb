@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { Tabs,Drawer } from 'antd';
 import SideNav from '../../SideNav';
 import DrawerNav from '../../DrawerNav';
+import { stringSpaceToHyphen } from '../..';
 
 
 const Colorcode  = ({names,toolType}) => {
@@ -157,7 +158,7 @@ export default (Colorcode);
 export async function getStaticPaths() {
       return {
           paths:[
-            { params: { id: '30', name:'Color code Resistance'} },
+            { params: { id: '30', name:stringSpaceToHyphen('Color code Resistance')} },
         
           ], fallback: false // See the "fallback" section below
       };

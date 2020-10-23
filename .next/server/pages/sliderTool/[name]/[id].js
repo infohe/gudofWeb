@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 12);
+/******/ 	return __webpack_require__(__webpack_require__.s = 13);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -143,7 +143,7 @@ function withRouter(ComposedComponent) {
 
 /***/ }),
 
-/***/ 12:
+/***/ 13:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("d12d");
@@ -412,13 +412,6 @@ module.exports = require("antd/lib/slider");
 
 /***/ }),
 
-/***/ "HJQg":
-/***/ (function(module, exports) {
-
-module.exports = require("styled-jsx/style");
-
-/***/ }),
-
 /***/ "Osoz":
 /***/ (function(module, exports) {
 
@@ -430,6 +423,597 @@ module.exports = require("next/dist/next-server/lib/router-context.js");
 /***/ (function(module, exports) {
 
 
+
+/***/ }),
+
+/***/ "RNiq":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stringSpaceToHyphen", function() { return stringSpaceToHyphen; });
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("hr7U");
+/* harmony import */ var antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("tI3Q");
+/* harmony import */ var antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_row__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("mN36");
+/* harmony import */ var antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card_style__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("5rRV");
+/* harmony import */ var antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(antd_lib_card__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("cUip");
+/* harmony import */ var antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_style__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__("Uqqx");
+/* harmony import */ var antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__("Z8Mf");
+/* harmony import */ var antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs_style__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__("zkM6");
+/* harmony import */ var antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__("xnum");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("zXOc");
+/* harmony import */ var _NavbarMain__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("aJgq");
+
+
+
+
+
+
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement;
+
+
+const {
+  TabPane
+} = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
+
+
+
+function Home() {
+  const names = [{
+    name: "3-15 PSI",
+    display: "3-15 PSI",
+    id: 0,
+    type: "instrumentation",
+    category: "instrumentation"
+  }, {
+    name: "0-20mA",
+    display: "0-20 mA",
+    id: 1,
+    type: "instrumentation",
+    category: "instrumentation"
+  }, {
+    name: "4-20mA",
+    display: "4-20 mA",
+    id: 2,
+    type: "instrumentation",
+    category: "instrumentation"
+  }, {
+    name: "0-25mA",
+    display: "0-25 mA",
+    id: 3,
+    type: "instrumentation",
+    category: "instrumentation"
+  }, {
+    name: "zero",
+    display: "0-X to % (Conversion)",
+    id: 4,
+    type: "instrumentation",
+    category: "zero"
+  }, {
+    children: "brightness_1",
+    name: "area",
+    display: "Area",
+    id: 5,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    children: "chat",
+    name: "force",
+    display: "Force",
+    id: 6,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "energy",
+    display: "Energy",
+    id: 7,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "fuel_consumption",
+    display: "Fuel Consumption",
+    id: 8,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "time",
+    display: "Time",
+    id: 9,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "mass",
+    display: "Mass",
+    id: 10,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "length",
+    display: "Length",
+    id: 11,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "digital_storage",
+    display: "Data Storage",
+    id: 12,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "resistancetemp",
+    display: "Resistance (from temperature)",
+    id: 13,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "linearma",
+    display: "Linear mA to Square Root mA",
+    id: 14,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "temperature",
+    display: "Temperature (from resistance)",
+    id: 15,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "temperature",
+    display: "Temperature",
+    id: 16,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "linear",
+    display: "Linear to Square Root percentage",
+    id: 17,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "electric_current",
+    display: "Current",
+    id: 18,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "ohms",
+    display: "Ohms law (R)",
+    id: 19,
+    stringId: "19",
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "ohmsi",
+    display: "Ohms law (I)",
+    id: 20,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "aircore",
+    display: "Air Core Inductance",
+    id: 21,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "laser",
+    display: "Laser Real-Time Converter",
+    id: 22,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "ohmsv",
+    display: "Ohms Law (V)",
+    id: 23,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "parallel",
+    display: "Parallel Resistance",
+    id: 24,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "velocitysound",
+    display: "Velocity of Sound",
+    id: 25,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "lcresonance",
+    display: "LC Resonance",
+    id: 26,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "voltagediv",
+    display: "Voltage Divider",
+    id: 27,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "speedtime",
+    display: "Time (Speed)",
+    id: 28,
+    type: "extra",
+    category: "electrical"
+  }, {
+    name: "wheat",
+    display: "Wheatstone bridge",
+    id: 29,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "color",
+    display: "Color code Resistance",
+    id: 30,
+    type: "electrical",
+    category: "color"
+  }, {
+    name: "powerrv",
+    display: "Power (with R,V)",
+    id: 31,
+    stringId: "31",
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "powervi",
+    display: "Power (with V,I)",
+    id: 32,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "frequency",
+    display: "Frequency",
+    id: 33,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "speedspeed",
+    display: "Speed",
+    id: 34,
+    type: "extra",
+    category: "electrical"
+  }, {
+    name: "distance",
+    display: "Distance (Speed)",
+    id: 35,
+    type: "extra",
+    category: "electrical"
+  }, {
+    name: "volume",
+    display: "Volume",
+    id: 36,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "pressure",
+    display: "Pressure",
+    id: 37,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "speed",
+    display: "Speed",
+    id: 38,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "power",
+    display: "Power",
+    id: 39,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "powerir",
+    display: "Power (with R,I)",
+    id: 40,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "wavelength",
+    display: "Wavelength",
+    id: 41,
+    type: "extra",
+    category: "electrical"
+  }, {
+    name: "powerline",
+    display: "Power Factor 3Phase (Line)",
+    id: 42,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "powerneutral",
+    display: "Power Factor 3Phase (neutral)",
+    id: 43,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "power",
+    display: "Power Factor Single Phase",
+    id: 44,
+    stringId: "44",
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "charge",
+    display: "Charge",
+    id: 45,
+    type: "conversions",
+    category: "conversion"
+  }, {
+    name: "speedhorse",
+    display: "Speed (Horsepower)",
+    id: 46,
+    stringId: "46",
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "torque",
+    display: "Torque (HorsePower)",
+    id: 47,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "horsepower",
+    display: "HorsePower",
+    id: 48,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "twoseals",
+    display: "Level measurement Two Seals",
+    id: 49,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "onesealabove",
+    display: "Level measurement one seal above",
+    id: 50,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "onesealbelow",
+    display: "Level measurement one seal below",
+    id: 51,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "bubblelevel",
+    display: "Bubble Level",
+    id: 52,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "bubbleinterface",
+    display: "Bubble Interface",
+    id: 53,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "twosealint",
+    display: "Two Seal Interface",
+    id: 54,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "opentank",
+    display: "Open Tank",
+    id: 55,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "intwet",
+    display: "Interface Wet Leg",
+    id: 56,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "liquidpurge",
+    display: "Liquid Purge",
+    id: 57,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "LT3",
+    display: "Level Transmission Closed Vessel",
+    id: 58,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "short",
+    display: "Short Circuit Calculation",
+    id: 59,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "transformer",
+    display: "Transformer Fault Current",
+    id: 60,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "DOL",
+    display: "DOL Star & Delta",
+    id: 61,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "flowrate",
+    display: "Flow Rate Calculation",
+    id: 62,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "hydrost",
+    display: "Hydrostatic Level",
+    id: 63,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "orifice",
+    display: "Orifice Plate error",
+    id: 64,
+    type: "instrumentation",
+    category: "electrical"
+  }, {
+    name: "lb",
+    display: "LbIn to Nm",
+    id: 65,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "nm",
+    display: "Nm to LbIn",
+    id: 66,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "dcmotor",
+    display: "DC Motor horsepower",
+    id: 67,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "eff1",
+    display: "Eff Tension from HP & FPM",
+    id: 68,
+    type: "electrical",
+    category: "electrical"
+  }, {
+    name: "eff2",
+    display: "Eff Tension from Torque and Radius",
+    id: 69,
+    type: "electrical",
+    category: "electrical"
+  }];
+  const toolType = [{
+    id: 1,
+    type: "instrumentation",
+    name: "INSTRUMENTATION",
+    show: false
+  }, {
+    id: 2,
+    type: "electrical",
+    name: "ELECTRICAL",
+    show: false
+  }, {
+    id: 3,
+    type: "conversions",
+    name: "UNIT CONVERSION",
+    show: false
+  }];
+  const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(names);
+  const [tooltype, setTooltype] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(toolType);
+
+  const handleChangeTrue = () => {
+    let newTooltype = tooltype;
+    newTooltype.map(item => item.show = true);
+    setTooltype(newTooltype);
+  };
+
+  const handleSearch = key => {
+    console.log("key", key);
+    handleChangeTrue();
+    setArray(tools.filter(item => key !== "" && item.display.toLowerCase().indexOf(key.toLowerCase()) !== -1));
+    if (key === "") setArray(tools);
+    console.log(array);
+  };
+
+  const [tools, setTools] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(names);
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("link", {
+    rel: "stylesheet",
+    type: "text/css",
+    href: "../styles/globals.css"
+  }), __jsx("title", null, "gudofConvert"), __jsx("link", {
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+    rel: "stylesheet"
+  }), __jsx("link", {
+    rel: "icon",
+    href: "/favicon.ico"
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  }), __jsx("script", {
+    src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+  }), __jsx("script", {
+    type: "module",
+    src: "https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+  }), __jsx("script", {
+    nomodule: true,
+    src: "https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+  }), __jsx("link", {
+    rel: "stylesheet",
+    href: "https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+  })), __jsx("body", {
+    className: "body"
+  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(_NavbarMain__WEBPACK_IMPORTED_MODULE_14__["default"], null), __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    style: {
+      marginTop: "60px"
+    },
+    defaultActiveKey: "1"
+  }, tooltype !== undefined && tooltype.map(type => __jsx(TabPane, {
+    tab: type.name,
+    key: type.id
+  }, __jsx("div", {
+    style: {
+      marginLeft: "20px",
+      marginRight: "20px"
+    }
+  }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    style: {
+      marginLeft: "10px",
+      marginRight: "30px"
+    },
+    placeholder: "Search",
+    prefix: __jsx("i", {
+      style: {
+        marginTop: "-5px"
+      },
+      className: "material-icons"
+    }, "search"),
+    onInput: e => handleSearch(e.target.value)
+  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: "carditems",
+    style: {
+      flex: 1
+    }
+  }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `${process.env.BACKEND_URL}/sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`
+  }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `${process.env.BACKEND_URL}/zerotox/zero/${item.id}`
+  }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `${process.env.BACKEND_URL}/functions/${stringSpaceToHyphen(item.display)}/${item.id}`
+  }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `${process.env.BACKEND_URL}/conversion/${stringSpaceToHyphen(item.display)}/${item.name}`
+  }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `${process.env.BACKEND_URL}/colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`
+  }, __jsx("a", null, item.display))))))))))));
+}
+const stringSpaceToHyphen = string => {
+  return string.split(" ").join("-").split("(").join("-").split(")").join("-");
+};
 
 /***/ }),
 
@@ -491,6 +1075,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("RNiq");
 
 
 
@@ -506,6 +1091,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 const {
   TabPane
 } = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
+
 
 function SideNav({
   names,
@@ -561,19 +1147,15 @@ function SideNav({
       flex: 1
     }
   }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `sliderTool/${item.display}/${item.id}`
+    href: `../../sliderTool/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `zerotox/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
+    href: `../../zerotox/zero/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `functions/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
+    href: `../../functions/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `conversion/${item.display}/${item.name}`,
-    as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
+    href: `../../conversion/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.name}`
   }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `colorcode/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
+    href: `../../colorcode/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display)))))))))));
 }
 
@@ -757,6 +1339,48 @@ function getRouteRegex(normalizedRoute) {
 /***/ (function(module, exports) {
 
 module.exports = require("antd/lib/menu");
+
+/***/ }),
+
+/***/ "aJgq":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavbarMain; });
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
+/* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
+/* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("PFYH");
+/* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("a5Fm");
+/* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+
+
+function NavbarMain() {
+  return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    className: "navbar"
+  }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    style: {
+      background: "#F73406"
+    },
+    className: "menu"
+  }, __jsx("h2", {
+    className: "h2-nav"
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    href: "/"
+  }, __jsx("a", null, "gudofConvert"))))));
+}
 
 /***/ }),
 
@@ -1054,6 +1678,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _SideNav__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("VcBQ");
 /* harmony import */ var _DrawerNav__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__("mkpg");
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__("RNiq");
 
 
 
@@ -1066,6 +1691,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+
 
 
 
@@ -1323,7 +1949,7 @@ async function getStaticPaths() {
   }];
   const paths = tools !== undefined && tools.map(post => ({
     params: {
-      name: post.display,
+      name: Object(___WEBPACK_IMPORTED_MODULE_16__["stringSpaceToHyphen"])(post.display),
       id: post.id.toString()
     }
   }));
@@ -2922,6 +3548,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__("YFqc");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("RNiq");
 
 
 
@@ -2937,6 +3564,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
 const {
   TabPane
 } = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
+
 
 function DrawerNav({
   names,
@@ -3004,19 +3632,15 @@ function DrawerNav({
       flex: 1
     }
   }, item.category === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `sliderTool/${item.display}/${item.id}`
+    href: `../../sliderTool/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'zero' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `zerotox/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `zerotox/${item.display}/${item.id}`
+    href: `../../zerotox/zero/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `functions/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `functions/${item.display}/${item.id}`
+    href: `../../functions/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display)), item.category === 'conversion' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `conversion/${item.display}/${item.name}`,
-    as: process.env.BACKEND_URL + `conversion/${item.display}/${item.name}`
+    href: `conversion/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.name}`
   }, __jsx("a", null, item.display)), item.category === 'color' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `colorcode/${item.display}/${item.id}`,
-    as: process.env.BACKEND_URL + `colorcode/${item.display}/${item.id}`
+    href: `../../colorcode/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}/${item.id}`
   }, __jsx("a", null, item.display))))))))));
 }
 
@@ -3232,18 +3856,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu_style__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("a5Fm");
 /* harmony import */ var antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("HJQg");
-/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__("YFqc");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("YFqc");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
 
 
 
 
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 function Navbar({
@@ -3251,22 +3872,19 @@ function Navbar({
 }) {
   return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "navbar"
-  }, __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    id: "2980934111"
-  }, ["@font-face{font-family:'Nexabold';src:url('../public/fonts/Nexa\\ Bold.otf') format('opentype');}", "@font-face{font-family:'Nexalight';src:url('../public/fonts/Nexa\\ Light.otf') format('opentype');}", "html,body{padding:0;margin:0;overflow:auto;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen, Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;}", ".card{padding:20px;margin:10px;}", ".ant-tabs-ink-bar{background:#F73406 !important;}", ".ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{color:#F73406 !important;}", ".ant-tabs-tab:hover .ant-tabs-tab:hover .ant-tabs-tab-btn:hover{color:#F73406 !important;}", ".heading{font-size:larger;text-transform:uppercase;font-weight:bold;color:#F73406;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;}", "html,.tools-container,.body{--antd-wave-shadow-color:#F73406 !important;--scroll-bar:0;font-family:'Nexalight' !important;}", ".h2{margin-left:20px;color:white;margin-top:10px !important;}", ".h2-nav{margin-left:20px;color:white;margin-top:20px !important;margin-bottom:20px !important;}", ".input{border:1px solid gray;padding:5px;margin-right:20px;}", ".result-heading{font-weight:bold;color:#F73406;text-transform:uppercase;}", ".result{margin:20px 0px;padding:20px;border:solid 1px #F73406;width:100%;}", "a{color:inherit;-webkit-text-decoration:none;text-decoration:none;}", "*{box-sizing:border-box;}", ".appbar{background:#F73406;}", ".descp{font-style:italic;}", ".contain{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".ant-tabs-content-holder{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".ant-tabs{width:100% !important;}", ".ant-input-affix-wrapper:hover,.ant-input-affix-wrapper:hover:focus{border:1px solid lightgray !important;box-shadow:0px 0px 0px 0px;}", "input[type=\"text\"]:focus{border:0 !important;box-shadow:0px 0px 0px 0px !important;}", ".ant-tabs-tab{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;margin-left:20px !important;}", ".input{margin-left:25px;margin-right:30px;}", ".input-col,.input-col input{min-width:60px;width:100px;margin-right:30px;}", ".slider{float:right;right:0;}", ".center{display:inline;}", ".icon-wrapper{position:relative;padding:0px 30px;}", ".ant-menu a{color:white !important;}", ".ant-layout{background:white !important;}", "a{color:black !important;}", ".ant-card:hover a{color:black !important;}", ".ant-card,.ant-card a{-webkit-transition:cubic-bezier(0.77,0,0.175,1) 0.5s;transition:cubic-bezier(0.77,0,0.175,1) 0.5s;}", ".ant-card{background:#fcfcfc !important;border-radius:10px !important;}", ".ant-input-affix-wrapper,.ant-input-affix-wrapper:hover,.ant-input-affix-wrapper:focus{box-shadow:0 !important;border:0 !important;}", ".ant-tabs-tab-btn:hover,.ant-tabs-tab:hover{color:#F73406 !important;}", ".ant-input:focus{border:1px solid gray !important;}", ".ant-card{margin-top:20px;}", ".card,.carditems,.ant-card-body,.ant-card{color:black !important;}", ".ant-slider-track{background:#F73406 !important;}", ".ant-slider-handle{border:2px solid #F73406 !important;}", ".appBar{background:red;color:red;}", ".taabs{color:red;display:inline;}", ".left{float:left;}", ".tab{float:left;width:50%;}", ".menu{background:red;color:white;width:100%;}", ".input{min-width:100px;}", ".contain{display:inline;}", ".carditems{max-width:90%;min-width:30%;width:350px;padding:10px;margin:10px;}", "@media only screen and (max-width:600px){.carditems{min-width:250px;}}", ".carditems:hover{box-shadow:0px 4px 8px 0px rgba(0,0,0,0.5);}", ".tool{width:100%;padding:50px 100px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;}", ".row{margin-bottom:20px;}", ".toolbox{width:100%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin:50px 70px;margin-top:20px;padding:0px !important;border-radius:30px;border:0px !important;}", ".ant-card-body{padding:0px !important;margin-top:20px;}", ".toolbox-heading{color:black;font-weight:bold;font-size:20px;padding:20px;}", ".toolbox-calc{padding:20px;background:white;font-size:15px !important;}", ".toolbox-desc{padding:20px;border-radius:0px 0px 20px 20px;}", ".toolbox-layout{background:white !important;height:100vh;margin-top:60px;color:black !important;font-size:17px;}", ".cardwidth{min-width:100% !important;}", ".hr{size:0.25px;width:95%;color:lightgray;}", ".tools-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".toolbox{width:100%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;margin:50px 70px;margin-top:20px;padding:0px !important;border-radius:30px;border:0px !important;}", ".ant-card-body{padding:0px !important;margin-top:20px;}", ".toolbox-heading{color:black;font-weight:bold;font-size:20px;padding:20px;}", ".toolbox-calc{padding:20px;background:white;font-size:15px !important;}", ".toolbox-desc{padding:20px;border-radius:0px 0px 20px 20px;}", ".toolbox-layout{background:white !important;height:100vh;margin-top:60px;color:black !important;font-size:17px;}", ".cardwidth{min-width:100% !important;}", ".hr{size:0.25px;width:95%;color:lightgray;}", ".tools-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".tools-left{height:100vh;min-width:300px;max-width:50%;overflow:auto;}", ".tools-container{height:90vh;}", ".menu{position:-webkit-sticky;position:sticky;}", "@media screen and (max-width:700px){.tools-left{display:none;}.menu-icon{display:block !important;}}", ".menu-icon{display:none;}", ".nav-surround{display:inline;}", ".ant-card-body{margin:0 !important;}", ".carditems{padding:10px !important;font-size:17px !important;}", "@media screen and (max-width:700px){.toolbox{margin:0px;border:0;border-radius:0;}.input,.input-col input{width:60px !important;margin-right:10px;}.input-col{min-width:10px;}.toolbox-heading{border-radius:0;}.card,.carditems,.ant-card-body,.ant-card-borde#F73406,.ant-card{width:100% !important;}}", ".menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".menu-icon{float:left;margin-left:20px;}", ".navbar{position:fixed;top:0;width:100%;overflow:hidden;z-index:1;height:60px;}", ".tools-container{margin-top:0px;}", ".h2-nav{font-family:'Nexabold' !important;}", ".ant-drawer-header,.ant-drawer-title{background:#F73406 !important;color:white !important;font-size:17px !important;font-weight:bold !important;}", ".calculate-button{background:#F73406 !important;color:white !important;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".toolbox-layout{height:100%;overflow:auto;}", ".center{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".tools-left{height:100vh;min-width:300px;max-width:50%;overflow:auto;}", ".tools-container{height:90vh;}", ".menu{position:-webkit-sticky;position:sticky;}", "@media screen and (max-width:700px){.tools-left{display:none;}.menu-icon{display:block !important;}}", ".menu-icon{display:none;}", ".nav-surround{display:inline;}", ".ant-card-body{margin:0 !important;}", ".carditems{padding:10px !important;font-size:17px !important;}", "@media screen and (max-width:700px){.toolbox{margin:0px;border:0;border-radius:0;}.input,.input-col input{width:60px !important;margin-right:10px;}.input-col{min-width:10px;}.toolbox-heading{border-radius:0;}.card,.carditems,.ant-card-body,.ant-card-borde#F73406,.ant-card{width:100% !important;}}", ".menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".menu-icon{float:left;margin-left:20px;}", ".navbar{position:fixed;top:0;width:100%;overflow:hidden;z-index:1;height:60px;}", ".tools-container{margin-top:0px;}", ".h2-nav{font-family:'Nexabold' !important;}", ".ant-drawer-header,.ant-drawer-title{background:#F73406 !important;color:white !important;font-size:17px !important;font-weight:bold !important;}", ".calculate-button{background:#F73406 !important;color:white !important;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}", ".toolbox-layout{height:100%;overflow:auto;}"]), __jsx("div", {
-    className: "jsx-2980934111"
-  }, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    style: {
+      background: "#F73406"
+    },
     className: "menu"
   }, __jsx("i", {
     onClick: () => showDrawer(),
-    className: "jsx-2980934111" + " " + "material-icons menu-icon"
+    className: "material-icons menu-icon"
   }, "dehaze"), __jsx("h2", {
-    className: "jsx-2980934111" + " " + "h2-nav"
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    className: "h2-nav"
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_5___default.a, {
     href: "/"
-  }, __jsx("a", {
-    className: "jsx-2980934111"
-  }, "gudofConvert"))))));
+  }, __jsx("a", null, "gudofConvert"))))));
 }
 
 /***/ }),

@@ -1,4 +1,4 @@
-
+const withCSS = require('@zeit/next-css')
 const withLess = require('@zeit/next-less')
 const lessToJS = require('less-vars-to-js')
 const fs = require('fs')
@@ -16,7 +16,11 @@ module.exports = withFonts(withLess({
     modifyVars: themeVariables, // make your antd custom effective
   },
   javascriptEnabled:true,
+  enableSvg: true,
+
+ 
   webpack: (config, { isServer }) => {
+ 
     if (isServer) {
       const antStyles = /antd\/.*?\/style.*?/
       const origExternals = [...config.externals]
@@ -37,7 +41,8 @@ module.exports = withFonts(withLess({
         use: 'null-loader',
       })
     }
-    return config
+   
+         return config
   },
 }));
 // const withCSS = require("@zeit/next-css");

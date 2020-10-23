@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Navbar from '../../Navbar';
 import SideNav from '../../SideNav';
 import DrawerNav from '../../DrawerNav';
+import { stringSpaceToHyphen } from '../..';
 
 
 const Electrical  = ({names,toolType}) => {
@@ -35,14 +36,14 @@ const Electrical  = ({names,toolType}) => {
       { display:"Ohms law (I)",id:20,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
       { display:"Parallel Resistance",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
       { display:"LC Resonance",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
-      { display:"Power(I,V)",id:31,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
-      { display:"Power(I,R)",id:32,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-      { display:"Power (R,V)",id:33,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+      { display:"Power(I,V)",id:32,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
+      { display:"Power(I,R)",id:40,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+      { display:"Power (R,V)",id:31,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
       { display:"Speed (Horsepower)",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
       { display:"Torque (horsepower)",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
       { display:"Horse Power",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
-      { display:"Effective Tension from HP & FPM",id:41,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-      { display:"Effective Tension from Torque & Radius",id:22,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+      { display:"Effective Tension from HP & FPM",id:68,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+      { display:"Effective Tension from Torque & Radius",id:69,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
   
         { display:"Resistance from temperature",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
         { display:"Temperature from resistance",id:15,descp:"As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
@@ -331,58 +332,57 @@ const Electrical  = ({names,toolType}) => {
             </div>
     <Layout className="toolbox-layout">
       {router.query.id!==undefined &&
-      <div className="toolbox">
-      <div className="toolbox-heading"> 
-      {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())].display}
-      </div>
-      <div>
+          <div className="toolbox">
+              <div className="toolbox-heading"> 
+              {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())].display}
+              </div>
               
-            <div className="heading">Calculation</div>
-            {value.map((item)=>
-            <div className="toolbox-calc">
-            {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.b] !== undefined &&
+              <div>
+                  <div className="heading">Calculation</div>
+                  {value.map((item)=>
+            
+                      electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.b] !== undefined &&
           
-         
-          <div style={{display:"flex"}}>
-                <div style={{flex:2}}>
-                    {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
-                </div>
-                <div style={{flex:1}}>
-                  <Input placeholder="input" className="input box" type="number" onChange={(e)=>{item.c(e)
-                  console.log("input",e.target.value)}}></Input>
-                </div>
-                <div style={{flex:1}}>
-                    {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b] || ""}
-                </div>
-              </div>
-              }
+                       <div className="toolbox-calc">
+                        <div style={{display:"flex"}}>
+                              <div style={{flex:2}}>
+                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
+                              </div>
+                              <div style={{flex:1}}>
+                                  <Input placeholder="input" className="input box" type="number" onChange={(e)=>{item.c(e)
+                                  console.log("input",e.target.value)}}></Input>
+                              </div>
+                              <div style={{flex:1}}>
+                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b] || ""}
+                              </div>
+                         </div>
               
-              </div>
-            )}
-                 </div>        
+                      </div>
+                     )}  
 
-            {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img !== undefined &&
+                    {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img !== undefined &&
             //<Image src="/assets/11LT.png"/>
-            <div className="toolbox-calc">
-            <Image style={{width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img}`}/>
-            </div>
-            }
-          {details.findIndex((list)=>list.id.toString() === router.query.id.toString()) !== -1 &&
-          <div className="toolbox-calc">
-          {detail.map((item)=>
+                          <div className="toolbox-calc">
+                          <Image style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img}`}/>
+                          </div>
+                    }
+                   <div className="toolbox-calc">
+                      {details.findIndex((list)=>list.id.toString() === router.query.id.toString()) !== -1 &&
           
-                        details[details.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
+                      detail.map((item)=>
+          
+                          details[details.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
                  
-                <div style={{display:"flex"}} key={item.id}>
-                   <div style={{flex:1}}>
-                      {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
-                  </div>
-                  <div style={{flex:1}}>
-                      {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b]}</div>
-                </div>
+                          <div style={{display:"flex"}} key={item.id}>
+                            <div style={{flex:1}}>
+                                {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
+                            </div>
+                            <div style={{flex:1}}>
+                                {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b]}</div>
+                          </div>
               
-            )}
-          </div>}
+            )
+          }</div>
           <div class="toolbox-desc">
 
           <Button className="calculate-button" onClick={()=>calculate(q1,q2,q3,q4,q5,q6,q7,q8,q9)}>CALCULATE</Button>
@@ -408,6 +408,7 @@ const Electrical  = ({names,toolType}) => {
       <div className="description">
       {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].descp}
       </div>} */}
+      </div>
       </div>}
     </Layout>
     </div>
@@ -417,57 +418,62 @@ const Electrical  = ({names,toolType}) => {
 
 export default Electrical;
 export async function getStaticPaths() {
-  const tools= [
-    { display:"Linear mA to Square root mA",id:14},
-    { display:"Linear to Square root percentage",id:17},
-    { display:"Lb In to Nm",id:65},
-    { display:"Nm to LbIn",id:66},
-    { display:"Time (Speed)",id:28},
-    { display:"Speed",id:34},
-    { display:"Distance",id:35},
-    { display:"Aircore Inductance",id:21},
-    { display:"Velocity of Sound",id:25},
-    { display:"Wheatstone",id:29,q1:"R1 (adjacent)",qc1:"Ohm",q2:"R2 (opposite)",qc2:"Ohm",q3:"R3 (adjacent)",qc3:"Ohm",a1:"R",ac1:"Ohm"},
-    { display:"Power Factor 3 Phase",id:42,q1:"Voltage (L-L)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-    { display:"Power Factor Neutral",id:43,q1:"Voltage (L-N)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-    { display:"Power Factor Single Phase",id:44,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-    { display:"DC Motor Horsepower",id:67,q1:"Volts",qc1:"V",q2:"Amps",qc2:"",q3:"Effs",qc3:"",a1:"Horsepower",ac1:""},
-    { display:"Ohms law (R)",id:19,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" Resistance, R",ac1:"Ohm"},
-    { display:"Ohms law (V)",id:20,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" Voltage ",ac1:"V"},
-    { display:"Ohms law (I)",id:23,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
-    { display:"Parallel Resistance",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
-    { display:"LC Resonance",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
-    { display:"Power(I,V)",id:31,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
-    { display:"Power(I,R)",id:32,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-    { display:"Power (R,V)",id:33,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-    { display:"Speed (Horsepower)",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
-    { display:"Torque (horsepower)",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
-    { display:"Horse Power",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
-    { display:"Effective Tension from HP & FPM",id:41,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-    { display:"Effective Tension from Torque & Radius",id:22,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-      { display:"Resistance from temperature",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
-      { display:"Temperature from resistance",id:15,descp:"As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
-      { display:"Level Measurement Two Seals",img:"twoSeal.png",id:49,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d3",qc3:"",q4:"d2",qc4:"",q5:"d1",qc5:"",q6:"C",qc6:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Level Measurement One Seal Above",img:"onseSealAbove.png",id:50,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Level Measurement One Seal Below",img:"oneSealBelow.png",id:51,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Bubble Level",img:"bubblelevel.png",id:52,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d1",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Bubble Interface",img:"bubbleInterface.png",id:53,q1:"h1",qc1:"mm",q2:"du",qc2:"",q3:"dl",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Two Seal Interface",img:"twoSealInterface.png",id:54,q1:"h4",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d3",qc4:"",q5:"d2",qc5:"",q6:"du",qc6:"",q7:"du",qc7:"",q8:"C",qc8:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Open Tank",img:"openTank.png",id:55,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d1",qc4:"",q5:"d0",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Interface Wet Leg",img:"twoSealInterface.png",id:56,q1:"h4",qc1:"mm",q2:"h3",qc2:"mm",q3:"h2",qc3:"mm",q4:"h1",qc4:"mm",q5:"h0",qc5:"mm",q6:"d2",qc6:"",q7:"d0",qc7:"",q8:"du",qc8:"",q9:"dl",qc9:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Liquid Purge",id:57,img:"liquidPurge.png",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Level Transmission Closed Vessel",img:"11LT.png",id:58,descp:"Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",q8:"d0",qc8:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-      { display:"Flow Rate Calculation",id:62,q1:"Pipe Diameter",qc1:"mm",q2:"Constricted Diameter",qc2:"mm",q3:"Measured Pressure Difference",qc3:"kPa",q4:"Fluid Density",qc4:"kg/m3",q5:"Meter Coefficient D",qc5:"",a1:"Constricted Area",ac1:"",a2:"Diameter Section",ac2:"",a3:"Pipe Flow Rate",ac3:"m3/s"},
-      { display:"Hydrostatic Level",id:63,descp:"Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",q1:"Max URV",qc1:"ft",q2:"Min LRV",qc2:"ft",q3:"Process Liquid Density",qc3:"",q4:"Transmitter Height Offset",qc4:"",q5:"Impulse Line Fluid Density",qc5:"lb/ft3",q6:"Actual Liquid Level",qc6:"ft",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-      { display:"Orifice Plate Error",id:64,q1:"Max Flow through orifice plate",qc1:"GPM",q2:"Differential pressure at that flow rate",qc2:"WC",q3:"Differential Pressure measurement errors",qc3:"WC",q4:"Current Flow",qc4:"GPM",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-      { display:"Short Circuit Calculation",id:59,descp:"This tool is used to find Source Impedence andTotal impedence at time of short circuit.",q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
-      { display:"Transformer Fault Current",id:60,descp:"This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
-      { display:"DOL & Star Delta Starter",id:61,descp:"DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
+  const tools = [
+    {name:"resistancetemp",display:"Resistance (from temperature)",id:13,type:"instrumentation",category:"electrical"},
+    {name:"linearma",display:"Linear mA to Square Root mA",id:14,type:"instrumentation",category:"electrical"},
+    {name:"temperature",display:"Temperature (from resistance)",id:15,type:"instrumentation",category:"electrical"},
+  {name:"linear",display:"Linear to Square Root percentage",id:17,type:"instrumentation",category:"electrical"},
+  {name:"ohms", display:"Ohms law (R)",id:19, stringId:"19",type:"electrical",category:"electrical"},
+  {name:"ohmsi",display:"Ohms law (I)",id:20,type:"electrical",category:"electrical"},{
+    name:"aircore",display:"Air Core Inductance",id:21,type:"electrical",category:"electrical"},{
+    // name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
+    name:"ohmsv",display:"Ohms Law (V)",id:23,type:"electrical",category:"electrical"},{
+    name:"parallel",display:"Parallel Resistance",id:24,type:"electrical",category:"electrical"},{
+    name:"velocitysound",display:"Velocity of Sound",id:25,type:"electrical",category:"electrical"},
+    {name:"lcresonance",display:"LC Resonance",id:26,type:"electrical",category:"electrical"},
+    {name:"voltagediv",display:"Voltage Divider",id:27, type:"electrical",category:"electrical"},
+    {name:"speedtime",display:"Time (Speed)",id:28,type:"extra",category:"electrical"}, {
+    name:"wheat",display:"Wheatstone bridge",id:29,type:"electrical",category:"electrical"}, 
+    {name:"powerrv",display:"Power (with R,V)",id:31, stringId:"31",type:"electrical",category:"electrical"},
+    {name:"powervi",display:"Power (with V,I)",id:32,type:"electrical" ,category:"electrical"},
+    // {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+    {name:"speedspeed",display:"Speed",id:34,type:"extra",category:"electrical"},
+    {name:"distance",display:"Distance /(Speed)",id:35,type:"extra",category:"electrical"},
+    
+    {name:"powerir", display:"Power (with R,I)",id:40,type:"electrical",category:"electrical"},{
+    // name:"wavelength",display:"Wavelength",id:41,type:"extra",category:"electrical"},{
+    name:"powerline",display:"Power Factor 3Phase (Line)",id:42,type:"electrical",category:"electrical"},{
+    name:"powerneutral",display:"Power Factor 3Phase (neutral)",id:43,type:"electrical",category:"electrical"},
+   {name:"power",display:"Power Factor Single Phase",id:44, stringId:"44",type:"electrical",category:"electrical"},
+   {name:"speedhorse",display:"Speed (Horsepower)",id:46, stringId:"46",type:"electrical",category:"electrical"},
+    {name:"torque",display:"Torque (HorsePower)",id:47,type:"electrical",category:"electrical"},
+    {name:"horsepower",display:"HorsePower",id:48,type:"electrical",category:"electrical"},  
+  {name:"twoseals",display:"Level measurement Two Seals",id:49,type:"instrumentation",category:"electrical"},
+  {name:"onesealabove",display:"Level measurement one seal above",id:50,type:"instrumentation",category:"electrical"},
+  {name:"onesealbelow",display:"Level measurement one seal below",id:51,type:"instrumentation",category:"electrical"},
+  {name:"bubblelevel",display:"Bubble Level",id:52,type:"instrumentation",category:"electrical"},
+  {name:"bubbleinterface",display:"Bubble Interface",id:53,type:"instrumentation",category:"electrical"},
+  {name:"twosealint",display:"Two Seal Interface",id:54,type:"instrumentation",category:"electrical"},
+  {name:"opentank",display:"Open Tank",id:55,type:"instrumentation",category:"electrical"},
+  {name:"intwet",display:"Interface Wet Leg",id:56,type:"instrumentation",category:"electrical"},
+  {name:"liquidpurge",display:"Liquid Purge",id:57,type:"instrumentation",category:"electrical"},
+  {name:"LT3",display:"Level Transmission Closed Vessel",id:58,type:"instrumentation",category:"electrical"},
+  {name:"short",display:"Short Circuit Calculation",id:59,type:"electrical",category:"electrical"},
+  {name:"transformer",display:"Transformer Fault Current",id:60,type:"electrical",category:"electrical"},
+  {name:"DOL",display:"DOL Star & Delta",id:61,type:"electrical",category:"electrical"},
+  {name:"flowrate",display:"Flow Rate Calculation",id:62,type:"instrumentation",category:"electrical"},
+  {name:"hydrost",display:"Hydrostatic Level",id:63,type:"instrumentation",category:"electrical"},
+  {name:"orifice",display:"Orifice Plate error",id:64,type:"instrumentation",category:"electrical"},
+  {name:"lb",display:"LbIn to Nm",id:65,type:"electrical",category:"electrical"},
+  {name:"nm",display:"Nm to LbIn",id:66,type:"electrical",category:"electrical"},
+  {name:"dcmotor",display:"DC Motor horsepower",id:67,type:"electrical",category:"electrical"},
+  {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
+  {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"}]
+
   
-  ]
 
   const paths = tools.map((post) => ({
-    params: {name :post.display, id: post.id.toString() }
+    params: {name :stringSpaceToHyphen(post.display), id: post.id.toString() }
   }))
   
     return {

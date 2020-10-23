@@ -4,6 +4,7 @@
   "/NavbarMain": "pages/NavbarMain.html",
   "/SideNav": "pages/SideNav.html",
   "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
   "/api/slider": "pages/api/slider.js",
   "/api/tools": "pages/api/tools.js",
   "/api/tooltype": "pages/api/tooltype.js",
@@ -14,6 +15,5 @@
   "/sliderTool/[name]/[id]": "pages/sliderTool/[name]/[id].js",
   "/zerotox/[name]/[id]": "pages/zerotox/[name]/[id].js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
   "/404": "pages/404.html"
 }
