@@ -69,7 +69,7 @@ const handleShow = (id) => {
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'conversion' &&
-                      <Link href={`conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
+                      <Link href={`../../conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'color' &&
