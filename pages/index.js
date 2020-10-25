@@ -139,23 +139,23 @@ export default function Home() {
                     {array.map(item=> item.type === type.type &&
                      <Card className="carditems" style={{flex:1}}>
                        {item.category === 'instrumentation' &&
-                      <Link href={`${process.env.BACKEND_URL}/sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                      <Link href={`sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'zero' &&
-                      <Link href={`${process.env.BACKEND_URL}/zerotox/zero/${item.id}`}>
+                      <Link href={`zerotox/zero/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'electrical' &&
-                      <Link href={`${process.env.BACKEND_URL}/functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                      <Link href={`functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'conversion' &&
-                      <Link href={`${process.env.BACKEND_URL}/conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
+                      <Link href={`conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'color' &&
-                      <Link href={`${process.env.BACKEND_URL}/colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                      <Link href={`colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>
                     </Link> }
                      </Card>)}
