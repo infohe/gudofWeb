@@ -58,14 +58,13 @@ const handleShow = (id) => {
                       
                     {array.map(item=> item.type === type.type &&
                      <Card onClick={()=>{
-                       console.log("closeing")
                        onClose()}} className="mobilecard" >
                       {item.category === 'instrumentation' &&
-                      <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                      <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'zero' &&
-                      <Link href={`../../zerotox/zero/${item.id}`}>
+                      <Link href={`../../zerotox/zero-to-x-percentage-conversion/`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'electrical' &&
@@ -73,7 +72,7 @@ const handleShow = (id) => {
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'conversion' &&
-                      <Link href={`../../conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
+                      <Link href={`../../conversion/${item.name}`}>
                         <a>{item.display}</a>
                     </Link> }
                     {item.category === 'color' &&

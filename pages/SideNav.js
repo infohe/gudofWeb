@@ -46,27 +46,25 @@ export default function SideNav({names , toolType}) {
                     {array.map(item=> item.type === type.type &&
                      <Card className={`${active(item.display)}`} style={{flex:1}}>
                        {item.category === 'instrumentation' &&
-                      <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>
-                          {item.display}
-                        </a>
-                    </Link> }
-                    {item.category === 'zero' &&
-                      <Link href={`../../zerotox/zero/${item.id}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'electrical' &&
-                      <Link href={`../../functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'conversion' &&
-                      <Link href={`../../conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'color' &&
-                      <Link href={`../../colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>{item.display}</a>
-                    </Link> }
+                       <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>
+                       <a>{item.display}</a>
+                   </Link> }
+                   {item.category === 'zero' &&
+                     <Link href={`../../zerotox/zero-to-x-percentage-conversion/`}>
+                       <a>{item.display}</a>
+                   </Link> }
+                   {item.category === 'electrical' &&
+                     <Link href={`../../functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                       <a>{item.display}</a>
+                   </Link> }
+                   {item.category === 'conversion' &&
+                     <Link href={`../../conversion/${item.name}`}>
+                       <a>{item.display}</a>
+                   </Link> }
+                   {item.category === 'color' &&
+                     <Link href={`../../colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                       <a>{item.display}</a>
+                   </Link> }
                      </Card>)}
                      </Row></div>
                                        </TabPane>

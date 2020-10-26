@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/conversion/[name]/[id]": "pages/conversion/[name]/[id].js",
+  "/zerotox/[name]": "pages/zerotox/[name].js",
   "/functions/[name]/[id]": "pages/functions/[name]/[id].js"
 }
