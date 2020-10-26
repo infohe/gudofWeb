@@ -29,6 +29,8 @@ export default function Instrumentation({params,functions,toolType,names}){
     const [question,setQuestion] = React.useState();
 
     const [result,setResult] = React.useState(0);
+    const [resultn,setResultn] = React.useState();
+
     let vari;
     const [queryid,setQueryId] = React.useState()
     const router = useRouter()
@@ -39,6 +41,7 @@ export default function Instrumentation({params,functions,toolType,names}){
     
     const setFn = (value) => {
         // setQuestion(newValue)
+        setResultn(1);
          setResult((value-a)*100/(b-a))
         setQuestion(value)
         console.log(value)
@@ -49,6 +52,8 @@ export default function Instrumentation({params,functions,toolType,names}){
       const [b,setb] = React.useState()
 
       const setIn = (e) => {
+        setResultn(1);
+
         console.log(e.target.value)
           if((e.target.value)!== NaN)
          { setQuestion(Number(e.target.value))
@@ -56,6 +61,8 @@ export default function Instrumentation({params,functions,toolType,names}){
           
       }
       const setRn = (e) => {
+        setResultn(1);
+
         if((e.target.value)!== NaN)
         {
         setResult(e.target.value)
@@ -63,6 +70,8 @@ export default function Instrumentation({params,functions,toolType,names}){
         
       }
       const resultfn = (value) => {
+        setResultn(1);
+
         setResult(value)
         setQuestion(value*(b-a)/100 + a)
         
@@ -123,7 +132,7 @@ React.useEffect(()=>{
         <div className="tools-container">
             {/* sliding drawer */}
             <Drawer width={350} title="gudofConvert" placement="left" closable={true} onClose={onClose} visible={visible}>
-              <DrawerNav names={names} toolType={toolType}/>
+              <DrawerNav names={names} toolType={toolType} onClose={()=>setVisible(false)}/>
             </Drawer>
 
             {/* fixed side menu */}
@@ -169,17 +178,19 @@ React.useEffect(()=>{
                          <br/>
 
                         </div>
-                        <hr className="hr"/>
-
-                        <div className="toolbox-desc">
-                          <div className="heading">
-                            Result
-                          </div>
-                          {question} {name} = {result} %
+{resultn!==undefined &&
+<div>
+<hr className="hr"/>
+                      <div className="toolbox-desc">
+                        <div className="heading">
+                          Result
                         </div>
+                        {question} {name} = {result} %
+                       
+                      </div></div>}
 
                         <hr className="hr"/>
-                          <div className="toolbox-desc">
+                          <div className="toolbox-desc toolbox-calc">
                             <div className="heading">
                               Description
                             </div>

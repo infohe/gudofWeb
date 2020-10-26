@@ -57,7 +57,7 @@ const Colorcode  = ({names,toolType}) => {
     <div className="tools-container">
             {/* sliding drawer */}
             <Drawer width={350} title="gudofConvert" placement="left" closable={true} onClose={onClose} visible={visible}>
-              <DrawerNav names={names} toolType={toolType}/>
+              <DrawerNav names={names} toolType={toolType} onClose={()=>setVisible(false)}/>
             </Drawer>
 
             {/* fixed side menu */}
@@ -66,14 +66,14 @@ const Colorcode  = ({names,toolType}) => {
             </div>
    <div className="toolbox-layout">
        <div className="toolbox">
-        <div className="heading">Color Code Resistance</div>
+        <div className="toolbox-heading">Color Code Resistance</div>
           <div>
-              
-              <div className="toolbox-desc">
+              <hr className="hr"/>
+              <div className="toolbox-calc">
                   <div className="heading">Calculation</div>
-            <Row>
-          <Col span={12}>First strip</Col>
-           <Col span={12}>
+            <Row style={{marginBottom:"10px"}}>
+          <Col style={{flex:1}}>First strip</Col>
+           <Col style={{flex:1}}>
                <Select style={{ width: 120 }} value={f} onSelect={(e)=>setf(e)}>
                    <Option value="0">Black</Option>
                    <Option value="1">Brown</Option>
@@ -88,9 +88,9 @@ const Colorcode  = ({names,toolType}) => {
                </Select>
            </Col>
            </Row>
-           <Row>
-          <Col span={12}>Second strip</Col>
-           <Col span={12}>
+           <Row style={{marginBottom:"10px"}}>
+          <Col style={{flex:1}}>Second strip</Col>
+           <Col style={{flex:1}}>
                <Select style={{ width: 120 }} value={s} onSelect={(e)=>sets(e)}>
                    <Option value="0">Black</Option>
                    <Option value="1">Brown</Option>
@@ -105,9 +105,9 @@ const Colorcode  = ({names,toolType}) => {
                </Select>
            </Col>
            </Row>
-           <Row>
-          <Col span={12}>Third strip</Col>
-           <Col span={12}>
+           <Row style={{marginBottom:"10px"}}>
+          <Col style={{flex:1}}>Third strip</Col>
+           <Col style={{flex:1}}>
                <Select style={{ width: 120 }} value={t} onSelect={(e)=>sett(e)}>
                    <Option value="0">Black</Option>
                    <Option value="1">Brown</Option>
@@ -122,9 +122,9 @@ const Colorcode  = ({names,toolType}) => {
                </Select>
            </Col>
            </Row>
-           <Row>
-          <Col span={12}>Fourth strip</Col>
-           <Col span={12}>
+           <Row style={{marginBottom:"10px"}}>
+          <Col style={{flex:1}}>Fourth strip</Col>
+           <Col style={{flex:1}}>
                <Select style={{ width: 120 }} value={w} onSelect={(e)=>setw(e)}>
                    <Option value="5">Gold</Option>
                    <Option value="10">Silver</Option>
@@ -132,15 +132,18 @@ const Colorcode  = ({names,toolType}) => {
                </Select>
            </Col>
            </Row>
+           <Button className="calculate-button" onClick={()=>calculate()}>CALCULATE</Button>
+
            </div>
-           <Button class="calculate-button" onClick={()=>calculate()}>CALCULATE</Button>
+           <hr className="hr"/>
            {answer1!== undefined &&
-               <div class="result">
-            <div className="resultheading">RESULT</div>
+               <div className="toolbox-calc">
+            <div className="heading">RESULT</div>
                 {answer1} Ohm  {answer2}%
             </div>}
-
-           <div className="description">
+            <hr className="hr"/>
+           <div className="toolbox-calc">
+             <div className="heading">DESCription</div>
               Components and wires are coded with colors to identify their value and function. 
 <br/>
 Resistor Color Coding uses colored bands to quickly identify a resistors resistive value and its percentage of tolerance with the physical size of the resistor indicating its wattage rating. 

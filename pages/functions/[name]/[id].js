@@ -323,7 +323,7 @@ const Electrical  = ({names,toolType}) => {
     <div className="tools-container">
             {/* sliding drawer */}
             <Drawer width={350} title="gudofConvert" placement="left" closable={true} onClose={onClose} visible={visible}>
-              <DrawerNav names={names} toolType={toolType}/>
+              <DrawerNav names={names} toolType={toolType} onClose={()=>setVisible(false)}/>
             </Drawer>
 
             {/* fixed side menu */}
@@ -336,8 +336,8 @@ const Electrical  = ({names,toolType}) => {
               <div className="toolbox-heading"> 
               {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())].display}
               </div>
-              
-              <div>
+              <hr className="hr"/>
+              <div className="toolbox-calc">
                   <div className="heading">Calculation</div>
                   {value.map((item)=>
             
@@ -358,22 +358,33 @@ const Electrical  = ({names,toolType}) => {
                          </div>
               
                       </div>
-                     )}  
+                     )} 
+                     </div> 
 
                     {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img !== undefined &&
             //<Image src="/assets/11LT.png"/>
+            <div>
+               <hr className="hr"/>
                           <div className="toolbox-calc">
+                            <div className="heading">FIGURE</div>
                           <Image style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img}`}/>
                           </div>
+                          </div>
                     }
-                   <div className="toolbox-calc">
+                    
+                  
                       {details.findIndex((list)=>list.id.toString() === router.query.id.toString()) !== -1 &&
-          
-                      detail.map((item)=>
+                      <div>
+                         <hr className="hr"/>
+          <div className="toolbox-calc">
+            
+                                 <div className="heading">DETAILS</div>
+
+                      {detail.map((item)=>
           
                           details[details.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
                  
-                          <div style={{display:"flex"}} key={item.id}>
+                          <div style={{display:"flex",marginTop:"5px"}} key={item.id}>
                             <div style={{flex:1}}>
                                 {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
                             </div>
@@ -382,14 +393,17 @@ const Electrical  = ({names,toolType}) => {
                           </div>
               
             )
-          }</div>
+          }
+          </div>
+          </div>}
           <div class="toolbox-desc">
 
           <Button className="calculate-button" onClick={()=>calculate(q1,q2,q3,q4,q5,q6,q7,q8,q9)}>CALCULATE</Button>
           </div>
               {(answer1!== undefined) &&
-         
-        <div class="toolbox-desc">
+         <div>
+            <hr className="hr"/>
+        <div class="toolbox-calc">
             <div className="heading">RESULT</div>
           {answer.map((item)=>
                         electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
@@ -402,13 +416,13 @@ const Electrical  = ({names,toolType}) => {
               </div>
               
             )}
+          </div>
           </div>}
       {/* {      electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].descp!== undefined &&
 
       <div className="description">
       {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].descp}
       </div>} */}
-      </div>
       </div>}
     </Layout>
     </div>

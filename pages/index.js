@@ -96,6 +96,8 @@ export default function Home() {
     setTooltype(newTooltype)
   }
   
+  const [tools,setTools] = React.useState(names)
+
   const handleSearch = (key) => {
     console.log("key",key)
     handleChangeTrue()
@@ -104,7 +106,17 @@ export default function Home() {
        setArray(tools)
        console.log(array)
   }
-  const [tools,setTools] = React.useState(names)
+
+  const handleShow = (id) => {
+    let newTooltype = tooltype
+    newTooltype.map(item=>item.id===id &&( item.show=!item.show))
+    setTooltype(newTooltype)
+    console.log(tooltype)
+    setBool(!bool)
+  }
+
+ 
+  const [bool,setBool] = React.useState(true)
     return (
     <div>
      
@@ -126,7 +138,7 @@ export default function Home() {
         <Layout>
         <NavbarMain/>
         
-      <Tabs style={{marginTop:"60px"}} defaultActiveKey="1">
+        <Tabs className="desktopview" style={{marginTop:"60px"}} defaultActiveKey="1">
       
         {tooltype!==undefined &&
           tooltype.map(
@@ -164,6 +176,55 @@ export default function Home() {
           )
         }
         </Tabs>
+
+        {/* MOBILE VIEW */}
+
+        <Layout className="mobileview">
+      <Input placeholder="Search" prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e.target.value)} />
+
+        {tooltype!==undefined &&
+          tooltype.map(
+            (type) => 
+            <div>
+              <div onClick={()=>{
+        
+                handleShow(type.id)}} style={{display:"flex",height:"45px"}}>
+                <div style={{flex:1}}></div>
+                <div style={{flex:10}}>{type.name}</div>
+                <i style={{flex:1}} className="material-icons">arrow_drop_down</i>
+                </div>
+               {type.show   && <div style={{marginLeft:"20px",marginRight:"20px"}}>
+                    <Row >
+                      
+                    {array.map(item=> item.type === type.type &&
+                     <Card className="mobilecard" >
+                      {item.category === 'instrumentation' &&
+                      <Link href={`sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                        <a>{item.display}</a>
+                    </Link> }
+                    {item.category === 'zero' &&
+                      <Link href={`zerotox/zero/${item.id}`}>
+                        <a>{item.display}</a>
+                    </Link> }
+                    {item.category === 'electrical' &&
+                      <Link href={`functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                        <a>{item.display}</a>
+                    </Link> }
+                    {item.category === 'conversion' &&
+                      <Link href={`conversion/${stringSpaceToHyphen(item.display)}/${item.name}`}>
+                        <a>{item.display}</a>
+                    </Link> }
+                    {item.category === 'color' &&
+                      <Link href={`colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
+                        <a>{item.display}</a>
+                    </Link> }
+                     </Card>)}
+                    </Row></div> }
+                                       </div>
+          )
+        }
+        </Layout>
+
         </Layout>
         </body>
         
@@ -176,5 +237,9 @@ export default function Home() {
 
 export const stringSpaceToHyphen= (string)=>{
   return ((string.split(" ").join("-")).split("(").join("-")).split(")").join("-");
+
+}
+
+export const windowSize = () => {
 
 }

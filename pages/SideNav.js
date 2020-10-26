@@ -1,15 +1,16 @@
 import { Card, Row,Input,Layout, Button } from 'antd';
 import React from 'react';
 import { Tabs } from 'antd';
-
+import ActiveLink from './ActiveLink';
 const { TabPane } = Tabs;
 import Link from 'next/link'
 import { stringSpaceToHyphen } from '.';
+import { useRouter } from 'next/router'
 
 export default function SideNav({names , toolType}) {
   
 
-  
+
   const [array,setArray] = React.useState(names)
   const  [ToolType,setTooltype] = React.useState(toolType)    
   const handleChangeTrue = () => {
@@ -43,10 +44,12 @@ export default function SideNav({names , toolType}) {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className="carditems" style={{flex:1}}>
+                     <Card className={`${active(item.display)}`} style={{flex:1}}>
                        {item.category === 'instrumentation' &&
                       <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>{item.display}</a>
+                        <a>
+                          {item.display}
+                        </a>
                     </Link> }
                     {item.category === 'zero' &&
                       <Link href={`../../zerotox/zero/${item.id}`}>
@@ -79,3 +82,11 @@ export default function SideNav({names , toolType}) {
   )
 }
 
+
+export const active = (name) => {
+  const router = useRouter()
+  if(router.query.name === stringSpaceToHyphen(name)){
+    return "activecard"
+  }
+  else return "carditems"
+}

@@ -19,6 +19,7 @@ const Zero = ({names,toolType}) => {
   const router = useRouter()
 
   const onClose = () => {
+    console.log("close")
     setVisible(false);
   };
   React.useEffect(()=>{
@@ -67,16 +68,18 @@ return(
     <div className="tools-container">
             {/* sliding drawer */}
             <Drawer width={350} title="gudofConvert" placement="left" closable={true} onClose={onClose} visible={visible}>
-              <DrawerNav names={names} toolType={toolType}/>
+              <DrawerNav names={names} toolType={toolType} onClose={()=>setVisible(false)}/>
             </Drawer>
 
             {/* fixed side menu */}
             <div className="tools-left">
               <SideNav names={names} toolType={toolType}/>
             </div>
-   <Layout className="tool">
+   <Layout className="toolbox-layout">
 
-        <div className="heading">0-X % Conversion</div>
+        <div className="toolbox-heading">0-X % Conversion</div>
+        <hr className="hr"/>
+        <div className="toolbox-calc">
         <div className="heading">Calculation</div>
 
       <Row className="row">
@@ -92,20 +95,20 @@ return(
       </Row>
      
    
-   <Row> 
-   
-</Row>
-<Row  className="row">
+
+<Row  className="toolbox-descp">
   <Col style={{textAlign:"center"}}>
-    <Button class="calculate-button" onClick={()=>click()}>Calculate</Button>
+    <Button className="calculate-button" onClick={()=>click()}>Calculate</Button>
   </Col>
 </Row>
-  
+</div>
    
+                          
+
      {r!==undefined &&
-    <div className="result">
-        
-          <div className="resultheading">RESULT</div>
+      <div className="toolbox-calc">  
+      <hr className="hr"/>      
+          <div className="heading">RESULT</div>
               
            <Row>
                 <Col span={12} className="result-head"> 0%</Col>
@@ -133,10 +136,12 @@ return(
         
      </div> }
   
-       
+     <hr className="hr"/>
 
-
- <div className="descp">This tool is used to calculate 0% , 25% , 50% , 75% ,and 100% of range between two numbers.</div> 
+<div className="toolbox-descp toolbox-calc">
+  <div className="heading">description</div>
+ <div className="">This tool is used to calculate 0% , 25% , 50% , 75% ,and 100% of range between two numbers.</div> 
+ </div>
  </Layout>
  </div>
  </div>

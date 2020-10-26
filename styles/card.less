@@ -1,0 +1,72 @@
+
+.carditems {
+    height:100px;
+    max-width:340px;
+    margin:10px !important;
+    border-radius:0px !important;
+   border:solid 1px black !important;
+}
+
+@media only screen and (max-width:1120px) {
+   .carditems ,.activecard{
+       max-width:250px;
+   }
+  }
+
+  @media only screen and (max-width:878px) {
+    .carditems ,.activecard{
+        max-width:200px;
+    }
+   }
+
+   @media only screen and (max-width:696px) {
+    .carditems,.activecard {
+        max-width:150px;
+    }
+}
+@media only screen and (max-width:640px) {
+    .carditems,.activecard {
+        max-width:300px;
+    }
+}
+@media only screen and (max-width:580px) {
+    .desktopview {
+        display:none !important;
+    }
+    .mobileview {
+        margin-top: 60px;
+        display: block !important;
+    }
+}
+
+@media only screen and (min-width:580px) {
+    .desktopview {
+        display:block !important;
+    }
+    .mobileview {
+        margin-top: 60px;
+        display: none !important;
+    }
+}
+.mobilecard {
+    width:100% !important;
+    border:0px !important;
+    margin-bottom: 5px !important;
+    padding:10px !important;
+    padding-left: 25px !important;
+}
+
+.activecard {
+    height:100px;
+    max-width:340px;
+    margin:10px !important;
+    border-radius:0px !important;
+   border:solid 1px red !important;
+   color:red !important;
+   font-weight: bold !important;
+   box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5) !important;
+   }
+.activecard a {
+    color:#F73406 !important;
+
+}

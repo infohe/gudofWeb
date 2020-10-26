@@ -5,7 +5,7 @@ const { TabPane } = Tabs;
 import Link from 'next/link'
 import { stringSpaceToHyphen } from '.';
 
-export default function DrawerNav({names , toolType}) {
+export default function DrawerNav({names , toolType,onClose}) {
   
 
   
@@ -35,27 +35,31 @@ const handleShow = (id) => {
   const [bool,setBool] = React.useState(true)
   const [tools,setTools] = React.useState(names)
     return (
-    <div>
+    <div className="body">
       
         {/* hello
         <Button onClick={console.log(ToolType)}>Click</Button> */}
       <Layout>
       <Input placeholder="Search" prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e)} />
 
-        {ToolType!==undefined &&
+      {ToolType!==undefined &&
           ToolType.map(
             (type) => 
             <div>
-              <div onClick={()=>handleShow(type.id)} style={{display:"flex",height:"45px"}}>
+              <div onClick={()=>{
+        
+                handleShow(type.id)}} style={{display:"flex",height:"45px"}}>
+                <div style={{flex:1}}></div>
                 <div style={{flex:10}}>{type.name}</div>
                 <i style={{flex:1}} className="material-icons">arrow_drop_down</i>
                 </div>
-               {type.show===true  && <div style={{marginLeft:"20px",marginRight:"20px"}}>
-            
+               {type.show   && <div style={{marginLeft:"20px",marginRight:"20px"}}>
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className="carditems cardwidth" style={{width:"300px",flex:1}}>
+                     <Card onClick={()=>{
+                       console.log("closeing")
+                       onClose()}} className="mobilecard" >
                       {item.category === 'instrumentation' &&
                       <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}/${item.id}`}>
                         <a>{item.display}</a>

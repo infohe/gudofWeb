@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button,Row,Input,Col,Select ,Drawer} from 'antd';
+import { Layout,Button,Row,Input,Col,Select ,Drawer} from 'antd';
 import SideNav from '../../SideNav';
 import DrawerNav from '../../DrawerNav';
 import Navbar from '../../Navbar';
@@ -111,29 +111,31 @@ const Conversion= ({names,toolType}) => {
   <div className="tools-container">
       {/* sliding drawer */}
       <Drawer width={350} title="gudofConvert" placement="left" closable={true} onClose={onClose} visible={visible}>
-        <DrawerNav names={names} toolType={toolType}/>
+        <DrawerNav names={names} toolType={toolType} onClose={()=>setVisible(false)}/>
       </Drawer>
 
       {/* fixed side menu */}
       <div className="tools-left">
         <SideNav names={names} toolType={toolType}/>
       </div>
-
-    <div className="tool">
+      
+    <Layout className="toolbox-layout">
      {router.query.id !== undefined &&
      <div>   
   <Row className="row">
-    <div className="heading">
+    <div className="toolbox-heading">
     {conversion_fn[ conversion_fn.findIndex(item => item.id===router.query.id)].name}
     </div>
-   
   </Row>
+  <hr className="hr"/>
+  <div className="toolbox-calc">
+      <div className="heading">CAlculation</div>
     <Row className="row">
 
-        <Col><Input style={{border:"1px solid gray"}} className="input box" class="box"  value={input1} onChange={(e)=>{
+        <Col style={{flex:1}}><Input style={{border:"1px solid gray"}} className="input box" class="box"  value={input1} onChange={(e)=>{
           console.log("input",e.target.value)
           setInput1(e.target.value)}}/></Col>
-        <Col>
+        <Col style={{flex:1}}>
                <Select  style={{border:"1px solid gray"}} className="input box" class="box"  value={inn} onSelect={(e)=>{
                    setIn(e)
                    console.log(e)
@@ -145,8 +147,8 @@ const Conversion= ({names,toolType}) => {
         </Col>
     </Row>
     <Row className="row">
-        <Col><Input style={{border:"1px solid gray"}} className="input box" class="box"  value={answer} disabled/></Col>
-        <Col>
+        <Col style={{flex:1}}><Input style={{border:"1px solid gray"}} className="input box" class="box"  value={answer} disabled/></Col>
+        <Col style={{flex:1}}>
 
 <Select className="input box"  style={{border:"1px solid gray"}} class="box" value={out} onSelect={(e)=>{
 setOut(e)
@@ -159,16 +161,33 @@ setOut(e)
 </Col>
     </Row>
     
-      <div className="toolbox-desc">
-    <Button class="calculate-button" onClick={()=>{
+    <Button className="calculate-button" onClick={()=>{
            setAnswer(compute(conversion_fn[conversion_fn.findIndex(item => item.id===router.query.id)].id,conversion_calc,'in'))
 
-}}>Convert</Button></div>
-   
+}}>Convert</Button>
     {/* <div className="description">Use this conversion utility to convert instantly between different units.</div> */}
 
-</div>}
 </div>
+
+<hr className="hr"/>
+{/* RESULT */}
+{
+  answer!==undefined
+  &&
+  <div>
+    
+    <div className="toolbox-calc">
+      <div className="heading">RESULT</div>
+      {input1} {inn} ={ answer} {out}
+      </div>
+    </div>
+ }
+
+
+
+</div>}
+
+</Layout>
 </div>
 </div>
   );
