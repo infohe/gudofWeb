@@ -1,7 +1,6 @@
 import { Card, Row,Input,Layout, Button } from 'antd';
 import React from 'react';
 import { Tabs } from 'antd';
-import ActiveLink from './ActiveLink';
 const { TabPane } = Tabs;
 import Link from 'next/link'
 import { stringSpaceToHyphen } from '.';

@@ -1,7 +1,19 @@
 {
+  "/DrawerNav": "pages/DrawerNav.html",
+  "/Navbar": "pages/Navbar.html",
+  "/NavbarMain": "pages/NavbarMain.html",
+  "/SideNav": "pages/SideNav.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/_error": "pages/_error.js",
+  "/api/slider": "pages/api/slider.js",
+  "/api/tools": "pages/api/tools.js",
+  "/api/tooltype": "pages/api/tooltype.js",
+  "/colorcode/[name]/[id]": "pages/colorcode/[name]/[id].js",
+  "/conversion/[name]": "pages/conversion/[name].js",
+  "/functions/[name]/[id]": "pages/functions/[name]/[id].js",
+  "/": "pages/index.html",
+  "/sliderTool/[name]": "pages/sliderTool/[name].js",
   "/zerotox/[name]": "pages/zerotox/[name].js",
-  "/functions/[name]/[id]": "pages/functions/[name]/[id].js"
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
 }
