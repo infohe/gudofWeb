@@ -162,6 +162,9 @@ export async function getStaticPaths() {
   
       
     const tools =[ 
+      {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+      {name:"timeperiod",display:"Time Period",id:22,type:"electrical",category:"electrical"},
+ 
       {name:"3-15 PSI",display:"3-15 PSI",id:0,type:"instrumentation",category:"instrumentation"},
     {name:"0-20mA",display:"0-20 mA",id:1,type:"instrumentation",category:"instrumentation"},
     {name:"4-20mA",display:"4-20 mA",id:2,type:"instrumentation",category:"instrumentation"},
@@ -231,7 +234,21 @@ export async function getStaticPaths() {
     {name:"nm",display:"Nm to LbIn",id:66,type:"electrical",category:"electrical"},
     {name:"dcmotor",display:"DC Motor horsepower",id:67,type:"electrical",category:"electrical"},
     {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
-    {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},]
+    {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},
+    {name:"",display:"Gear Pump Displacement",id:81,type:"mechanical",category:"electrical"},
+    {name:"",display:"Stroke's Law",id:82,type:"mechanical",category:"electrical"},
+    {name:"",display:"Flow Velocity",id:83,type:"mechanical",category:"electrical"},
+    {name:"",display:"Hooke's Law (Force)",id:84,type:"mechanical",category:"electrical"},
+    {name:"",display:"Hooke's Law (Spring constant)",id:85,type:"mechanical",category:"electrical"},
+    {name:"",display:"Strain",id:86,type:"mechanical",category:"electrical"},
+    {name:"",display:"K Value & Pipe Length",id:87,type:"mechanical",category:"electrical"},
+    {name:"",display:"Young's modulus",id:88,type:"mechanical",category:"electrical"},
+    {name:"",display:"Weber Number",id:89,type:"mechanical",category:"electrical"},
+    {name:"",display:"Chezy Coefficient",id:90,type:"mechanical",category:"electrical"},
+    {name:"",display:"Cauchy Number",id:91,type:"mechanical",category:"electrical"},
+    {name:"",display:"Bulk Modulus Elasticity",id:92,type:"mechanical",category:"electrical"},
+
+]
     
     const tooltype = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                     {id:2,type:"electrical",name:"ELECTRICAL",show:false},

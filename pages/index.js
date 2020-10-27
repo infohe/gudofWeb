@@ -12,6 +12,9 @@ import NavbarMain from './NavbarMain';
 export default function Home() {
   
   const names =[ 
+    {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+    {name:"timeperiod",display:"Time Period",id:22,type:"electrical",category:"electrical"},
+
     {name:"3-15 PSI",display:"3-15 PSI",id:0,type:"instrumentation",category:"instrumentation"},
     {name:"0-20mA",display:"0-20 mA",id:1,type:"instrumentation",category:"instrumentation"},
     {name:"4-20mA",display:"4-20 mA",id:2,type:"instrumentation",category:"instrumentation"},
@@ -34,7 +37,7 @@ export default function Home() {
     {name:"ohms", display:"Ohms law (R)",id:19, stringId:"19",type:"electrical",category:"electrical"},
     {name:"ohmsi",display:"Ohms law (I)",id:20,type:"electrical",category:"electrical"},{
     name:"aircore",display:"Air Core Inductance",id:21,type:"electrical",category:"electrical"},{
-    name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
+    // name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
     name:"ohmsv",display:"Ohms Law (V)",id:23,type:"electrical",category:"electrical"},{
     name:"parallel",display:"Parallel Resistance",id:24,type:"electrical",category:"electrical"},{
     name:"velocitysound",display:"Velocity of Sound",id:25,type:"electrical",category:"electrical"},
@@ -45,7 +48,7 @@ export default function Home() {
     name:"color",display:"Color code Resistance",id:30,type:"electrical",category:"color"},
     {name:"powerrv",display:"Power (with R,V)",id:31, stringId:"31",type:"electrical",category:"electrical"},
     {name:"powervi",display:"Power (with V,I)",id:32,type:"electrical" ,category:"electrical"},
-    {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+    // {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
     {name:"speedspeed",display:"Speed",id:34,type:"extra",category:"electrical"},
     {name:"distance",display:"Distance (Speed)",id:35,type:"extra",category:"electrical"},
     {name:"volume",display:"Volume",id:36,type:"conversions",category:"conversion"},
@@ -81,11 +84,26 @@ export default function Home() {
     {name:"nm",display:"Nm to LbIn",id:66,type:"electrical",category:"electrical"},
     {name:"dcmotor",display:"DC Motor horsepower",id:67,type:"electrical",category:"electrical"},
     {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
-    {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},]
+    {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},
+    {name:"",display:"Gear Pump Displacement",id:81,type:"mechanical",category:"electrical"},
+    {name:"",display:"Stroke's Law",id:82,type:"mechanical",category:"electrical"},
+    {name:"",display:"Flow Velocity",id:83,type:"mechanical",category:"electrical"},
+    {name:"",display:"Hooke's Law (Force)",id:84,type:"mechanical",category:"electrical"},
+    {name:"",display:"Hooke's Law (Spring constant)",id:85,type:"mechanical",category:"electrical"},
+    {name:"",display:"Strain",id:86,type:"mechanical",category:"electrical"},
+    {name:"",display:"K Value & Pipe Length",id:87,type:"mechanical",category:"electrical"},
+    {name:"",display:"Young's modulus",id:88,type:"mechanical",category:"electrical"},
+    {name:"",display:"Weber Number",id:89,type:"mechanical",category:"electrical"},
+    {name:"",display:"Chezy Coefficient",id:90,type:"mechanical",category:"electrical"},
+    {name:"",display:"Cauchy Number",id:91,type:"mechanical",category:"electrical"},
+    {name:"",display:"Bulk Modulus Elasticity",id:92,type:"mechanical",category:"electrical"},
+
+]
     
   const toolType = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                   {id:2,type:"electrical",name:"ELECTRICAL",show:false},
-                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}]
+                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}
+                ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
             
   
   const [array,setArray] = React.useState(names)

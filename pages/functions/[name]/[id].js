@@ -63,8 +63,31 @@ const Electrical  = ({names,toolType}) => {
         { display:"Short Circuit Calculation",id:59,descp:"This tool is used to find Source Impedence andTotal impedence at time of short circuit.",q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
         { display:"Transformer Fault Current",id:60,descp:"This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
         { display:"DOL & Star Delta Starter",id:61,descp:"DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
-    
-        
+        {display:"Time Period",id:22,descp:"",q1:"Frequency",qc1:"Hz",a1:"Time Period",ac1:"ms"},
+        {display:"Frequency",id:33,descp:"",q1:"Time Period",qc1:"ms",a1:"Frequency",ac1:"Hz"}
+        ,
+        //MECHANICAL
+       
+        {display:"Belt",id:80,descp:"",q1:"",qc1:"",q2:"",qc2:"",q3:"",qc3:"",a1:"",ac1:""},
+        {display:"Belt",id:80,descp:"",q1:"",qc1:"",a1:"",ac1:""},
+
+
+        {display:"Belt length",id:80,descp:"",q1:"Diameter of Large Pulley",qc1:"m",q2:"Diameter of Small pulley",q3:"Pulley Centre distance",qc3:"m",a1:"Belt Length",ac1:"m"},
+       
+
+        {display:"Gear Pump Displacement",id:81,descp:"",q1:"Gear width",qc1:"cm",q2:"Gear tip diameter",qc2:"cm",q3:"Gear centres (when meshed)",qc3:"cm",a1:"Displacement",ac1:"cm^3/rev"},
+        {display:"Stroke's Law",id:82,descp:"",q1:"Acceleration of gravity",qc1:"m/s^2",q2:"Diameter of a particle",qc2:"m",q3:"Density of particle",qc3:"gm/m^3",q4:"Density of Medium",qc4:"gm/m^3",q5:"Viscoscity of Medium",qc5:"gm/ms",a1:"Terminal Velocity",ac1:"m/s"},
+        {display:"Flow Velocity",id:83,descp:"",q1:"Cauchy Number",qc1:"N/m^2",q2:"Bulk Modulus Elasticity",qc2:"N/m^2",q3:"Density",qc3:"kg/m^3",a1:"Flow Velocity",ac1:"m/s"},
+        {display:"Hooke's Law (Force)",id:84,descp:"",q1:"Spring Constant",qc1:"N/m",q2:"Distance from Equillibrium",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Force",ac1:"N"},
+        {display:"Hooke's Law (Spring constant)",id:85,descp:"",q1:"Force",qc1:"N",q2:"Distance",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Spring Constant",ac1:"N/m"},
+        {display:"Strain",id:86,descp:"",q1:"Change in Length",qc1:"m",q2:"Original Length",qc2:"m",a1:"Strain",ac1:""},
+        {display:"K Value & Pipe Length",id:87,descp:"",q1:"Turbulent Friction Factor",qc1:"",q2:"Length",qc2:"m",q3:"Pipe Diameter",qc3:"mm",a1:"K Value",ac1:""},
+        {display:"Young's modulus",id:88,descp:"",q1:"Stress",qc1:"N/m^2",q2:"Strain",qc2:"",a1:"Young's Modulus",ac1:"N/m^2"},
+        {display:"Weber Number",id:89,descp:"",q1:"Density",qc1:"kg/m^3",q2:"Velocity",qc2:"m/s",q3:"Length",qc3:"m",q4:"Surface Tension",qc4:"N/m",a1:"Weber Number",ac1:""},
+        {display:"Chezy Coefficient",id:90,descp:"",q1:"Mean Velocity",qc1:"m/s",q2:"Hydraulic radius",qc2:"m",q3:"Slope",qc3:"",a1:"Chezy Coefficient",ac1:""},
+        {display:"Cauchy Number",id:91,descp:"",q1:"Flow Velocity",qc1:"m/s",q2:"Density",qc2:"kg/m^3",q3:"Bulk Modulus Elasticity",qc3:"N/m^2",a1:"Cauchy Number",ac1:""},
+        {display:"Bulk Modulus Elasticity",id:92,descp:"",q1:"Flow Velocity",qc1:"m/s",q2:"Density",qc2:"kg/m^3",q3:"Cauchy Number",qc3:"",a1:"Bulk Modulus Elasticity",ac1:"N/m^2"},
+
     ]
 
      const details = [
@@ -82,6 +105,9 @@ const Electrical  = ({names,toolType}) => {
        {id:56,a1:"d2",ad1:"Specific Gravity of wet leg",a2:"du",ad2:"Specific Gravity of Upper Tank",a3:"dl",ad3:"Specific Gravity of Lower Tank",a4:"d0",ad4:"Specific Gravity of tank leg h2"},
        {id:57,a1:"d3",ad1:"Specific Gravity of Vapour",a2:"d2",ad2:"Specific Gravity of Purge",a3:"d1",ad3:"Specific Gravity of Tank liquid"},
        {id:58,a1:"d3",ad1:"Specific Gravity Vapour",a2:"d2",ad2:"Specific Gravity wet leg",a3:"d1",ad3:"Specific Gravity Tank Liquid",a4:"d0",ad4:"Specific Gravity Tank leg h2"},
+
+
+  
      ]
      const [answer1,setAnswer1] = React.useState()
      const [answer2,setAnswer2] = React.useState()
@@ -237,6 +263,8 @@ const Electrical  = ({names,toolType}) => {
            setAnswer5((Math.pow(q4/(q1/Math.sqrt(q2)),2) + q3 -q4)/q4)
  
          }
+         else if(function_id===33 || function_id===22)
+         setAnswer1(1000/q1)
          else if(function_id=== 59){
            setAnswer1(q2/q1)
            setAnswer2(q2/q1 + q3)
@@ -270,6 +298,31 @@ const Electrical  = ({names,toolType}) => {
              else 
              {setAnswer5((1000*(q3)*0.746/((q5)*1.732*(q1)) )) } 
            }
+           else if(function_id===80)
+           setAnswer1(
+             (q1+q2)*1.57 + (q1-q2)*Math.asin((q1-q2)/(2*q3)) + 2*Math.sqrt(q3*q3- 0.25*(q1-q2)*(q1-q2))
+           )
+           else if(function_id===81)
+           setAnswer1(3.14*q1*(q2*q2-q3*q3)/2)
+           else if(function_id===82)
+           setAnswer1(q1*q2*q2*(q3-q4)/(18*q5))
+           else if(function_id===83)
+           setAnswer1(-q1*(q2-q3))
+           else if(function_id===84 || function_id===85)
+           setAnswer1(-q1*(q2-q3))
+           else if(function_id===86 || function_id===88)
+           setAnswer1(q1/q2)
+           else if(function_id===87)
+           setAnswer1(q1*1000*q2/q3)
+           else if(function_id===89)
+           setAnswer1(q1*q2*q2*q3/q4)
+           else if(function_id===90)
+           setAnswer1(q1/Math.sqrt(q2*q3))
+           else if(function_id===91 || function_id===92)
+           setAnswer1(q2*q1*q1/q3)
+           else if(function_id===83)
+           setAnswer1(Math.sqrt(q1*q2/q3))
+           
              //add history
              console.log("answers",answer1,answer2,answer3)
              if(function_id === 53)
@@ -450,7 +503,9 @@ export async function getStaticPaths() {
     name:"wheat",display:"Wheatstone bridge",id:29,type:"electrical",category:"electrical"}, 
     {name:"powerrv",display:"Power (with R,V)",id:31, stringId:"31",type:"electrical",category:"electrical"},
     {name:"powervi",display:"Power (with V,I)",id:32,type:"electrical" ,category:"electrical"},
-    // {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+     {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+     {name:"timeperiod",display:"Time Period",id:22,type:"electrical",category:"electrical"},
+
     {name:"speedspeed",display:"Speed",id:34,type:"extra",category:"electrical"},
     {name:"distance",display:"Distance /(Speed)",id:35,type:"extra",category:"electrical"},
     
@@ -482,7 +537,25 @@ export async function getStaticPaths() {
   {name:"nm",display:"Nm to LbIn",id:66,type:"electrical",category:"electrical"},
   {name:"dcmotor",display:"DC Motor horsepower",id:67,type:"electrical",category:"electrical"},
   {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
-  {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"}]
+  {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},
+  {name:"Belt Length",display:"Belt Length",id:80,type:"mechanical",category:"electrical"},
+          {name:"",display:"Gear Pump Displacement",id:81,type:"mechanical",category:"electrical"},
+          {name:"",display:"Stroke's Law",id:82,type:"mechanical",category:"electrical"},
+          {name:"",display:"Flow Velocity",id:83,type:"mechanical",category:"electrical"},
+          {name:"",display:"Hooke's Law (Force)",id:84,type:"mechanical",category:"electrical"},
+          {name:"",display:"Hooke's Law (Spring constant)",id:85,type:"mechanical",category:"electrical"},
+          {name:"",display:"Strain",id:86,type:"mechanical",category:"electrical"},
+          {name:"",display:"K Value & Pipe Length",id:87,type:"mechanical",category:"electrical"},
+          {name:"",display:"Young's modulus",id:88,type:"mechanical",category:"electrical"},
+          {name:"",display:"Weber Number",id:89,type:"mechanical",category:"electrical"},
+          {name:"",display:"Chezy Coefficient",id:90,type:"mechanical",category:"electrical"},
+          {name:"",display:"Cauchy Number",id:91,type:"mechanical",category:"electrical"},
+          {name:"",display:"Bulk Modulus Elasticity",id:92,type:"mechanical",category:"electrical"},
+          
+
+
+
+]
 
   
 
