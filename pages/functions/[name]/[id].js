@@ -646,7 +646,9 @@ export async function getStaticProps({ params }) {
   
   const tooltype = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                   {id:2,type:"electrical",name:"ELECTRICAL",show:false},
-                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}]
+                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false},
+                  ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
+
                     
   // Pass post data to the page via props
   return { props: { names:tools,toolType:tooltype ,params:params} }
