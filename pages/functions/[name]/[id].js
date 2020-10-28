@@ -387,26 +387,26 @@ const Electrical  = ({names,toolType}) => {
       {router.query.id!==undefined &&
           <div className="toolbox">
               <div className="toolbox-heading"> 
-              {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())].display}
+              {electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id)].display}
               </div>
               <hr className="hr"/>
               <div className="toolbox-calc">
                   <div className="heading">Calculation</div>
                   {value.map((item)=>
             
-                      electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.b] !== undefined &&
+                      electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id)][item.b] !== undefined &&
           
                        <div className="toolbox-calc">
                         <div style={{display:"flex"}}>
                               <div style={{flex:2}}>
-                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
+                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)][item.a]}
                               </div>
                               <div style={{flex:1}}>
                                   <Input placeholder="input" className="input box" type="number" onChange={(e)=>{item.c(e)
                                   console.log("input",e.target.value)}}></Input>
                               </div>
                               <div style={{flex:1}}>
-                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b] || ""}
+                                  {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)][item.b] || ""}
                               </div>
                          </div>
               
@@ -414,19 +414,19 @@ const Electrical  = ({names,toolType}) => {
                      )} 
                      </div> 
 
-                    {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img !== undefined &&
+                    {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)].img !== undefined &&
             //<Image src="/assets/11LT.png"/>
             <div>
                <hr className="hr"/>
                           <div className="toolbox-calc">
                             <div className="heading">FIGURE</div>
-                          <Image style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].img}`}/>
+                          <Image style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)].img}`}/>
                           </div>
                           </div>
                     }
                     
                   
-                      {details.findIndex((list)=>list.id.toString() === router.query.id.toString()) !== -1 &&
+                      {details.findIndex((list)=>list.id.toString() === router.query.id) !== -1 &&
                       <div>
                          <hr className="hr"/>
           <div className="toolbox-calc">
@@ -435,14 +435,14 @@ const Electrical  = ({names,toolType}) => {
 
                       {detail.map((item)=>
           
-                          details[details.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
+                          details[details.findIndex((list)=>list.id.toString() === router.query.id)][item.a] !== undefined &&
                  
                           <div style={{display:"flex",marginTop:"5px"}} key={item.id}>
                             <div style={{flex:1}}>
-                                {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}
+                                {details[details.findIndex((item)=>item.id.toString() === router.query.id)][item.a]}
                             </div>
                             <div style={{flex:1}}>
-                                {details[details.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b]}</div>
+                                {details[details.findIndex((item)=>item.id.toString() === router.query.id)][item.b]}</div>
                           </div>
               
             )
@@ -459,22 +459,22 @@ const Electrical  = ({names,toolType}) => {
         <div class="toolbox-calc">
             <div className="heading">RESULT</div>
           {answer.map((item)=>
-                        electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id.toString())][item.a] !== undefined &&
+                        electricalList[electricalList.findIndex((list)=>list.id.toString() === router.query.id)][item.a] !== undefined &&
                  
           <div style={{display:"flex"}} key={item.id}>
-                  <div style={{flex:2}}> {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.a]}</div>
+                  <div style={{flex:2}}> {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)][item.a]}</div>
                   <div style={{flex:1}}> {item.c}</div>
-                  <div style={{flex:1}}>{electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())][item.b]}</div>
+                  <div style={{flex:1}}>{electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)][item.b]}</div>
 
               </div>
               
             )}
           </div>
           </div>}
-      {/* {      electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].descp!== undefined &&
+      {/* {      electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)].descp!== undefined &&
 
       <div className="description">
-      {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id.toString())].descp}
+      {electricalList[electricalList.findIndex((item)=>item.id.toString() === router.query.id)].descp}
       </div>} */}
       </div>}
     </Layout>
@@ -646,7 +646,7 @@ export async function getStaticProps({ params }) {
   
   const tooltype = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                   {id:2,type:"electrical",name:"ELECTRICAL",show:false},
-                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false},
+                  {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}
                   ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
 
                     
