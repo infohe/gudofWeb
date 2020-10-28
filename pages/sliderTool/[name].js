@@ -1,5 +1,5 @@
 
-import {Card,Row,Layout,Col,Input,Slider} from 'antd'
+import {Layout,Col,Input,Slider} from 'antd'
 import { useRouter } from 'next/router'
 
 import Navbar from '../Navbar';
@@ -319,7 +319,8 @@ export async function getStaticPaths() {
     
     const tooltype = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                     {id:2,type:"electrical",name:"ELECTRICAL",show:false},
-                    {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}                ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
+                    {id:3,type:"conversions",name:"UNIT CONVERSION",show:false}
+                    ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
 
                       
     // Pass post data to the page via props
