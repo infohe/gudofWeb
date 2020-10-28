@@ -18,7 +18,7 @@ export default function SideNav({names , toolType}) {
     setTooltype(newTooltype)
 }
   
-
+ React.useEffect(()=>console.log("type",ToolType))
   const handleSearch = (event) => {
     handleChangeTrue()
     setArray(tools.filter((item) => ((event.target.value!== "") && item.display.toLowerCase().indexOf(event.target.value.toLowerCase())!== -1) ))
@@ -34,8 +34,8 @@ export default function SideNav({names , toolType}) {
         <Button onClick={console.log(ToolType)}>Click</Button> */}
       <Layout>
       <Tabs  style={{marginTop:"60px"}} tabPosition="top" defaultActiveKey="1">  
-        {toolType!==undefined &&
-          toolType.map(
+        {ToolType!==undefined &&
+          ToolType.map(
             (type) =>  <TabPane tab={type.name} key={type.id}>
                 <div style={{marginLeft:"20px",marginRight:"20px"}}>
             
@@ -43,7 +43,7 @@ export default function SideNav({names , toolType}) {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className={`${active(item.display)}`} style={{flex:1}}>
+                     <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
                        {item.category === 'instrumentation' &&
                        <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>
                        <a>{item.display}</a>
@@ -82,7 +82,9 @@ export default function SideNav({names , toolType}) {
 
 export const active = (name) => {
   const router = useRouter()
+
   if(router.query.name === stringSpaceToHyphen(name)){
+   
     return "activecard"
   }
   else return "carditems1"

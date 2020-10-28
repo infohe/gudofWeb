@@ -45,7 +45,7 @@ const handleShow = (id) => {
       {ToolType!==undefined &&
           ToolType.map(
             (type) => 
-            <div>
+            <div key={type.type}>
               <div onClick={()=>{
         
                 handleShow(type.id)}} style={{display:"flex",height:"45px"}}>
@@ -57,7 +57,7 @@ const handleShow = (id) => {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card onClick={()=>{
+                     <Card key={item.id} onClick={()=>{
                        onClose()}} className="mobilecard" >
                       {item.category === 'instrumentation' &&
                       <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>

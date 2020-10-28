@@ -141,7 +141,7 @@ const Conversion= ({names,toolType}) => {
                    console.log(e)
                }} placeholder="Input">
                    {conversion_fn[ conversion_fn.findIndex(item => item.id===router.query.name)].units.map(item=>
-                    <Option value={item.id}>{item.name}</Option>
+                    <Option key={item.id} value={item.id}>{item.name}</Option>
                     )}
                      </Select>
         </Col>
@@ -2413,7 +2413,8 @@ export const conversion_fn= [
         
         const tooltype = [{id:1,type:"instrumentation",name:"INSTRUMENTATION",show:false},
                         {id:2,type:"electrical",name:"ELECTRICAL",show:false},
-                        {id:3,type:"conversions",name:"UNIT CONVERSION",show:false},                ,{id:4,type:"mechanical",name:"MECHANICAL",show:false}]
+                        {id:3,type:"conversions",name:"UNIT CONVERSION",show:false},             
+                        {id:4,type:"mechanical",name:"MECHANICAL",show:false}]
 
                           
         // Pass post data to the page via props
