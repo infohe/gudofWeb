@@ -6,7 +6,6 @@ import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
 import Link from 'next/link'
-import Navbar from './Navbar';
 import NavbarMain from './NavbarMain';
 
 export default function Home() {
