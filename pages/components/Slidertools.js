@@ -45,7 +45,7 @@ export default function Slidertools({a,b,name,qn,res,display,desc,functions, sho
       }
     return (
        <div>
-             <div className="toolbox">
+            {a!==undefined && <div className="toolbox">
                   
                     <div>
                       <div className="toolbox-heading">{display} </div>
@@ -101,7 +101,7 @@ export default function Slidertools({a,b,name,qn,res,display,desc,functions, sho
                       </div>
                       
        
-                   </div>
+                   </div>}
        </div>
   )
 }
