@@ -52,7 +52,7 @@ export default function Instrumentation({params,functions,toolType,names}){
     return(
       <div>
         <Head>
-          <title>{router.query.name}</title>
+          <title>{router.query.name} Electrical Tools</title>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
           
           {functions!==undefined && functions.map(item => stringSpaceToHyphen(item.display) === router.query.name

@@ -4,7 +4,6 @@ import SideNav from '../SideNav';
 import DrawerNav from '../DrawerNav';
 import Navbar from '../Navbar';
 import Head from 'next/head'
-import { Tabs } from 'antd';
 
 import { useRouter } from 'next/router'
 import { stringSpaceToHyphen } from '..';
@@ -99,7 +98,7 @@ const Conversion= ({names,toolType}) => {
   return (
     <div>
     <Head>
-    <title>{capitalize(router.query.name)}</title>
+    <title>{capitalize(router.query.name)} Tools</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     
     {descriptions.map(item => item.name === router.query.name

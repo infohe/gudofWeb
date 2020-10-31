@@ -79,7 +79,7 @@ React.useEffect(()=>{
     return(
       <div>
         <Head>
-          <title>{router.query.name}</title>
+          <title>{router.query.name} Instrumentation Tool</title>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
           
           {functions!==undefined && functions.map(item => stringSpaceToHyphen(item.display) === router.query.name
