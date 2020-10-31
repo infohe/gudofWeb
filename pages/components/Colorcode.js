@@ -100,8 +100,9 @@ const Colorcode  = ({names,toolType}) => {
                <div className="toolbox-calc">
             <div className="heading">RESULT</div>
                 {answer1} Ohm  {answer2}%
+                <hr className="hr"/>
             </div>}
-            <hr className="hr"/>
+           
            <div className="toolbox-calc">
              <div className="heading">DESCription</div>
               Components and wires are coded with colors to identify their value and function. 

@@ -188,7 +188,7 @@ export default function Home() {
         {/* MOBILE VIEW */}
 
         <Layout className="mobileview">
-      <Input placeholder="Search" prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e.target.value)} />
+      <Input placeholder="Search" style={{marginTop:"10px",marginBottom:"10px"}} prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e.target.value)} />
 
         {tooltype!==undefined &&
           tooltype.map(
@@ -205,7 +205,8 @@ export default function Home() {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className="mobilecard" >
+                     <div className="mobilecard" >
+                       <div style={{margin:"auto"}}>
                       {item.type === 'instrumentation' &&
                           <Link href={`Instrumentation/${stringSpaceToHyphen(item.display)}`}>
                              <a>{item.display}</a>
@@ -222,7 +223,8 @@ export default function Home() {
                         <Link href={`Mechanical/${stringSpaceToHyphen(item.display)}`}>
                           <a>{item.display}</a>
                       </Link> }
-                     </Card>)}
+                      </div>
+                     </div>)}
                     </Row></div> }
                                        </div>
           )
