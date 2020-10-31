@@ -145,7 +145,7 @@ export default function Home() {
    
       </Head>
 
-      <body className="body">
+      <body style={{fontFamily:'Nexalight'}}>
         <Layout>
         <NavbarMain/>
         
@@ -205,7 +205,12 @@ export default function Home() {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <div className="mobilecard" >
+                     <div style={{   width:"100%",
+                      border:"0px",
+                      marginBottom: "5px",
+                      padding:"0px",
+                      paddingLeft: "15px",
+                      height:"40px"}} >
                        <div style={{margin:"auto"}}>
                       {item.type === 'instrumentation' &&
                           <Link href={`Instrumentation/${stringSpaceToHyphen(item.display)}`}>
