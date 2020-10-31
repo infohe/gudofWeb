@@ -387,7 +387,7 @@ const Functions  = ({names,toolType,id}) => {
                <hr className="hr"/>
                           <div className="toolbox-calc">
                             <div className="heading">FIGURE</div>
-                          <Image style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id === id)].img}`}/>
+                          <Image alt="image" style={{marginTop:"60px",width:"90%"}} src={`/assets/${electricalList[electricalList.findIndex((item)=>item.id === id)].img}`}/>
                           </div>
                           </div>
                     }

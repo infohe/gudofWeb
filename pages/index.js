@@ -138,10 +138,10 @@ export default function Home() {
     <div>
      
       <Head>
-
+      
         <title>gudofConvert</title>
         <link rel="preload"/>
-        <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
+        <link  media="print" onload="this.media='all'" rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
    
       </Head>
 
@@ -160,7 +160,16 @@ export default function Home() {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className="carditems" style={{flex:1}}>
+                     <Card className="carditems" style={{  height:"100px",
+                      maxWidth:"340px",
+                      padding:"100px", 
+                      margin:"10px",
+                  
+                    
+                      background:"#ffffff",
+                      borderRadius:"0px",
+                     boxShadow:" 0px 2px 4px 0px rgba(0,0,0,0.5)",
+                  flex:1}}>
                       {item.type === 'instrumentation' &&
                           <Link href={`Instrumentation/${stringSpaceToHyphen(item.display)}`}>
                              <a>{item.display}</a>

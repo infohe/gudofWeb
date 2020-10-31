@@ -1040,11 +1040,9 @@ function Home() {
   return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("title", null, "gudofConvert"), __jsx("link", {
     rel: "preload"
   }), __jsx("link", {
+    rel: "preload",
     href: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
     rel: "stylesheet"
-  }), __jsx("link", {
-    rel: "icon",
-    href: "/favicon.ico"
   })), __jsx("body", {
     className: "body"
   }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(_NavbarMain__WEBPACK_IMPORTED_MODULE_13__["default"], null), __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
@@ -4382,6 +4380,7 @@ const Functions = ({
   }, __jsx("div", {
     className: "heading"
   }, "FIGURE"), __jsx(antd_lib_image__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    alt: "image",
     style: {
       marginTop: "60px",
       width: "90%"
