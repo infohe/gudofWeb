@@ -156,10 +156,12 @@ input[type="text"]:focus {
 @font-face {
   font-family: 'Nexabold';
   src: url("/_next/static/chunks/fonts/Nexa Bold-c9f309b3d47969ecac64a77a6c672594.otf") format('opentype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Nexalight';
   src: url("/_next/static/chunks/fonts/Nexa Light-12108809f49c49bcdc126dcecc938761.otf") format('opentype');
+  font-display: swap;
 }
 .input-col,
 .input-col input {
