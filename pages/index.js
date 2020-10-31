@@ -141,8 +141,7 @@ export default function Home() {
 
         <title>gudofConvert</title>
         <link rel="preload"/>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
    
       </Head>
 
