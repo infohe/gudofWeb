@@ -7,7 +7,6 @@ export default class MyDocument extends Document {
         <Head>
         </Head>
         <body>
-            <style dangerouslySetInnerHTML={{ __html:stylesheet}}/>
           <Main />
           <NextScript />
         </body>

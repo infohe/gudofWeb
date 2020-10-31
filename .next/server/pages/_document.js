@@ -118,11 +118,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
   render() {
-    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null), __jsx("body", null, __jsx("style", {
-      dangerouslySetInnerHTML: {
-        __html: _styles_Homepage_less__WEBPACK_IMPORTED_MODULE_2___default.a
-      }
-    }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
+    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
   }
 
 }

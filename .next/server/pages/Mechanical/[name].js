@@ -1040,6 +1040,8 @@ function Home() {
   return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("title", null, "gudofConvert"), __jsx("link", {
     rel: "preload"
   }), __jsx("link", {
+    media: "print",
+    onload: "this.media='all'",
     rel: "preload",
     href: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
     rel: "stylesheet"
