@@ -1568,8 +1568,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__("YFqc");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("zXOc");
-/* harmony import */ var _NavbarMain__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__("aJgq");
+/* harmony import */ var _NavbarMain__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__("aJgq");
 
 
 
@@ -1586,7 +1585,6 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_11___default.a.createElement;
 const {
   TabPane
 } = antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a;
-
 
 
 function Home() {
@@ -2140,33 +2138,17 @@ function Home() {
   };
 
   const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(true);
-  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("link", {
-    rel: "stylesheet",
-    type: "text/css",
-    href: "../styles/globals.css"
-  }), __jsx("title", null, "gudofConvert"), __jsx("link", {
-    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("title", null, "gudofConvert"), __jsx("link", {
+    rel: "preload"
+  }), __jsx("link", {
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
     rel: "stylesheet"
   }), __jsx("link", {
     rel: "icon",
     href: "/favicon.ico"
-  }), __jsx("link", {
-    rel: "stylesheet",
-    href: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-  }), __jsx("script", {
-    src: "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
-  }), __jsx("script", {
-    type: "module",
-    src: "https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
-  }), __jsx("script", {
-    nomodule: true,
-    src: "https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
-  }), __jsx("link", {
-    rel: "stylesheet",
-    href: "https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
   })), __jsx("body", {
     className: "body"
-  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(_NavbarMain__WEBPACK_IMPORTED_MODULE_14__["default"], null), __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
+  }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(_NavbarMain__WEBPACK_IMPORTED_MODULE_13__["default"], null), __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
     className: "desktopview",
     style: {
       marginTop: "60px"

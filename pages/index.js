@@ -138,10 +138,10 @@ export default function Home() {
     <div>
      
       <Head>
-      <link rel="stylesheet" type="text/css" href="../styles/globals.css" />
 
         <title>gudofConvert</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link rel="preload"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
         <link rel="icon" href="/favicon.ico" />
    
       </Head>
