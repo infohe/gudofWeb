@@ -188,7 +188,6 @@ export default function Home() {
         {/* MOBILE VIEW */}
 
         <Layout className="mobileview">
-          Hello
       <Input placeholder="Search" style={{marginTop:"10px",marginBottom:"10px"}} prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e.target.value)} />
 
         {tooltype!==undefined &&
