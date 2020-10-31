@@ -207,7 +207,6 @@ export async function getStaticPaths() {
     {name:"ohms", display:"Ohms law (R)",id:19, stringId:"19",type:"electrical",category:"electrical"},
     {name:"ohmsi",display:"Ohms law (I)",id:20,type:"electrical",category:"electrical"},{
       name:"aircore",display:"Air Core Inductance",id:21,type:"electrical",category:"electrical"},{
-      name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
       name:"ohmsv",display:"Ohms Law (V)",id:23,type:"electrical",category:"electrical"},{
       name:"parallel",display:"Parallel Resistance",id:24,type:"electrical",category:"electrical"},{
       name:"velocitysound",display:"Velocity of Sound",id:25,type:"electrical",category:"electrical"},
@@ -218,7 +217,6 @@ export async function getStaticPaths() {
       name:"color",display:"Color code Resistance",id:30,type:"electrical",category:"color"},
       {name:"powerrv",display:"Power (with R,V)",id:31, stringId:"31",type:"electrical",category:"electrical"},
       {name:"powervi",display:"Power (with V,I)",id:32,type:"electrical" ,category:"electrical"},
-      {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
       {name:"speedspeed",display:"Speed",id:34,type:"extra",category:"electrical"},
       {name:"distance",display:"Distance (Speed)",id:35,type:"extra",category:"electrical"},
       {name:"volume",display:"Volume",id:36,type:"conversions",category:"conversion"},
