@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { stringSpaceToHyphen } from '.';
 import { useRouter } from 'next/router'
 
-export default function SideNav({names , toolType}) {
+export default function SideNav({names , toolType,key2}) {
   
 
 
@@ -33,7 +33,7 @@ export default function SideNav({names , toolType}) {
         {/* hello
         <Button onClick={console.log(ToolType)}>Click</Button> */}
       <Layout>
-      <Tabs  style={{marginTop:"60px"}} tabPosition="top" defaultActiveKey="1">  
+      <Tabs  style={{marginTop:"60px"}} tabPosition="top" defaultActiveKey={key2}>  
         {ToolType!==undefined &&
           ToolType.map(
             (type) =>  <TabPane tab={type.name} key={type.id}>
@@ -44,26 +44,22 @@ export default function SideNav({names , toolType}) {
                       
                     {array.map(item=> item.type === type.type &&
                      <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
-                       {item.category === 'instrumentation' &&
-                       <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>
-                       <a>{item.display}</a>
-                   </Link> }
-                   {item.category === 'zero' &&
-                     <Link href={`../../zerotox/zero-to-x-percentage-conversion/`}>
-                       <a>{item.display}</a>
-                   </Link> }
-                   {item.category === 'electrical' &&
-                     <Link href={`../../functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                       <a>{item.display}</a>
-                   </Link> }
-                   {item.category === 'conversion' &&
-                     <Link href={`../../conversion/${item.name}`}>
-                       <a>{item.display}</a>
-                   </Link> }
-                   {item.category === 'color' &&
-                     <Link href={`../../colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                       <a>{item.display}</a>
-                   </Link> }
+                       {item.type === 'instrumentation' &&
+                          <Link href={`../../Instrumentation/${stringSpaceToHyphen(item.display)}`}>
+                             <a>{item.display}</a>
+                      </Link>  }
+                      {item.type === 'electrical' &&
+                        <Link href={`../../Electrical/${stringSpaceToHyphen(item.display)}`}>
+                          <a>{item.display}</a>
+                      </Link> }
+                      {item.type === 'conversions' &&
+                        <Link href={`../../Conversion/${item.name}`}>
+                          <a>{item.display}</a>
+                      </Link> }
+                      {item.type === 'mechanical' &&
+                        <Link href={`../../Mechanical/${stringSpaceToHyphen(item.display)}`}>
+                          <a>{item.display}</a>
+                      </Link> }
                      </Card>)}
                      </Row></div>
                                        </TabPane>

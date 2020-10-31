@@ -59,26 +59,23 @@ const handleShow = (id) => {
                     {array.map(item=> item.type === type.type &&
                      <Card key={item.id} onClick={()=>{
                        onClose()}} className="mobilecard" >
-                      {item.category === 'instrumentation' &&
-                      <Link href={`../../sliderTool/${stringSpaceToHyphen(item.display)}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'zero' &&
-                      <Link href={`../../zerotox/zero-to-x-percentage-conversion/`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'electrical' &&
-                      <Link href={`../../functions/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'conversion' &&
-                      <Link href={`../../conversion/${item.name}`}>
-                        <a>{item.display}</a>
-                    </Link> }
-                    {item.category === 'color' &&
-                      <Link href={`../../colorcode/${stringSpaceToHyphen(item.display)}/${item.id}`}>
-                        <a>{item.display}</a>
-                    </Link> }
+                     {item.type === 'instrumentation' &&
+                          <Link href={`../../Instrumentation/${stringSpaceToHyphen(item.display)}`}>
+                             <a>{item.display}</a>
+                      </Link>  }
+                      {item.type === 'electrical' &&
+                        <Link href={`../../Electrical/${stringSpaceToHyphen(item.display)}`}>
+                          <a>{item.display}</a>
+                      </Link> }
+                      {item.type === 'conversions' &&
+                        <Link href={`../../Conversion/${item.name}`}>
+                          <a>{item.display}</a>
+                      </Link> }
+                      {item.type === 'mechanical' &&
+                        <Link href={`../../Mechanical/${stringSpaceToHyphen(item.display)}`}>
+                          <a>{item.display}</a>
+                      </Link> }
+                   
                      </Card>)}
                     </Row></div> }
                                        </div>
