@@ -1,7 +1,22 @@
 {
+  "/Conversion/[name]": "pages/Conversion/[name].js",
+  "/DrawerNav": "pages/DrawerNav.html",
+  "/Electrical/[name]": "pages/Electrical/[name].js",
+  "/Instrumentation/[name]": "pages/Instrumentation/[name].js",
+  "/Mechanical/[name]": "pages/Mechanical/[name].js",
+  "/Navbar": "pages/Navbar.html",
+  "/NavbarMain": "pages/NavbarMain.html",
+  "/SideNav": "pages/SideNav.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
+  "/api/slider": "pages/api/slider.js",
+  "/api/tools": "pages/api/tools.js",
+  "/api/tooltype": "pages/api/tooltype.js",
+  "/components/Colorcode": "pages/components/Colorcode.html",
+  "/components/Functions": "pages/components/Functions.html",
+  "/components/Slidertools": "pages/components/Slidertools.html",
+  "/components/Zero": "pages/components/Zero.html",
+  "/": "pages/index.html",
   "/_error": "pages/_error.js",
-  "/Electrical/[name]": "pages/Electrical/[name].js",
-  "/Instrumentation/[name]": "pages/Instrumentation/[name].js"
+  "/404": "pages/404.html"
 }
