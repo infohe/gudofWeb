@@ -8,7 +8,7 @@
     "start": "next start",
     "predeploy": "npm run build",
     "export":"next export",
-    "deploy": "next export && git add . && git commit -m \"Deploy gh-pages\" && git subtree push --prefix build  origin gh-pages --force"
+    "deploy": "next export && git add . && git commit -m \"Deploy gh-pages\" && git subtree push --prefix build  origin gh-pages"
   },
   "homepage": "https://infohe.github.io/gudofWeb/index",
   "dependencies": {
