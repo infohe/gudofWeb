@@ -45,10 +45,11 @@ const handleShow = (id) => {
       {ToolType!==undefined &&
           ToolType.map(
             (type) => 
-            <div key={type.type}>
+            <div>
               <div onClick={()=>{
         
-                handleShow(type.id)}} style={{display:"flex",height:"45px"}}>
+                handleShow(type.id)
+                }} style={{display:"flex",height:"45px"}}>
                 <div style={{flex:1}}></div>
                 <div style={{flex:10}}>{type.name}</div>
                 <i style={{flex:1}} className="material-icons">arrow_drop_down</i>
@@ -57,9 +58,14 @@ const handleShow = (id) => {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card key={item.id} onClick={()=>{
-                       onClose()}} className="mobilecard" >
-                     {item.type === 'instrumentation' &&
+                     <div onClick={()=>onClose()} style={{   width:"100%",
+                      border:"0px",
+                      marginBottom: "5px",
+                      padding:"0px",
+                      paddingLeft: "15px",
+                      height:"40px"}} >
+                       <div style={{margin:"auto"}}>
+                      {item.type === 'instrumentation' &&
                           <Link href={`../../Instrumentation/${stringSpaceToHyphen(item.display)}`}>
                              <a>{item.display}</a>
                       </Link>  }
@@ -75,8 +81,8 @@ const handleShow = (id) => {
                         <Link href={`../../Mechanical/${stringSpaceToHyphen(item.display)}`}>
                           <a>{item.display}</a>
                       </Link> }
-                   
-                     </Card>)}
+                      </div>
+                     </div>)}
                     </Row></div> }
                                        </div>
           )
