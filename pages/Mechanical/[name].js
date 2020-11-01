@@ -100,7 +100,7 @@ export async function getStaticPaths() {
     ]
 
 
-  const paths = tools!==undefined && tools.map((post) => ({
+  const paths =  tools.map((post) => ({
     params: {name :stringSpaceToHyphen(post.display) }
   }))
   

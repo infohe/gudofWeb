@@ -1046,7 +1046,9 @@ function Home() {
     href: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
     rel: "stylesheet"
   })), __jsx("body", {
-    className: "body"
+    style: {
+      fontFamily: 'Nexalight'
+    }
   }, __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, null, __jsx(_NavbarMain__WEBPACK_IMPORTED_MODULE_13__["default"], null), __jsx(antd_lib_tabs__WEBPACK_IMPORTED_MODULE_9___default.a, {
     className: "desktopview",
     style: {
@@ -1091,6 +1093,10 @@ function Home() {
     className: "mobileview"
   }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     placeholder: "Search",
+    style: {
+      marginTop: "10px",
+      marginBottom: "10px"
+    },
     prefix: __jsx("i", {
       style: {
         marginTop: "-5px"
@@ -1124,8 +1130,19 @@ function Home() {
       marginLeft: "20px",
       marginRight: "20px"
     }
-  }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    className: "mobilecard"
+  }, __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx("div", {
+    style: {
+      width: "100%",
+      border: "0px",
+      marginBottom: "5px",
+      padding: "0px",
+      paddingLeft: "15px",
+      height: "40px"
+    }
+  }, __jsx("div", {
+    style: {
+      margin: "auto"
+    }
   }, item.type === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
     href: `Instrumentation/${stringSpaceToHyphen(item.display)}`
   }, __jsx("a", null, item.display)), item.type === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -1134,7 +1151,7 @@ function Home() {
     href: `Conversion/${item.name}`
   }, __jsx("a", null, item.display)), item.type === 'mechanical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
     href: `Mechanical/${stringSpaceToHyphen(item.display)}`
-  }, __jsx("a", null, item.display))))))))))));
+  }, __jsx("a", null, item.display)))))))))))));
 }
 const stringSpaceToHyphen = string => {
   // return ((string.split(" ").join("-")).split("(").join("-")).split(")").join("-");
@@ -4553,7 +4570,7 @@ function Mechanical({
       });
     }
   }, [router, router.query]);
-  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx("title", null, router.query.name), __jsx("link", {
+  return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx("title", null, router.query.name, " Mechanical Tools"), __jsx("link", {
     href: "https://fonts.googleapis.com/icon?family=Material+Icons",
     rel: "stylesheet"
   }), functions !== undefined && functions.map(item => Object(___WEBPACK_IMPORTED_MODULE_10__["stringSpaceToHyphen"])(item.display) === router.query.name && __jsx("meta", {
@@ -4615,7 +4632,7 @@ async function getStaticPaths() {
   }, {
     display: "Bulk Modulus Elasticity"
   }];
-  const paths = tools !== undefined && tools.map(post => ({
+  const paths = tools.map(post => ({
     params: {
       name: Object(___WEBPACK_IMPORTED_MODULE_10__["stringSpaceToHyphen"])(post.display)
     }
@@ -4808,12 +4825,6 @@ async function getStaticProps({
     type: "electrical",
     category: "electrical"
   }, {
-    name: "laser",
-    display: "Laser Real-Time Converter",
-    id: 22,
-    type: "electrical",
-    category: "electrical"
-  }, {
     name: "ohmsv",
     display: "Ohms Law (V)",
     id: 23,
@@ -4872,12 +4883,6 @@ async function getStaticProps({
     name: "powervi",
     display: "Power (with V,I)",
     id: 32,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "frequency",
-    display: "Frequency",
-    id: 33,
     type: "electrical",
     category: "electrical"
   }, {
