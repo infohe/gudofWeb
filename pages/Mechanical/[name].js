@@ -1,16 +1,17 @@
 
 import {Layout} from 'antd'
 import { useRouter } from 'next/router'
-
-import Navbar from '../Navbar';
+import dynamic from "next/dynamic";
 
 import Head from 'next/head'
 import { Drawer } from 'antd';
-import SideNav from '../SideNav';
-import DrawerNav from '../DrawerNav';
 import { stringSpaceToHyphen } from '..';
-import Functions from '../components/Functions';
 
+const Navbar = dynamic(import('../Navbar'));
+
+const DrawerNav = dynamic(import('../DrawerNav'));
+const SideNav = dynamic(import('../SideNav'));
+const Functions = dynamic(import('../components/Functions'));
 
 export default function Mechanical({params,functions,toolType,names}){
     const router = useRouter()
