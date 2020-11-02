@@ -1,15 +1,15 @@
 import Document, { Html,Head, Main, NextScript } from 'next/document';
-import stylesheet from '../styles/Homepage.less';
+const pagesWithoutReact = ['/'];
 export default class MyDocument extends Document {
   render() {
+    const { __NEXT_DATA__ } = this.props;
     return (
       <Html>
         <Head>
         </Head>
         <body>
           <Main />
-          <NextScript />
-        </body>
+          {!pagesWithoutReact.includes(__NEXT_DATA__.pathname) ? <NextScript /> : null}        </body>
       </Html>
     )
   }
