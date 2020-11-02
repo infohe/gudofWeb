@@ -450,9 +450,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__("zXOc");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__("xnum");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("4Q3z");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("RNiq");
+/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__("RNiq");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__("4Q3z");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_20__);
 
 
 
@@ -468,6 +468,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_14___default.a.createElement;
+
 
 
 
@@ -493,7 +494,7 @@ const Conversion = ({
   react__WEBPACK_IMPORTED_MODULE_14___default.a.useEffect(() => {
     if (window.innerWidth > 700) setVisible(false);
   });
-  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_19__["useRouter"])();
+  const router = Object(next_router__WEBPACK_IMPORTED_MODULE_20__["useRouter"])();
   const {
     Option
   } = antd_lib_select__WEBPACK_IMPORTED_MODULE_13___default.a;
@@ -2677,7 +2678,7 @@ async function getStaticPaths() {
   }];
   const paths = tools.map(post => ({
     params: {
-      name: Object(___WEBPACK_IMPORTED_MODULE_20__["stringSpaceToHyphen"])(post.name)
+      name: Object(_index__WEBPACK_IMPORTED_MODULE_19__["stringSpaceToHyphen"])(post.name)
     }
   }));
   return {
@@ -2689,537 +2690,11 @@ async function getStaticPaths() {
 async function getStaticProps({
   params
 }) {
-  const tools = [{
-    name: "3-15 PSI",
-    display: "3-15 PSI",
-    id: 0,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "0-20mA",
-    display: "0-20 mA",
-    id: 1,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "4-20mA",
-    display: "4-20 mA",
-    id: 2,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "0-25mA",
-    display: "0-25 mA",
-    id: 3,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "zero",
-    display: "0-X to % (Conversion)",
-    id: 4,
-    type: "instrumentation",
-    category: "zero"
-  }, {
-    children: "brightness_1",
-    name: "area",
-    display: "Area",
-    id: 5,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    children: "chat",
-    name: "force",
-    display: "Force",
-    id: 6,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "energy",
-    display: "Energy",
-    id: 7,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "fuel_consumption",
-    display: "Fuel Consumption",
-    id: 8,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "time",
-    display: "Time",
-    id: 9,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "mass",
-    display: "Mass",
-    id: 10,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "length",
-    display: "Length",
-    id: 11,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "digital_storage",
-    display: "Data Storage",
-    id: 12,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "resistancetemp",
-    display: "Resistance (from temperature)",
-    id: 13,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "linearma",
-    display: "Linear mA to Square Root mA",
-    id: 14,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "temperature",
-    display: "Temperature (from resistance)",
-    id: 15,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "temperature",
-    display: "Temperature",
-    id: 16,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "linear",
-    display: "Linear to Square Root percentage",
-    id: 17,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "electric_current",
-    display: "Current",
-    id: 18,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "ohms",
-    display: "Ohms law (R)",
-    id: 19,
-    stringId: "19",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "ohmsi",
-    display: "Ohms law (I)",
-    id: 20,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "aircore",
-    display: "Air Core Inductance",
-    id: 21,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "ohmsv",
-    display: "Ohms Law (V)",
-    id: 23,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "parallel",
-    display: "Parallel Resistance",
-    id: 24,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "velocitysound",
-    display: "Velocity of Sound",
-    id: 25,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "lcresonance",
-    display: "LC Resonance",
-    id: 26,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "voltagediv",
-    display: "Voltage Divider",
-    id: 27,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "speedtime",
-    display: "Time (Speed)",
-    id: 28,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "wheat",
-    display: "Wheatstone bridge",
-    id: 29,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "color",
-    display: "Color code Resistance",
-    id: 30,
-    type: "electrical",
-    category: "color"
-  }, {
-    name: "powerrv",
-    display: "Power (with R,V)",
-    id: 31,
-    stringId: "31",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "powervi",
-    display: "Power (with V,I)",
-    id: 32,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "speedspeed",
-    display: "Speed",
-    id: 34,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "distance",
-    display: "Distance (Speed)",
-    id: 35,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "volume",
-    display: "Volume",
-    id: 36,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "pressure",
-    display: "Pressure",
-    id: 37,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "speed",
-    display: "Speed",
-    id: 38,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "power",
-    display: "Power",
-    id: 39,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "powerir",
-    display: "Power (with R,I)",
-    id: 40,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "wavelength",
-    display: "Wavelength",
-    id: 41,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "powerline",
-    display: "Power Factor 3Phase (Line)",
-    id: 42,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "powerneutral",
-    display: "Power Factor 3Phase (neutral)",
-    id: 43,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "power",
-    display: "Power Factor Single Phase",
-    id: 44,
-    stringId: "44",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "charge",
-    display: "Charge",
-    id: 45,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "speedhorse",
-    display: "Speed (Horsepower)",
-    id: 46,
-    stringId: "46",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "torque",
-    display: "Torque (HorsePower)",
-    id: 47,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "horsepower",
-    display: "HorsePower",
-    id: 48,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "twoseals",
-    display: "Level measurement Two Seals",
-    id: 49,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "onesealabove",
-    display: "Level measurement one seal above",
-    id: 50,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "onesealbelow",
-    display: "Level measurement one seal below",
-    id: 51,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "bubblelevel",
-    display: "Bubble Level",
-    id: 52,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "bubbleinterface",
-    display: "Bubble Interface",
-    id: 53,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "twosealint",
-    display: "Two Seal Interface",
-    id: 54,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "opentank",
-    display: "Open Tank",
-    id: 55,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "intwet",
-    display: "Interface Wet Leg",
-    id: 56,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "liquidpurge",
-    display: "Liquid Purge",
-    id: 57,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "LT3",
-    display: "Level Transmission Closed Vessel",
-    id: 58,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "short",
-    display: "Short Circuit Calculation",
-    id: 59,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "transformer",
-    display: "Transformer Fault Current",
-    id: 60,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "DOL",
-    display: "DOL Star & Delta",
-    id: 61,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "flowrate",
-    display: "Flow Rate Calculation",
-    id: 62,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "hydrost",
-    display: "Hydrostatic Level",
-    id: 63,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "orifice",
-    display: "Orifice Plate error",
-    id: 64,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "lb",
-    display: "LbIn to Nm",
-    id: 65,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "nm",
-    display: "Nm to LbIn",
-    id: 66,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "dcmotor",
-    display: "DC Motor horsepower",
-    id: 67,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "eff1",
-    display: "Eff Tension from HP & FPM",
-    id: 68,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "eff2",
-    display: "Eff Tension from Torque and Radius",
-    id: 69,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "frequency",
-    display: "Frequency",
-    id: 33,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "timeperiod",
-    display: "Time Period",
-    id: 22,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "Belt Length",
-    display: "Belt Length",
-    id: 80,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Gear Pump Displacement",
-    id: 81,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Stroke's Law",
-    id: 82,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Flow Velocity",
-    id: 83,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Hooke's Law (Force)",
-    id: 84,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Hooke's Law (Spring constant)",
-    id: 85,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Strain",
-    id: 86,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "K Value & Pipe Length",
-    id: 87,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Young's modulus",
-    id: 88,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Weber Number",
-    id: 89,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Chezy Coefficient",
-    id: 90,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Cauchy Number",
-    id: 91,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Bulk Modulus Elasticity",
-    id: 92,
-    type: "mechanical",
-    category: "electrical"
-  }];
-  const tooltype = [{
-    id: 1,
-    type: "instrumentation",
-    name: "INSTRUMENTATION",
-    show: false
-  }, {
-    id: 2,
-    type: "electrical",
-    name: "ELECTRICAL",
-    show: false
-  }, {
-    id: 3,
-    type: "conversions",
-    name: "UNIT CONVERSION",
-    show: false
-  }, {
-    id: 4,
-    type: "mechanical",
-    name: "MECHANICAL",
-    show: false
-  }]; // Pass post data to the page via props
-
+  // Pass post data to the page via props
   return {
     props: {
-      names: tools,
-      toolType: tooltype,
+      names: _index__WEBPACK_IMPORTED_MODULE_19__["names"],
+      toolType: _index__WEBPACK_IMPORTED_MODULE_19__["toolType"],
       params: params
     }
   };
@@ -3266,6 +2741,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Home; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "stringSpaceToHyphen", function() { return stringSpaceToHyphen; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "windowSize", function() { return windowSize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "names", function() { return names; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toolType", function() { return toolType; });
 /* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("ppZR");
 /* harmony import */ var antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(antd_lib_layout_style__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var antd_lib_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("VzA1");
@@ -3312,528 +2789,6 @@ const {
 
 
 function Home() {
-  const names = [{
-    name: "frequency",
-    display: "Frequency",
-    id: 33,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "timeperiod",
-    display: "Time Period",
-    id: 22,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "3-15 PSI",
-    display: "3-15 PSI",
-    id: 0,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "0-20mA",
-    display: "0-20 mA",
-    id: 1,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "4-20mA",
-    display: "4-20 mA",
-    id: 2,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "0-25mA",
-    display: "0-25 mA",
-    id: 3,
-    type: "instrumentation",
-    category: "instrumentation"
-  }, {
-    name: "zero",
-    display: "0-X to % (Conversion)",
-    id: 4,
-    type: "instrumentation",
-    category: "zero"
-  }, {
-    children: "brightness_1",
-    name: "area",
-    display: "Area",
-    id: 5,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    children: "chat",
-    name: "force",
-    display: "Force",
-    id: 6,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "energy",
-    display: "Energy",
-    id: 7,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "fuel_consumption",
-    display: "Fuel Consumption",
-    id: 8,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "time",
-    display: "Time",
-    id: 9,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "mass",
-    display: "Mass",
-    id: 10,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "length",
-    display: "Length",
-    id: 11,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "digital_storage",
-    display: "Data Storage",
-    id: 12,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "resistancetemp",
-    display: "Resistance (from temperature)",
-    id: 13,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "linearma",
-    display: "Linear mA to Square Root mA",
-    id: 14,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "temperature",
-    display: "Temperature (from resistance)",
-    id: 15,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "temperature",
-    display: "Temperature",
-    id: 16,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "linear",
-    display: "Linear to Square Root percentage",
-    id: 17,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "electric_current",
-    display: "Current",
-    id: 18,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "ohms",
-    display: "Ohms law (R)",
-    id: 19,
-    stringId: "19",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "ohmsi",
-    display: "Ohms law (I)",
-    id: 20,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "aircore",
-    display: "Air Core Inductance",
-    id: 21,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    // name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
-    name: "ohmsv",
-    display: "Ohms Law (V)",
-    id: 23,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "parallel",
-    display: "Parallel Resistance",
-    id: 24,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "velocitysound",
-    display: "Velocity of Sound",
-    id: 25,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "lcresonance",
-    display: "LC Resonance",
-    id: 26,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "voltagediv",
-    display: "Voltage Divider",
-    id: 27,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "speedtime",
-    display: "Time (Speed)",
-    id: 28,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "wheat",
-    display: "Wheatstone bridge",
-    id: 29,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "color",
-    display: "Color code Resistance",
-    id: 30,
-    type: "electrical",
-    category: "color"
-  }, {
-    name: "powerrv",
-    display: "Power (with R,V)",
-    id: 31,
-    stringId: "31",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "powervi",
-    display: "Power (with V,I)",
-    id: 32,
-    type: "electrical",
-    category: "electrical"
-  }, // {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
-  {
-    name: "speedspeed",
-    display: "Speed",
-    id: 34,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "distance",
-    display: "Distance (Speed)",
-    id: 35,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "volume",
-    display: "Volume",
-    id: 36,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "pressure",
-    display: "Pressure",
-    id: 37,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "speed",
-    display: "Speed",
-    id: 38,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "power",
-    display: "Power",
-    id: 39,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "powerir",
-    display: "Power (with R,I)",
-    id: 40,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "wavelength",
-    display: "Wavelength",
-    id: 41,
-    type: "extra",
-    category: "electrical"
-  }, {
-    name: "powerline",
-    display: "Power Factor 3Phase (Line)",
-    id: 42,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "powerneutral",
-    display: "Power Factor 3Phase (neutral)",
-    id: 43,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "power",
-    display: "Power Factor Single Phase",
-    id: 44,
-    stringId: "44",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "charge",
-    display: "Charge",
-    id: 45,
-    type: "conversions",
-    category: "conversion"
-  }, {
-    name: "speedhorse",
-    display: "Speed (Horsepower)",
-    id: 46,
-    stringId: "46",
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "torque",
-    display: "Torque (HorsePower)",
-    id: 47,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "horsepower",
-    display: "HorsePower",
-    id: 48,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "twoseals",
-    display: "Level measurement Two Seals",
-    id: 49,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "onesealabove",
-    display: "Level measurement one seal above",
-    id: 50,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "onesealbelow",
-    display: "Level measurement one seal below",
-    id: 51,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "bubblelevel",
-    display: "Bubble Level",
-    id: 52,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "bubbleinterface",
-    display: "Bubble Interface",
-    id: 53,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "twosealint",
-    display: "Two Seal Interface",
-    id: 54,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "opentank",
-    display: "Open Tank",
-    id: 55,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "intwet",
-    display: "Interface Wet Leg",
-    id: 56,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "liquidpurge",
-    display: "Liquid Purge",
-    id: 57,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "LT3",
-    display: "Level Transmission Closed Vessel",
-    id: 58,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "short",
-    display: "Short Circuit Calculation",
-    id: 59,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "transformer",
-    display: "Transformer Fault Current",
-    id: 60,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "DOL",
-    display: "DOL Star & Delta",
-    id: 61,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "flowrate",
-    display: "Flow Rate Calculation",
-    id: 62,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "hydrost",
-    display: "Hydrostatic Level",
-    id: 63,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "orifice",
-    display: "Orifice Plate error",
-    id: 64,
-    type: "instrumentation",
-    category: "electrical"
-  }, {
-    name: "lb",
-    display: "LbIn to Nm",
-    id: 65,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "nm",
-    display: "Nm to LbIn",
-    id: 66,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "dcmotor",
-    display: "DC Motor horsepower",
-    id: 67,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "eff1",
-    display: "Eff Tension from HP & FPM",
-    id: 68,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "eff2",
-    display: "Eff Tension from Torque and Radius",
-    id: 69,
-    type: "electrical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Gear Pump Displacement",
-    id: 81,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Stroke's Law",
-    id: 82,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Flow Velocity",
-    id: 83,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Hooke's Law (Force)",
-    id: 84,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Hooke's Law (Spring constant)",
-    id: 85,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Strain",
-    id: 86,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "K Value & Pipe Length",
-    id: 87,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Young's modulus",
-    id: 88,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Weber Number",
-    id: 89,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Chezy Coefficient",
-    id: 90,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Cauchy Number",
-    id: 91,
-    type: "mechanical",
-    category: "electrical"
-  }, {
-    name: "",
-    display: "Bulk Modulus Elasticity",
-    id: 92,
-    type: "mechanical",
-    category: "electrical"
-  }];
-  const toolType = [{
-    id: 1,
-    type: "instrumentation",
-    name: "INSTRUMENTATION",
-    show: false
-  }, {
-    id: 2,
-    type: "electrical",
-    name: "ELECTRICAL",
-    show: false
-  }, {
-    id: 3,
-    type: "conversions",
-    name: "UNIT CONVERSION",
-    show: false
-  }, {
-    id: 4,
-    type: "mechanical",
-    name: "MECHANICAL",
-    show: false
-  }];
   const [array, setArray] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(names);
   const [tooltype, setTooltype] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(toolType);
 
@@ -3983,6 +2938,528 @@ const stringSpaceToHyphen = string => {
   return string.split(" ").join("-").split("%").join("percentage");
 };
 const windowSize = () => {};
+const names = [{
+  name: "frequency",
+  display: "Frequency",
+  id: 33,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "timeperiod",
+  display: "Time Period",
+  id: 22,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "3-15 PSI",
+  display: "3-15 PSI",
+  id: 0,
+  type: "instrumentation",
+  category: "instrumentation"
+}, {
+  name: "0-20mA",
+  display: "0-20 mA",
+  id: 1,
+  type: "instrumentation",
+  category: "instrumentation"
+}, {
+  name: "4-20mA",
+  display: "4-20 mA",
+  id: 2,
+  type: "instrumentation",
+  category: "instrumentation"
+}, {
+  name: "0-25mA",
+  display: "0-25 mA",
+  id: 3,
+  type: "instrumentation",
+  category: "instrumentation"
+}, {
+  name: "zero",
+  display: "0-X to % (Conversion)",
+  id: 4,
+  type: "instrumentation",
+  category: "zero"
+}, {
+  children: "brightness_1",
+  name: "area",
+  display: "Area",
+  id: 5,
+  type: "conversions",
+  category: "conversion"
+}, {
+  children: "chat",
+  name: "force",
+  display: "Force",
+  id: 6,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "energy",
+  display: "Energy",
+  id: 7,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "fuel_consumption",
+  display: "Fuel Consumption",
+  id: 8,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "time",
+  display: "Time",
+  id: 9,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "mass",
+  display: "Mass",
+  id: 10,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "length",
+  display: "Length",
+  id: 11,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "digital_storage",
+  display: "Data Storage",
+  id: 12,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "resistancetemp",
+  display: "Resistance (from temperature)",
+  id: 13,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "linearma",
+  display: "Linear mA to Square Root mA",
+  id: 14,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "temperature",
+  display: "Temperature (from resistance)",
+  id: 15,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "temperature",
+  display: "Temperature",
+  id: 16,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "linear",
+  display: "Linear to Square Root percentage",
+  id: 17,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "electric_current",
+  display: "Current",
+  id: 18,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "ohms",
+  display: "Ohms law (R)",
+  id: 19,
+  stringId: "19",
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "ohmsi",
+  display: "Ohms law (I)",
+  id: 20,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "aircore",
+  display: "Air Core Inductance",
+  id: 21,
+  type: "electrical",
+  category: "electrical"
+}, {
+  // name:"laser",display:"Laser Real-Time Converter",id:22,type:"electrical",category:"electrical"},{
+  name: "ohmsv",
+  display: "Ohms Law (V)",
+  id: 23,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "parallel",
+  display: "Parallel Resistance",
+  id: 24,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "velocitysound",
+  display: "Velocity of Sound",
+  id: 25,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "lcresonance",
+  display: "LC Resonance",
+  id: 26,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "voltagediv",
+  display: "Voltage Divider",
+  id: 27,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "speedtime",
+  display: "Time (Speed)",
+  id: 28,
+  type: "extra",
+  category: "electrical"
+}, {
+  name: "wheat",
+  display: "Wheatstone bridge",
+  id: 29,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "color",
+  display: "Color code Resistance",
+  id: 30,
+  type: "electrical",
+  category: "color"
+}, {
+  name: "powerrv",
+  display: "Power (with R,V)",
+  id: 31,
+  stringId: "31",
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "powervi",
+  display: "Power (with V,I)",
+  id: 32,
+  type: "electrical",
+  category: "electrical"
+}, // {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+{
+  name: "speedspeed",
+  display: "Speed",
+  id: 34,
+  type: "extra",
+  category: "electrical"
+}, {
+  name: "distance",
+  display: "Distance (Speed)",
+  id: 35,
+  type: "extra",
+  category: "electrical"
+}, {
+  name: "volume",
+  display: "Volume",
+  id: 36,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "pressure",
+  display: "Pressure",
+  id: 37,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "speed",
+  display: "Speed",
+  id: 38,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "power",
+  display: "Power",
+  id: 39,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "powerir",
+  display: "Power (with R,I)",
+  id: 40,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "wavelength",
+  display: "Wavelength",
+  id: 41,
+  type: "extra",
+  category: "electrical"
+}, {
+  name: "powerline",
+  display: "Power Factor 3Phase (Line)",
+  id: 42,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "powerneutral",
+  display: "Power Factor 3Phase (neutral)",
+  id: 43,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "power",
+  display: "Power Factor Single Phase",
+  id: 44,
+  stringId: "44",
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "charge",
+  display: "Charge",
+  id: 45,
+  type: "conversions",
+  category: "conversion"
+}, {
+  name: "speedhorse",
+  display: "Speed (Horsepower)",
+  id: 46,
+  stringId: "46",
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "torque",
+  display: "Torque (HorsePower)",
+  id: 47,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "horsepower",
+  display: "HorsePower",
+  id: 48,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "twoseals",
+  display: "Level measurement Two Seals",
+  id: 49,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "onesealabove",
+  display: "Level measurement one seal above",
+  id: 50,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "onesealbelow",
+  display: "Level measurement one seal below",
+  id: 51,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "bubblelevel",
+  display: "Bubble Level",
+  id: 52,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "bubbleinterface",
+  display: "Bubble Interface",
+  id: 53,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "twosealint",
+  display: "Two Seal Interface",
+  id: 54,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "opentank",
+  display: "Open Tank",
+  id: 55,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "intwet",
+  display: "Interface Wet Leg",
+  id: 56,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "liquidpurge",
+  display: "Liquid Purge",
+  id: 57,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "LT3",
+  display: "Level Transmission Closed Vessel",
+  id: 58,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "short",
+  display: "Short Circuit Calculation",
+  id: 59,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "transformer",
+  display: "Transformer Fault Current",
+  id: 60,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "DOL",
+  display: "DOL Star & Delta",
+  id: 61,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "flowrate",
+  display: "Flow Rate Calculation",
+  id: 62,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "hydrost",
+  display: "Hydrostatic Level",
+  id: 63,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "orifice",
+  display: "Orifice Plate error",
+  id: 64,
+  type: "instrumentation",
+  category: "electrical"
+}, {
+  name: "lb",
+  display: "LbIn to Nm",
+  id: 65,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "nm",
+  display: "Nm to LbIn",
+  id: 66,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "dcmotor",
+  display: "DC Motor horsepower",
+  id: 67,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "eff1",
+  display: "Eff Tension from HP & FPM",
+  id: 68,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "eff2",
+  display: "Eff Tension from Torque and Radius",
+  id: 69,
+  type: "electrical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Gear Pump Displacement",
+  id: 81,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Stroke's Law",
+  id: 82,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Flow Velocity",
+  id: 83,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Hooke's Law (Force)",
+  id: 84,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Hooke's Law (Spring constant)",
+  id: 85,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Strain",
+  id: 86,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "K Value & Pipe Length",
+  id: 87,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Young's modulus",
+  id: 88,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Weber Number",
+  id: 89,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Chezy Coefficient",
+  id: 90,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Cauchy Number",
+  id: 91,
+  type: "mechanical",
+  category: "electrical"
+}, {
+  name: "",
+  display: "Bulk Modulus Elasticity",
+  id: 92,
+  type: "mechanical",
+  category: "electrical"
+}];
+const toolType = [{
+  id: 1,
+  type: "instrumentation",
+  name: "INSTRUMENTATION",
+  show: false
+}, {
+  id: 2,
+  type: "electrical",
+  name: "ELECTRICAL",
+  show: false
+}, {
+  id: 3,
+  type: "conversions",
+  name: "UNIT CONVERSION",
+  show: false
+}, {
+  id: 4,
+  type: "mechanical",
+  name: "MECHANICAL",
+  show: false
+}];
 
 /***/ }),
 
