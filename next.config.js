@@ -17,7 +17,7 @@ module.exports = withFonts(withLess({
   javascriptEnabled:true,
   enableSvg: true,
 
- 
+  
   webpack: (config, { isServer }) => {
  
     if (isServer) {
@@ -43,7 +43,38 @@ module.exports = withFonts(withLess({
    
          return config
   },
+
+  trailingSlash:true,
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      // '/Mechanical/Belt-Length': { page: '/Mechanical/Belt-Length' },
+
+      '/Mechanical/Belt-Length': { page: '/Mechanical/[name]', query: { name: 'Belt-Length' } },
+      '/Mechanical/Weber-Number': { page: '/Mechanical/[name]', query: { name: 'Weber-Number' } },
+
+          }
+  },
 }));
+
+const nextConfig = {
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      // '/Mechanical/Belt-Length': { page: '/Mechanical/Belt-Length' },
+
+      '/Mechanical/Belt-Length': { page: '/Mechanical/[name]', query: { name: 'Belt-Length' } },
+      '/Mechanical/Weber-Number': { page: '/Mechanical/[name]', query: { name: 'Weber-Number' } },
+
+          }
+  },
+}
 // const withCSS = require("@zeit/next-css");
 
 // module.exports = withCSS({
