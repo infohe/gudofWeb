@@ -43,24 +43,36 @@ export default function SideNav({names , toolType,key2}) {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
+                    <>
                        {item.type === 'instrumentation' &&
-                          <Link href={`../../Instrumentation/${stringSpaceToHyphen(item.display)}`}>
-                             <a>{item.display}</a>
+                       
+                          <Link href={`../../Instrumentation/${stringSpaceToHyphen(item.display)}`} passHref>
+                            <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
+
+                             {item.display}</Card>
                       </Link>  }
                       {item.type === 'electrical' &&
-                        <Link href={`../../Electrical/${stringSpaceToHyphen(item.display)}`}>
-                          <a>{item.display}</a>
-                      </Link> }
+                        <Link href={`../../Electrical/${stringSpaceToHyphen(item.display)}`} passHref>
+                          <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
+
+                             {item.display}</Card>
+                               </Link> }
                       {item.type === 'conversions' &&
-                        <Link href={`../../Conversion/${item.name}`}>
-                          <a>{item.display}</a>
+                        <Link href={`../../Conversion/${item.name}`} passHref>
+                          
+                          <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
+
+                            {item.display}</Card>
                       </Link> }
                       {item.type === 'mechanical' &&
-                        <Link href={`../../Mechanical/${stringSpaceToHyphen(item.display)}`}>
-                          <a>{item.display}</a>
+                        <Link href={`../../Mechanical/${stringSpaceToHyphen(item.display)}`} passHref>
+                           <Card className={`${item.category==="conversion" ? active(item.name) : active(item.display) }`} style={{flex:1}}>
+
+{item.display}</Card>
                       </Link> }
-                     </Card>)}
+                    
+                     </>)}
+                    
                      </Row></div>
                                        </TabPane>
           )

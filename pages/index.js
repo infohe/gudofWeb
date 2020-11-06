@@ -66,25 +66,33 @@ export default function Home() {
                     <Row >
                       
                     {array.map(item=> item.type === type.type &&
-                     <Card className="carditems" style={{flex:1}}>
+                     <>
                       {item.type === 'instrumentation' &&
-                          <Link href={`Instrumentation/${stringSpaceToHyphen(item.display)}`}>
+                          <Link href={`Instrumentation/${stringSpaceToHyphen(item.display)}`} passHref>
+                            <Card className="carditems" style={{flex:1}}>
                              <a>{item.display}</a>
+                             </Card> 
                       </Link>  }
                       {item.type === 'electrical' &&
-                        <Link href={`Electrical/${stringSpaceToHyphen(item.display)}`}>
-                          <a>{item.display}</a>
+                        <Link href={`Electrical/${stringSpaceToHyphen(item.display)}`} passHref>
+                          <Card className="carditems" style={{flex:1}}>
+                             <a>{item.display}</a>
+                             </Card>
                       </Link> }
                       {item.type === 'conversions' &&
                         <Link href={`Conversion/${item.name}`}>
-                          <a>{item.display}</a>
+                          <Card className="carditems" style={{flex:1}} passHref>
+                             <a>{item.display}</a>
+                             </Card>
                       </Link> }
                       {item.type === 'mechanical' &&
-                        <Link href={`Mechanical/${stringSpaceToHyphen(item.display)}`}>
-                          <a>{item.display}</a>
+                        <Link href={`Mechanical/${stringSpaceToHyphen(item.display)}`} passHref>
+                          <Card className="carditems" style={{flex:1}}>
+                             <a>{item.display}</a>
+                             </Card>
                       </Link> }
 
-                     </Card>)}
+                     </>)}
                      </Row></div>
                                        </TabPane>
           )
@@ -247,6 +255,7 @@ export const names =[
   {name:"",display:"Chezy Coefficient",id:90,type:"mechanical",category:"electrical"},
   {name:"",display:"Cauchy Number",id:91,type:"mechanical",category:"electrical"},
   {name:"",display:"Bulk Modulus Elasticity",id:92,type:"mechanical",category:"electrical"},
+  {name:"",display:"Belt Length",id:80,type:"mechanical",category:"electrical"},
 
 ]
   

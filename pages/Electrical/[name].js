@@ -141,23 +141,9 @@ export async function getStaticPaths() {
       {name:"dcmotor",display:"DC Motor horsepower",id:67,type:"electrical",category:"electrical"},
       {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
       {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},
-      {name:"Belt Length",display:"Belt Length",id:80,type:"mechanical",category:"electrical"},
 
       {display:"Color code Resistance",id:30},
 
-              {name:"",display:"Gear Pump Displacement",id:81,type:"mechanical",category:"electrical"},
-              {name:"",display:"Stroke's Law",id:82,type:"mechanical",category:"electrical"},
-              {name:"",display:"Flow Velocity",id:83,type:"mechanical",category:"electrical"},
-              {name:"",display:"Hooke's Law (Force)",id:84,type:"mechanical",category:"electrical"},
-              {name:"",display:"Hooke's Law (Spring constant)",id:85,type:"mechanical",category:"electrical"},
-              {name:"",display:"Strain",id:86,type:"mechanical",category:"electrical"},
-              {name:"",display:"K Value & Pipe Length",id:87,type:"mechanical",category:"electrical"},
-              {name:"",display:"Young's modulus",id:88,type:"mechanical",category:"electrical"},
-              {name:"",display:"Weber Number",id:89,type:"mechanical",category:"electrical"},
-              {name:"",display:"Chezy Coefficient",id:90,type:"mechanical",category:"electrical"},
-              {name:"",display:"Cauchy Number",id:91,type:"mechanical",category:"electrical"},
-              {name:"",display:"Bulk Modulus Elasticity",id:92,type:"mechanical",category:"electrical"},
-              
     
     
     

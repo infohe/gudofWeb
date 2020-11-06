@@ -556,20 +556,39 @@ function Home() {
       className: "material-icons"
     }, "search"),
     onInput: e => handleSearch(e.target.value)
-  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(react__WEBPACK_IMPORTED_MODULE_11___default.a.Fragment, null, item.type === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `Instrumentation/${stringSpaceToHyphen(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: "carditems",
     style: {
       flex: 1
     }
-  }, item.type === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
-    href: `Instrumentation/${stringSpaceToHyphen(item.display)}`
-  }, __jsx("a", null, item.display)), item.type === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
-    href: `Electrical/${stringSpaceToHyphen(item.display)}`
-  }, __jsx("a", null, item.display)), item.type === 'conversions' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+  }, __jsx("a", null, item.display))), item.type === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `Electrical/${stringSpaceToHyphen(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: "carditems",
+    style: {
+      flex: 1
+    }
+  }, __jsx("a", null, item.display))), item.type === 'conversions' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
     href: `Conversion/${item.name}`
-  }, __jsx("a", null, item.display)), item.type === 'mechanical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
-    href: `Mechanical/${stringSpaceToHyphen(item.display)}`
-  }, __jsx("a", null, item.display))))))))), __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: "carditems",
+    style: {
+      flex: 1
+    },
+    passHref: true
+  }, __jsx("a", null, item.display))), item.type === 'mechanical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    href: `Mechanical/${stringSpaceToHyphen(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: "carditems",
+    style: {
+      flex: 1
+    }
+  }, __jsx("a", null, item.display)))))))))), __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
     className: "mobileview"
   }, __jsx(antd_lib_input__WEBPACK_IMPORTED_MODULE_7___default.a, {
     placeholder: "Search",
@@ -1138,6 +1157,12 @@ const names = [{
   id: 92,
   type: "mechanical",
   category: "electrical"
+}, {
+  name: "",
+  display: "Belt Length",
+  id: 80,
+  type: "mechanical",
+  category: "electrical"
 }];
 const toolType = [{
   id: 1,
@@ -1301,20 +1326,39 @@ function SideNav({
       className: "material-icons"
     }, "search"),
     onInput: e => handleSearch(e)
-  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }), __jsx(antd_lib_row__WEBPACK_IMPORTED_MODULE_3___default.a, null, array.map(item => item.type === type.type && __jsx(react__WEBPACK_IMPORTED_MODULE_10___default.a.Fragment, null, item.type === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    href: `../../Instrumentation/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
     className: `${item.category === "conversion" ? active(item.name) : active(item.display)}`,
     style: {
       flex: 1
     }
-  }, item.type === 'instrumentation' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `../../Instrumentation/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`
-  }, __jsx("a", null, item.display)), item.type === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `../../Electrical/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`
-  }, __jsx("a", null, item.display)), item.type === 'conversions' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `../../Conversion/${item.name}`
-  }, __jsx("a", null, item.display)), item.type === 'mechanical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    href: `../../Mechanical/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`
-  }, __jsx("a", null, item.display)))))))))));
+  }, item.display)), item.type === 'electrical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    href: `../../Electrical/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: `${item.category === "conversion" ? active(item.name) : active(item.display)}`,
+    style: {
+      flex: 1
+    }
+  }, item.display)), item.type === 'conversions' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    href: `../../Conversion/${item.name}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: `${item.category === "conversion" ? active(item.name) : active(item.display)}`,
+    style: {
+      flex: 1
+    }
+  }, item.display)), item.type === 'mechanical' && __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    href: `../../Mechanical/${Object(___WEBPACK_IMPORTED_MODULE_12__["stringSpaceToHyphen"])(item.display)}`,
+    passHref: true
+  }, __jsx(antd_lib_card__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    className: `${item.category === "conversion" ? active(item.name) : active(item.display)}`,
+    style: {
+      flex: 1
+    }
+  }, item.display)))))))))));
 }
 const active = name => {
   const router = Object(next_router__WEBPACK_IMPORTED_MODULE_13__["useRouter"])();
@@ -3872,26 +3916,6 @@ const Functions = ({
     ac1: "Hz"
   }, //MECHANICAL
   {
-    display: "Belt",
-    id: 80,
-    descp: "",
-    q1: "",
-    qc1: "",
-    q2: "",
-    qc2: "",
-    q3: "",
-    qc3: "",
-    a1: "",
-    ac1: ""
-  }, {
-    display: "Belt",
-    id: 80,
-    descp: "",
-    q1: "",
-    qc1: "",
-    a1: "",
-    ac1: ""
-  }, {
     display: "Belt length",
     id: 80,
     descp: "",

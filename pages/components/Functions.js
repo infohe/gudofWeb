@@ -66,9 +66,7 @@ const Functions  = ({names,toolType,id}) => {
         ,
         //MECHANICAL
        
-        {display:"Belt",id:80,descp:"",q1:"",qc1:"",q2:"",qc2:"",q3:"",qc3:"",a1:"",ac1:""},
-        {display:"Belt",id:80,descp:"",q1:"",qc1:"",a1:"",ac1:""},
-
+    
 
         {display:"Belt length",id:80,descp:"",q1:"Diameter of Large Pulley",qc1:"m",q2:"Diameter of Small pulley",q3:"Pulley Centre distance",qc3:"m",a1:"Belt Length",ac1:"m"},
        
