@@ -980,12 +980,7 @@ function Home() {
 
   const [bool, setBool] = react__WEBPACK_IMPORTED_MODULE_11___default.a.useState(true);
   return __jsx("div", null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_10___default.a, null, __jsx("title", null, "gudofConvert"), __jsx("link", {
-    rel: "preload"
-  }), __jsx("link", {
-    media: "print",
-    onload: "this.media='all'",
-    rel: "preload",
-    href: "https://fonts.googleapis.com/icon?family=Material+Icons&display=swap",
+    href: "https://fonts.googleapis.com/icon?family=Material+Icons",
     rel: "stylesheet"
   })), __jsx("body", {
     style: {

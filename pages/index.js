@@ -46,8 +46,7 @@ export default function Home() {
       <Head>
       
         <title>gudofConvert</title>
-        <link rel="preload"/>
-        <link  media="print" onload="this.media='all'" rel="preload" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
    
       </Head>
 
