@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Navbar({showDrawer}) {
     return (
-        <Layout className="navbar">
+        <Layout className="navbar" style={{zIndex:2}}>
          
         <div >
         <Menu style={{background:"#F73406"}} className="menu">

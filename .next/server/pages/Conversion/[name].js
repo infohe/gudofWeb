@@ -5598,7 +5598,10 @@ function Navbar({
   showDrawer
 }) {
   return __jsx(antd_lib_layout__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    className: "navbar"
+    className: "navbar",
+    style: {
+      zIndex: 2
+    }
   }, __jsx("div", null, __jsx(antd_lib_menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
     style: {
       background: "#F73406"

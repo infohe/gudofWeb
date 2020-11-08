@@ -47,6 +47,7 @@ export default function Mechanical({params,toolType,names}){
     return(
       <div>
         <Head>
+          
           <title>{router.query.name} Mechanical Tools</title>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
         </Head>
