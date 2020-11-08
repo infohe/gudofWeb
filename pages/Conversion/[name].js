@@ -136,7 +136,7 @@ const Conversion= ({names,toolType}) => {
           console.log("input",e.target.value)
           setInput1(e.target.value)}}/></Col>
         <Col style={{flex:1}}>
-               <Select  style={{border:"1px solid gray"}} className="input box" class="box"  value={inn} onSelect={(e)=>{
+               <Select  style={{border:"1px solid gray"}} className="box" class="box"  value={inn} onSelect={(e)=>{
                    setIn(e)
                    console.log(e)
                }} placeholder="Input">
@@ -150,7 +150,7 @@ const Conversion= ({names,toolType}) => {
         <Col style={{flex:1}}><Input  className="input box" type="number"  value={answer} disabled/></Col>
         <Col style={{flex:1}}>
 
-<Select className="input box"  style={{border:"1px solid gray"}} class="box" value={out} onSelect={(e)=>{
+<Select className="box"  style={{width:"100px",border:"1px solid gray"}}  value={out} onSelect={(e)=>{
 setOut(e)
 }} placeholder="Output">
 {conversion_fn[ conversion_fn.findIndex(item => item.id===router.query.name)].units.map(item=>

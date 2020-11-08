@@ -662,7 +662,7 @@ const Conversion = ({
     style: {
       border: "1px solid gray"
     },
-    className: "input box",
+    className: "box",
     class: "box",
     value: inn,
     onSelect: e => {
@@ -689,11 +689,11 @@ const Conversion = ({
       flex: 1
     }
   }, __jsx(antd_lib_select__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    className: "input box",
+    className: "box",
     style: {
+      width: "100px",
       border: "1px solid gray"
     },
-    class: "box",
     value: out,
     onSelect: e => {
       setOut(e);

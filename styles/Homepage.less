@@ -335,18 +335,26 @@ a {color:black !important;}
     scrollbar-width: thin !important;
 }
 
-::scrollbar-track {
-  background: #f1f1f1 !important;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1 !important;
-}
-::-moz-scrollbar-track {
-  background: #f1f1f1 !important;
+
+// ::-webkit-scrollbar-track {
+//   background: red !important;
+// }
+// ::-moz-scrollbar-track {
+//   background: #f1f1f1 !important;
+// }
+.ant-select {
+  margin-left: 10px !important;
+  min-width: 100px !important;
+  max-width: 140px !important;
 }
 ::-webkit-scrollbar {
-  width: 2px !important;
-  color:grey !important;
+  width: 4px !important;
+  color: #f1f1f1 !important;
+  background: white;
+}
+::-webkit-scrollbar-thumb {
+  background:#cfcbcb;
+  border-radius: 30px;
 }
 .tools-container {
     height:90vh;
