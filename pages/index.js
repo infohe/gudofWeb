@@ -45,7 +45,7 @@ export default function Home() {
      
       <Head>
       
-        <title>gudofConvert</title>
+        <title>converter.gudof.com</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
    
       </Head>
