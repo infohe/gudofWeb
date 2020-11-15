@@ -423,7 +423,7 @@ const Functions  = ({names,toolType,id}) => {
           </div>
           <hr className="hr"/>
 
-          <div class="toolbox-desc">
+          <div class="toolbox-calc">
             <div className="heading">Description</div>
           {electricalList[electricalList.findIndex((item)=>item.id === id)].descp}
             </div>

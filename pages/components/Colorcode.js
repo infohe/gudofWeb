@@ -101,11 +101,13 @@ const Colorcode  = ({names,toolType}) => {
            </div>
            <hr className="hr"/>
            {answer1!== undefined &&
+           <div>
                <div className="toolbox-calc">
             <div className="heading">RESULT</div>
                 {answer1} Ohm  {answer2}%
-                <hr className="hr"/>
-            </div>}
+            </div>
+            <hr className="hr"/>
+</div>}
            
            <div className="toolbox-calc">
              <div className="heading">DESCription</div>

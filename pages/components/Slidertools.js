@@ -97,7 +97,7 @@ export default function Slidertools({a,b,name,qn,res,display,desc,functions, sho
                       </div></div>}
 
                         <hr className="hr"/>
-                          <div className="toolbox-desc toolbox-calc">
+                          <div className="toolbox-calc">
                             <div className="heading">
                               Description
                             </div>
