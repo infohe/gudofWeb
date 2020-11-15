@@ -28,7 +28,7 @@ export default function SideNav({names , toolType,key2}) {
   }
   const [tools,setTools] = React.useState(names)
     return (
-    <div>
+    <div className="body">
       
         {/* hello
         <Button onClick={console.log(ToolType)}>Click</Button> */}
