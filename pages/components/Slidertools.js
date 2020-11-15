@@ -2,6 +2,7 @@ import React from 'react';
 import {Menu, Layout} from 'antd'
 import Link from 'next/link'
 import {Col,Input,Slider} from 'antd'
+import Head from 'next/head';
 
 export default function Slidertools({a,b,name,qn,res,display,desc,functions, showDrawer}) {
 
@@ -45,6 +46,10 @@ export default function Slidertools({a,b,name,qn,res,display,desc,functions, sho
       }
     return (
        <div>
+         <Head>
+         <meta key="description" name="description" content={desc}/>
+
+         </Head>
             {a!==undefined && <div className="toolbox">
                   
                     <div>

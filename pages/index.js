@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import { Card, Row,Input,Layout } from 'antd';
 import React from 'react';
-
 import { Tabs } from 'antd';
 
 const { TabPane } = Tabs;
@@ -38,7 +37,7 @@ export default function Home() {
     setBool(!bool)
   }
 
- 
+ const descp = "This tool will be very useful for instrumentation and electrical engineers, by using this tool we can do many calculations and conversions related to electrical and instrumentation and this tool will also be useful to students and to the people who works in the electrical and the instrumentation field. By using the instrumentation conversion and calculation tool we can calculate the flow rate, hydrostatic level, linear to square root percentage and lot more.By using the electrical tool we can calculate the resistance of the resistor by its color code, power, frequency, voltage, power-factor can also be calculated and we can do a lot more calculations by this. This app can also be used to do certain unit conversions such as time, mass, length, etc. We can also do certain mechanical calculations by this such as gear pump displacement, belt length etc."
   const [bool,setBool] = React.useState(true)
     return (
     <div>
@@ -47,7 +46,7 @@ export default function Home() {
       
         <title>converter.gudof.com</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-   
+        <meta key="description" name="description"content={descp}/>
       </Head>
 
       <body style={{fontFamily:'Nexalight'}}>
@@ -60,7 +59,6 @@ export default function Home() {
           tooltype.map(
             (type) =>  <TabPane tab={type.name} key={type.id}>
                 <div style={{marginLeft:"20px",marginRight:"20px"}}>
-            
                       <Input style={{marginLeft:"10px",marginRight:"30px"}} placeholder="Search" prefix={<i style={{marginTop:"-5px"}} className="material-icons">search</i>} onInput={(e)=>handleSearch(e.target.value)} />
                     <Row >
                       
@@ -169,7 +167,7 @@ export const windowSize = () => {
 
 }
 export const names =[ 
-  {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical"},
+  {name:"frequency",display:"Frequency",id:33,type:"electrical",category:"electrical",desc:"Frqueunce is "},
   {name:"timeperiod",display:"Time Period",id:22,type:"electrical",category:"electrical"},
 
   {name:"3-15 PSI",display:"3-15 PSI",id:0,type:"instrumentation",category:"instrumentation"},

@@ -80,20 +80,20 @@ const Conversion= ({names,toolType}) => {
         
       }
     const descriptions = [
-      {name:"area",descp:""},
-      {name:"force",descp:""},
+      {name:"area",descp:"The area conversion or calculation can be done by this, for example we can convert the Hector into square kilometer and to Acre"},
+      {name:"force",descp:"The force can be calculated by using this tool by giving the input and it can be calculated in newtons, Kilonewtons, dynes, poundals etc."},
       {name:"energy",descp:""},
-      {name:"fuel_consumption",descp:""},
+      {name:"fuel_consumption",descp:"This tool will help us to do the calculation and conversions related to volume in cubic meter, US gal, US quart, US pint etc."},
       {name:"time",descp:""},
-      {name:"mass",descp:""},
-      {name:"length",descp:""},
-      {name:"digital_storage",descp:""},
-      {name:"temperature",descp:""},
+      {name:"mass",descp:"With the help of this tool we can calculate the mass in kilogram, gram, milligram etc."},
+      {name:"length",descp:"By this unit conversion tool we can calculate the length in kilometer, meter, centimeter, millimeter, miles, yards, feet etc."},
+      {name:"digital_storage",descp:"This tool is to do the data conversions in bits, bytes, kilobits, kilobytes etc.      "},
+      {name:"temperature",descp:"By using this tool we can calculate the temperature in Celsius, Fahrenheit, and kelvin."},
       {name:"current",descp:""},
-      {name:"pressure",descp:""},
-      {name:"speed",descp:""},
-      {name:"power",descp:""},
-      {name:"charge",descp:""},
+      {name:"pressure",descp:"This unit conversion tool can be used to calculate the pressure, and the pressure can be calculated in bar, mbar, dynes…"},
+      {name:"speed",descp:"By using this we can calculate the speed in miles/hour, feet/second, Meter/second, kilometer/hour, and in knots."},
+      {name:"power",descp:"By the help of this tool, the power can be calculated, in watts, kilowatts, giga-watts, etc."},
+      {name:"charge",descp:"By using this unit tool we can calculate the charge in coulomb, ampere, nano coulomb, micro coulomb, pico coulomb etc."},
 
     ]
   return (
@@ -169,7 +169,16 @@ setOut(e)
 
 </div>
 
+
 <hr className="hr"/>
+
+    <div className="toolbox-calc">
+      <div className="heading">DESCRIPTION</div>
+      {descriptions.map(item => item.name === router.query.name
+    &&item.descp) }
+      </div>
+      <hr className="hr"/>
+
 {/* RESULT */}
 {
   answer!==undefined

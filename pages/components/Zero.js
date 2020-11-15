@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Button,Row,Col,Input} from 'antd';
+import Head from 'next/head';
 
 const Zero = () => {
 
@@ -29,9 +30,12 @@ const click = () => {
     calculate();
 
   }
-
+const descp = "By using this tool we can measure the 0-20mA signal converter, with the help of this tool we can calculate the percentage range between two numbers."
 return(
  <div className="toolbox">
+   <Head>
+       <meta key="description" name="description" content={descp}/>
+       </Head>
         <div className="toolbox-heading">0-X % Conversion</div>
         <hr className="hr"/>
         <div className="toolbox-calc">
@@ -95,7 +99,7 @@ return(
 
 <div className="toolbox-descp toolbox-calc">
   <div className="heading">description</div>
- <div className="">This tool is used to calculate 0% , 25% , 50% , 75% ,and 100% of range between two numbers.</div> 
+ <div className="">{descp}</div> 
  </div>
  </div>
 )

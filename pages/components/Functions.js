@@ -11,78 +11,78 @@ const Functions  = ({names,toolType,id}) => {
 
   const function_id = parseInt(id);
     const electricalList =[
-      { display:"Linear mA to Square root mA",id:14,descp:"This tool is used to convert transmitter Linear ma to Square root ma conversion. It calculates the equivalemnt square root ma for any given linear ma.",q1:"Linear mA",qc1:"mA",a1:"Square root",ac1:"mA"},
-      { display:"Linear % to Square root %",id:17,descp:"This formula used to convert transmitter Linear Percentage to Square root Percentage conversion. ",q1:"Linear %",qc1:"%",a1:"Square root",ac1:"%"},
-      { display:"Lb In to Nm",id:65,q1:"Lb In",descp:"This calculator is used to convert between Newton meter and Inch pound",qc1:"",a1:"Nm",ac1:""},
-      { display:"Nm to LbIn",id:66,q1:"Nm",descp:"This calculator is used to convert between Newton meter and Inch pound",qc1:"",a1:"Lb In",ac1:""},
+      { display:"Linear mA to Square root mA",id:14,descp:"By using this we can convert the transmitter’s linear mA to square root mA and also we can calculate the square root mA value by the linear mA.",q1:"Linear mA",qc1:"mA",a1:"Square root",ac1:"mA"},
+      { display:"Linear % to Square root %",id:17,descp:" ",q1:"Linear %",qc1:"%",a1:"Square root",ac1:"%"},
+      { display:"Lb In to Nm",id:65,q1:"Lb In",descp:"",qc1:"",a1:"Nm",ac1:""},
+      { display:"Nm to LbIn",id:66,q1:"Nm",descp:"",qc1:"",a1:"Lb In",ac1:""},
 
-      { display:"Time (Speed)",id:28,descp:"This calculator is used to calculate Time from Speed and Distance.",q1:"Distance",qc1:"m",q2:"Speed",qc2:"m/s",a1:" Time",ac1:"s"},
-      { display:"Speed",id:34,descp:"This calculator is used to calculate Speed from Time and Distance.",q1:"Distance",qc1:"m",q2:"Time",qc2:"s",a1:" Speed",ac1:"m/s"},
-      { display:"Distance",descp:"This calculator is used to calculate Distance from Time and Speed.",id:35,q1:"Time",qc1:"s",q2:"Speed",qc2:"m/s",a1:" Distance",ac1:"m"},
+      { display:"Time (Speed)",id:28,descp:"",q1:"Distance",qc1:"m",q2:"Speed",qc2:"m/s",a1:" Time",ac1:"s"},
+      { display:"Speed",id:34,descp:"",q1:"Distance",qc1:"m",q2:"Time",qc2:"s",a1:" Speed",ac1:"m/s"},
+      { display:"Distance",descp:"",id:35,q1:"Time",qc1:"s",q2:"Speed",qc2:"m/s",a1:" Distance",ac1:"m"},
       { display:"Voltage Divider",id:27,descp:"",q1:"V (total)",qc1: "V",q2:"R1",qc2:"Ohm",q3:"R2",qc3:"Ohm",q4:"R3",qc4:"Ohm",a1:"V1",ac1:"Ohm",a2:"V2",ac2:"Ohm",a3:"V3",ac3:"Ohm"},
 
 
-      { display:"Aircore Inductance",id:21,q1:"Coil diameter",qc1:"in",q2:"Coil Length",qc2:"in",q3:"No: of turns",qc3:"",a1:"Inductance",ac1:""},
-      { display:"Velocity of Sound",id:25,q1:"Temperature",qc1:"K",q2:"Gamma",qc2:"",q3:"Gas constant",qc3:"J/Kg*K",a1:"Velocity",ac1:""},
-      { display:"Wheatstone",id:29,q1:"R1 (adjacent)",qc1:"Ohm",q2:"R2 (opposite)",qc2:"Ohm",q3:"R3 (adjacent)",qc3:"Ohm",a1:"R",ac1:"Ohm"},
-      { display:"Power Factor 3 Phase",id:42,q1:"Voltage (L-L)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-      { display:"Power Factor Neutral",id:43,q1:"Voltage (L-N)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-      { display:"Power Factor Single Phase",id:44,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
-      { display:"DC Motor Horsepower",id:67,q1:"Volts",qc1:"V",q2:"Amps",qc2:"",q3:"Effs",qc3:"",a1:"Horsepower",ac1:""},
-      { display:"Ohms law (R)",id:19,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" Resistance, R",ac1:"Ohm"},
-      { display:"Ohms law (V)",id:23,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" Voltage ",ac1:"V"},
-      { display:"Ohms law (I)",id:20,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
-      { display:"Parallel Resistance",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
-      { display:"LC Resonance",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
-      { display:"Power(I,V)",id:32,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
-      { display:"Power(I,R)",id:40,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-      { display:"Power (R,V)",id:31,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
-      { display:"Speed (Horsepower)",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
-      { display:"Torque (horsepower)",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
-      { display:"Horse Power",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
-      { display:"Effective Tension from HP & FPM",id:68,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
-      { display:"Effective Tension from Torque & Radius",id:69,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+      { display:"Aircore Inductance",descp:"The frequency calculations can be done according to the time period",id:21,q1:"Coil diameter",qc1:"in",q2:"Coil Length",qc2:"in",q3:"No: of turns",qc3:"",a1:"Inductance",ac1:""},
+      { display:"Velocity of Sound",descp:"",id:25,q1:"Temperature",qc1:"K",q2:"Gamma",qc2:"",q3:"Gas constant",qc3:"J/Kg*K",a1:"Velocity",ac1:""},
+      { display:"Wheatstone",descp:"The wheat stone bridge calculations can be done by using adjacent and opposite resistors.",id:29,q1:"R1 (adjacent)",qc1:"Ohm",q2:"R2 (opposite)",qc2:"Ohm",q3:"R3 (adjacent)",qc3:"Ohm",a1:"R",ac1:"Ohm"},
+      { display:"Power Factor 3 Phase",descp:"By using this we can check the power factor in three phase and the required values for this calculation is line to line voltage, apparent power, and current.",id:42,q1:"Voltage (L-L)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+      { display:"Power Factor Neutral",descp:"By using this we can determine the power factor neutral and the required values are line to neutral voltage, current and apparent power.",id:43,q1:"Voltage (L-N)",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+      { display:"Power Factor Single Phase",descp:"",id:44,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",q3:"Aparent Power",qc3:"Watt",a1:"Powerfactor",ac1:""},
+      { display:"DC Motor Horsepower",descp:"",id:67,q1:"Volts",qc1:"V",q2:"Amps",qc2:"",q3:"Effs",qc3:"",a1:"Horsepower",ac1:""},
+      { display:"Ohms law (R)",descp:"By this we can calculate the resistance, current and voltage. The resistance, current and voltage in a circuit can be calculated by this and the equation for the calculation is R=V/I   V= IR   I = V/RSo we need the voltage and current value to determine the resistance, current and resistance to determine the voltage and voltage and resistance to determine the current.",id:19,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" Resistance, R",ac1:"Ohm"},
+      { display:"Ohms law (V)",descp:"By this we can calculate the resistance, current and voltage. The resistance, current and voltage in a circuit can be calculated by this and the equation for the calculation is R=V/I   V= IR   I = V/RSo we need the voltage and current value to determine the resistance, current and resistance to determine the voltage and voltage and resistance to determine the current.",id:23,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" Voltage ",ac1:"V"},
+      { display:"Ohms law (I)",descp:"By this we can calculate the resistance, current and voltage. The resistance, current and voltage in a circuit can be calculated by this and the equation for the calculation is R=V/I   V= IR   I = V/RSo we need the voltage and current value to determine the resistance, current and resistance to determine the voltage and voltage and resistance to determine the current.",id:20,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" Current",ac1:"A"},
+      { display:"Parallel Resistance",descp:"By using this we can calculate the whole resistance in a circuit section which is connected in parallel, and we need the resistors value to determine the parallel resistance.",id:24,q1:"R1",qc1:"Ohm",q2:"R2",qc2:"Ohm",a1:" R",ac1:"Ohm"},
+      { display:"LC Resonance",descp:"",id:26,q1:"C",qc1:"",q2:"L",qc2:"",a1:" Frequency",ac1:""},
+      { display:"Power(I,V)",descp:"So by using this we can calculate the power, the power value can be determined by the resistance and voltage, it can also determined by voltage and current and we can also use resistance and current to check the power.",id:32,q1:"Voltage",qc1:"V",q2:"Current",qc2:"A",a1:" P",ac1:"Watts"},
+      { display:"Power(I,R)",descp:"So by using this we can calculate the power, the power value can be determined by the resistance and voltage, it can also determined by voltage and current and we can also use resistance and current to check the power.",id:40,q1:"Current",qc1:"A",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+      { display:"Power (R,V)",descp:"So by using this we can calculate the power, the power value can be determined by the resistance and voltage, it can also determined by voltage and current and we can also use resistance and current to check the power.",id:31,q1:"Voltage",qc1:"V",q2:"Resistance",qc2:"Ohm",a1:" P",ac1:"Watts"},
+      { display:"Speed (Horsepower)",descp:"The speed or horsepower can be calculated by using power and torque ",id:46,q1:"Power",qc1:"Horsepower",q2:"Torque",qc2:"PoundFoot",a1:"Rotating speed",ac1:"rpm"},
+      { display:"Torque (horsepower)",descp:"",id:47,q1:"Power",qc1:"Horsepower",q2:"Speed",qc2:"rpm",a1:"Torque",ac1:"PoundFoot"},
+      { display:"Horse Power",descp:"",id:48,q1:"Torque",qc1:"PoundFoot",q2:"Speed",qc2:"rpm",a1:"Horsepower",ac1:"horsePower"},
+      { display:"Effective Tension from HP & FPM",descp:"",id:68,q1:"HP",qc1:"",q2:"FPM",qc2:"",a1:"Effective Tension",ac1:"lbs"},
+      { display:"Effective Tension from Torque & Radius",descp:"",id:69,q1:"Torque",qc1:"",q2:"Radius",qc2:"",a1:"Effective Tension",ac1:"lbs"},
   
-        { display:"Resistance from temperature",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
-        { display:"Temperature from resistance",id:15,descp:"As temperature rises, the number of phonons increases and with it the likelihood that the electrons and phonons will collide. Thus when temperature goes up, resistance goes up. For some materials, resistivity is a linear function of temperature. The resistivity of a conductor increases with temperature.",q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
-        { display:"Level Measurement Two Seals",img:"twoSeal.png",id:49,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d3",qc3:"",q4:"d2",qc4:"",q5:"d1",qc5:"",q6:"C",qc6:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Level Measurement One Seal Above",img:"onseSealAbove.png",id:50,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Level Measurement One Seal Below",img:"oneSealBelow.png",id:51,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Bubble Level",img:"bubblelevel.png",id:52,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d1",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Bubble Interface",img:"bubbleInterface.png",id:53,q1:"h1",qc1:"mm",q2:"du",qc2:"",q3:"dl",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Two Seal Interface",img:"twoSealInterface.png",id:54,q1:"h4",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d3",qc4:"",q5:"d2",qc5:"",q6:"du",qc6:"",q7:"du",qc7:"",q8:"C",qc8:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Open Tank",img:"openTank.png",id:55,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d1",qc4:"",q5:"d0",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Interface Wet Leg",img:"twoSealInterface.png",id:56,q1:"h4",qc1:"mm",q2:"h3",qc2:"mm",q3:"h2",qc3:"mm",q4:"h1",qc4:"mm",q5:"h0",qc5:"mm",q6:"d2",qc6:"",q7:"d0",qc7:"",q8:"du",qc8:"",q9:"dl",qc9:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Liquid Purge",id:57,img:"liquidPurge.png",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Level Transmission Closed Vessel",img:"11LT.png",id:58,descp:"Hydrostatic head instruments for measuring liquid level in vessels operating above atmospheric pressure uses the full capability of the differential pressure instruments with both sides of the measuring element connected to the vessel.",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",q8:"d0",qc8:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
-        { display:"Flow Rate Calculation",id:62,q1:"Pipe Diameter",qc1:"mm",q2:"Constricted Diameter",qc2:"mm",q3:"Measured Pressure Difference",qc3:"kPa",q4:"Fluid Density",qc4:"kg/m3",q5:"Meter Coefficient D",qc5:"",a1:"Constricted Area",ac1:"",a2:"Diameter Section",ac2:"",a3:"Pipe Flow Rate",ac3:"m3/s"},
-        { display:"Hydrostatic Level",id:63,descp:"Hydrostatic level measurement is a simple and reliable method of measuring level. A submersible pressure sensor, regular pressure sensor or pressure gauge is lowered to or mounted at a specific depth (zero level). The sensor then measures the pressure caused by the weight of the liquid directly on top of it. Due to the hydrostatic paradox, the pressure sensor does not measure the complete volume in the tank above it, but only the liquid column vertically above it.",q1:"Max URV",qc1:"ft",q2:"Min LRV",qc2:"ft",q3:"Process Liquid Density",qc3:"",q4:"Transmitter Height Offset",qc4:"",q5:"Impulse Line Fluid Density",qc5:"lb/ft3",q6:"Actual Liquid Level",qc6:"ft",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-        { display:"Orifice Plate Error",id:64,q1:"Max Flow through orifice plate",qc1:"GPM",q2:"Differential pressure at that flow rate",qc2:"WC",q3:"Differential Pressure measurement errors",qc3:"WC",q4:"Current Flow",qc4:"GPM",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
-        { display:"Short Circuit Calculation",id:59,descp:"This tool is used to find Source Impedence andTotal impedence at time of short circuit.",q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
-        { display:"Transformer Fault Current",id:60,descp:"This tool calculates the loop impedance at the end ofa circuit fed from the secondary winding of a transformer. When calculating Fault Loop Impedance Select the Correct Transformer Type Above. Three Phase Transformers Divide the Values for Vs secondary Voltage by √3 and the VA by 3.",q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
-        { display:"DOL & Star Delta Starter",id:61,descp:"DOL means the motor is connected Directly ON Line using one contactor with no starting circuit to lower the high starting current. Typically the Delta part of Star-Delta. Star-Delta uses two contactors, one to start at a lower voltage in Star and one to run at a higher voltage in Delta configuration.",q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
-        {display:"Time Period",id:22,descp:"",q1:"Frequency",qc1:"Hz",a1:"Time Period",ac1:"ms"},
-        {display:"Frequency",id:33,descp:"",q1:"Time Period",qc1:"ms",a1:"Frequency",ac1:"Hz"}
+        { display:"Resistance from temperature",descp:"",id:13,q1:"T(t)",qc1:"",q2:"R(0)",qc2:"",q3:"T(0)",qc3:"",q4:"C",qc4:"",a1:"Resistance",ac1:"Ohm"},
+        { display:"Temperature from resistance",descp:"By using this we can calculate the temperature by resistance, for example the temperature of gauge wire can be calculated, if the gauge wire temperature is increased then the resistance will change so according to the resistance we can find the temperature. In order to calculate this we need some input values and they are current resistance value, initial resistance value, temperature co-efficient value and initial temperature value",id:15,q1:"R(t)",qc1:"",q2:"R(0)",qc2:"",q3:"Temp",qc3:"",q4:"C",qc4:"",a1:"Temperature",ac1:"K"},
+        { display:"Level Measurement Two Seals",descp:"",img:"twoSeal.png",id:49,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d3",qc3:"",q4:"d2",qc4:"",q5:"d1",qc5:"",q6:"C",qc6:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Level Measurement One Seal Above",descp:"",img:"onseSealAbove.png",id:50,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Level Measurement One Seal Below",descp:"",img:"oneSealBelow.png",id:51,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d2",qc4:"",q5:"d1",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Bubble Level",descp:"By using this we can calculate liquid level and this is determined by calculating the pressure that is needed to force a gas to the liquid. In order to do this we need the specific gravity of the tank liquid.",img:"bubblelevel.png",id:52,q1:"h1",qc1:"mm",q2:"h0",qc2:"mm",q3:"d1",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Bubble Interface",descp:"This tool is also for the level measurement and we need certain inputs such as the specific gravity of the upper tank and lower tank and the height.",img:"bubbleInterface.png",id:53,q1:"h1",qc1:"mm",q2:"du",qc2:"",q3:"dl",qc3:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Two Seal Interface",descp:"This tool is to calculate the liquid level in the tank and the required inputs are specific gravity of the upper tank and the lower tank, specific gravity of the tank leg and wet leg etc.",img:"twoSealInterface.png",id:54,q1:"h4",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d3",qc4:"",q5:"d2",qc5:"",q6:"du",qc6:"",q7:"du",qc7:"",q8:"C",qc8:"mm",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Open Tank",descp:"",img:"openTank.png",id:55,q1:"h2",qc1:"mm",q2:"h1",qc2:"mm",q3:"h0",qc3:"mm",q4:"d1",qc4:"",q5:"d0",qc5:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Interface Wet Leg",descp:"By using this tool we can calculate the interface of the liquids that has dissimilar specific gravities. For this calculation we need certain inputs such as specific gravity of the lighter and heavier liquid and also need the specific gravity of the wet leg and tank leg etc.",img:"twoSealInterface.png",id:56,q1:"h4",qc1:"mm",q2:"h3",qc2:"mm",q3:"h2",qc3:"mm",q4:"h1",qc4:"mm",q5:"h0",qc5:"mm",q6:"d2",qc6:"",q7:"d0",qc7:"",q8:"du",qc8:"",q9:"dl",qc9:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Liquid Purge",descp:"By using this we can measure the level, in a tank and we require certain inputs to do this calculation and they are specific gravity of the tank liquid, specific gravity of the purge, specific gravity of the vapor etc.",id:57,img:"liquidPurge.png",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Level Transmission Closed Vessel",q1:"h3",qc1:"mm",q2:"h2",qc2:"mm",q3:"h1",qc3:"mm",q4:"h0",qc4:"mm",q5:"d3",qc5:"",q6:"d2",qc6:"",q7:"d1",qc7:"",q8:"d0",qc8:"",a1:"HP Side/LRV/4mA",ac1:"mmH20",a2:"LP Side/URV/20mA",ac2:"mmH20",a3:"Span",ac3:"mmH20"},
+        { display:"Flow Rate Calculation",descp:"By using this we can calculate the flow rate in a pipe and we need certain values to do this calculation and they are pipe and constricted diameter, density of the fluid, measured pressure difference, and meter coefficient.",id:62,q1:"Pipe Diameter",qc1:"mm",q2:"Constricted Diameter",qc2:"mm",q3:"Measured Pressure Difference",qc3:"kPa",q4:"Fluid Density",qc4:"kg/m3",q5:"Meter Coefficient D",qc5:"",a1:"Constricted Area",ac1:"",a2:"Diameter Section",ac2:"",a3:"Pipe Flow Rate",ac3:"m3/s"},
+        { display:"Hydrostatic Level",descp:"By using this we can measure the level by using the pressure created by the liquid in a tank and it is done by the help of a pressure transmitter. To do this calculation we need values like minimum LRV, maximum URV, actual liquid level, impulse line fluid density, pressure liquid density, and transmitter height offset.",id:63,ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
+        { display:"Orifice Plate Error",descp:"By using this we can find out the errors in an orifice plate, we need certain values to check this and they are current flow, differential pressure measurement errors, differential pressure at that flow rate, and maximum flow through that orifice plate.",id:64,q1:"Max Flow through orifice plate",qc1:"GPM",q2:"Differential pressure at that flow rate",qc2:"WC",q3:"Differential Pressure measurement errors",qc3:"WC",q4:"Current Flow",qc4:"GPM",a1:"Hydrostatic Pressure @ transmitter ",ac1:"WC",a2:"Transmitter LRV",ac2:"",a3:"Transmitter URV",ac3:""},
+        { display:"Short Circuit Calculation",descp:"",id:59,q1:"I",qc1:"",q2:"kVA",qc2:"mm",q3:"Zt",qc3:"",a1:"Source Impedence Zu",ac1:"",a2:"Total impedence Z",ac2:""},
+        { display:"Transformer Fault Current",descp:"",id:60,q1:"V",qc1:"",q2:"Z% ",qc2:"%",q3:"I",qc3:"",a1:"Maximum Fault Current",ac1:"A",a2:"Impedence Voltage",ac2:""},
+        { display:"DOL & Star Delta Starter",descp:"",id:61,q1:"System Voltage",qc1:"V",q2:"Phase",qc2:"",q3:"Motor Size",qc3:"HP",q4:"Motor rpm",qc4:"",q5:"Power Factor",qc5:"",a1:"Motor Rated Torque (Full Load)",ac1:"lb-ft",a2:"Motor Starting Torque",ac2:"mmH20",a3:"Lock Rotor Current IL(Min)",ac3:"",a4:"Lock Rotor Current IL(Max)",ac4:"",a5:"Motor Full load current (Live)",ac5:""},
+        {display:"Time Period",id:22,descp:"The Time Period calculations can be done according to the frequency",q1:"Frequency",qc1:"Hz",a1:"Time Period",ac1:"ms"},
+        {display:"Frequency",id:33,descp:"The frequency calculations can be done according to the time period",q1:"Time Period",qc1:"ms",a1:"Frequency",ac1:"Hz"}
         ,
         //MECHANICAL
        
     
 
-        {display:"Belt length",id:80,descp:"",q1:"Diameter of Large Pulley",qc1:"m",q2:"Diameter of Small pulley",q3:"Pulley Centre distance",qc3:"m",a1:"Belt Length",ac1:"m"},
+        {display:"Belt length",id:80,descp:"We can calculate the distance between the centers of two pulleys for a given belt length.",q1:"Diameter of Large Pulley",qc1:"m",q2:"Diameter of Small pulley",q3:"Pulley Centre distance",qc3:"m",a1:"Belt Length",ac1:"m"},
        
 
-        {display:"Gear Pump Displacement",id:81,descp:"",q1:"Gear width",qc1:"cm",q2:"Gear tip diameter",qc2:"cm",q3:"Gear centres (when meshed)",qc3:"cm",a1:"Displacement",ac1:"cm^3/rev"},
-        {display:"Stroke's Law",id:82,descp:"",q1:"Acceleration of gravity",qc1:"m/s^2",q2:"Diameter of a particle",qc2:"m",q3:"Density of particle",qc3:"gm/m^3",q4:"Density of Medium",qc4:"gm/m^3",q5:"Viscoscity of Medium",qc5:"gm/ms",a1:"Terminal Velocity",ac1:"m/s"},
-        {display:"Flow Velocity",id:83,descp:"",q1:"Cauchy Number",qc1:"N/m^2",q2:"Bulk Modulus Elasticity",qc2:"N/m^2",q3:"Density",qc3:"kg/m^3",a1:"Flow Velocity",ac1:"m/s"},
-        {display:"Hooke's Law (Force)",id:84,descp:"",q1:"Spring Constant",qc1:"N/m",q2:"Distance from Equillibrium",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Force",ac1:"N"},
-        {display:"Hooke's Law (Spring constant)",id:85,descp:"",q1:"Force",qc1:"N",q2:"Distance",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Spring Constant",ac1:"N/m"},
-        {display:"Strain",id:86,descp:"",q1:"Change in Length",qc1:"m",q2:"Original Length",qc2:"m",a1:"Strain",ac1:""},
-        {display:"K Value & Pipe Length",id:87,descp:"",q1:"Turbulent Friction Factor",qc1:"",q2:"Length",qc2:"m",q3:"Pipe Diameter",qc3:"mm",a1:"K Value",ac1:""},
-        {display:"Young's modulus",id:88,descp:"",q1:"Stress",qc1:"N/m^2",q2:"Strain",qc2:"",a1:"Young's Modulus",ac1:"N/m^2"},
-        {display:"Weber Number",id:89,descp:"",q1:"Density",qc1:"kg/m^3",q2:"Velocity",qc2:"m/s",q3:"Length",qc3:"m",q4:"Surface Tension",qc4:"N/m",a1:"Weber Number",ac1:""},
-        {display:"Chezy Coefficient",id:90,descp:"",q1:"Mean Velocity",qc1:"m/s",q2:"Hydraulic radius",qc2:"m",q3:"Slope",qc3:"",a1:"Chezy Coefficient",ac1:""},
+        {display:"Gear Pump Displacement",id:81,descp:"This can be calculated by certain input parameters such as gear-width, gear tip diameter and gear centers and all of these values must be in centimeters. ",q1:"Gear width",qc1:"cm",q2:"Gear tip diameter",qc2:"cm",q3:"Gear centres (when meshed)",qc3:"cm",a1:"Displacement",ac1:"cm^3/rev"},
+        {display:"Stroke's Law",id:82,descp:"This law is about the relation between a sphere’s frictional force in a liquid when the sphere is in motion. This can be calculated by using some input parameters such as viscosity of the medium, diameter of the particle, density of the particle and medium, and acceleration of gravity.",q1:"Acceleration of gravity",qc1:"m/s^2",q2:"Diameter of a particle",qc2:"m",q3:"Density of particle",qc3:"gm/m^3",q4:"Density of Medium",qc4:"gm/m^3",q5:"Viscoscity of Medium",qc5:"gm/ms",a1:"Terminal Velocity",ac1:"m/s"},
+        {display:"Flow Velocity",id:83,descp:"By using this we can determine the flow velocity with the help of some input parameters such as density, Cauchy number, and bulk modulus elasticity.        ",q1:"Cauchy Number",qc1:"N/m^2",q2:"Bulk Modulus Elasticity",qc2:"N/m^2",q3:"Density",qc3:"kg/m^3",a1:"Flow Velocity",ac1:"m/s"},
+        {display:"Hooke's Law (Force)",id:84,descp:"Most of the material can explained by this law, till the load won’t exceed the elastic limit of the material. The K denotes the spring constant in the hooks’s law and its equation is F=Kx and x denotes the spring’s displacement from its position. The spring constant can be calculated by using the inputs such as force, distance, and spring equilibrium position. The force can be calculated with the above mentioned inputs with the spring constant.",q1:"Spring Constant",qc1:"N/m",q2:"Distance from Equillibrium",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Force",ac1:"N"},
+        {display:"Hooke's Law (Spring constant)",id:85,descp:"Most of the material can explained by this law, till the load won’t exceed the elastic limit of the material. The K denotes the spring constant in the hooks’s law and its equation is F=Kx and x denotes the spring’s displacement from its position. The spring constant can be calculated by using the inputs such as force, distance, and spring equilibrium position. The force can be calculated with the above mentioned inputs with the spring constant.",q1:"Force",qc1:"N",q2:"Distance",qc2:"m",q3:"Spring Equillibrium Position",qc3:"m",a1:"Spring Constant",ac1:"N/m"},
+        {display:"Strain",id:86,descp:"This tool will help us to determine the strain in a material and for this calculation we need the change in length and original length of the material.",q1:"Change in Length",qc1:"m",q2:"Original Length",qc2:"m",a1:"Strain",ac1:""},
+        {display:"K Value & Pipe Length",id:87,descp:"K value can be considered as the bending limit, so we can calculate the K value and pipe-length by using certain input parameters such as length, pipe diameter, and turbulent friction factor. ",q1:"Turbulent Friction Factor",qc1:"",q2:"Length",qc2:"m",q3:"Pipe Diameter",qc3:"mm",a1:"K Value",ac1:""},
+        {display:"Young's modulus",id:88,descp:"This is a mechanical property and it is a measure that shows how much a material can withstand the changes in length and this can be calculated by using the stress and strain.",q1:"Stress",qc1:"N/m^2",q2:"Strain",qc2:"",a1:"Young's Modulus",ac1:"N/m^2"},
+        {display:"Weber Number",id:89,descp:"This number will be helpful to analyze the flow of the fluid and this is a dimensionless number. In order to do the calculation we need the velocity, length, density, and surface tension.",q1:"Density",qc1:"kg/m^3",q2:"Velocity",qc2:"m/s",q3:"Length",qc3:"m",q4:"Surface Tension",qc4:"N/m",a1:"Weber Number",ac1:""},
+        {display:"Chezy Coefficient",id:90,descp:"With this tool we can determine the chezy coefficient, this can also be considered as the hydraulic radius. The chezy coefficient can be determined by using certain inputs like slope, hydraulic radius, and mean velocity.",q1:"Mean Velocity",qc1:"m/s",q2:"Hydraulic radius",qc2:"m",q3:"Slope",qc3:"",a1:"Chezy Coefficient",ac1:""},
         {display:"Cauchy Number",id:91,descp:"",q1:"Flow Velocity",qc1:"m/s",q2:"Density",qc2:"kg/m^3",q3:"Bulk Modulus Elasticity",qc3:"N/m^2",a1:"Cauchy Number",ac1:""},
-        {display:"Bulk Modulus Elasticity",id:92,descp:"",q1:"Flow Velocity",qc1:"m/s",q2:"Density",qc2:"kg/m^3",q3:"Cauchy Number",qc3:"",a1:"Bulk Modulus Elasticity",ac1:"N/m^2"},
+        {display:"Bulk Modulus Elasticity",id:92,descp:"By using this we can calculate the bulk modulus elasticity by using inputs such as Cauchy number, density, and flow velocity. There is other tool to determine the Cauchy number and it can be calculated by using the inputs such as flow velocity, density and bulk modulus elasticity.",q1:"Flow Velocity",qc1:"m/s",q2:"Density",qc2:"kg/m^3",q3:"Cauchy Number",qc3:"",a1:"Bulk Modulus Elasticity",ac1:"N/m^2"},
 
     ]
 
@@ -348,7 +348,10 @@ const Functions  = ({names,toolType,id}) => {
         ]
   return (
     <div>
-   
+      <Head>
+     <meta key="description" name="description"content={electricalList[electricalList.findIndex((item)=>item.id === id)].descp}/>
+
+      </Head>
       {id!==undefined &&
           <div className="toolbox">
               <div className="toolbox-heading"> 
@@ -378,7 +381,7 @@ const Functions  = ({names,toolType,id}) => {
                       </div>
                      )} 
                      </div> 
-
+                    
                     {electricalList[electricalList.findIndex((item)=>item.id === id)].img !== undefined &&
             //<Image src="/assets/11LT.png"/>
             <div>
@@ -418,9 +421,18 @@ const Functions  = ({names,toolType,id}) => {
 
           <Button className="calculate-button" onClick={()=>calculate(q1,q2,q3,q4,q5,q6,q7,q8,q9)}>CALCULATE</Button>
           </div>
+          <hr className="hr"/>
+
+          <div class="toolbox-desc">
+            <div className="heading">Description</div>
+          {electricalList[electricalList.findIndex((item)=>item.id === id)].descp}
+            </div>
               {(answer1!== undefined) &&
          <div>
             <hr className="hr"/>
+
+        
+
         <div class="toolbox-calc">
             <div className="heading">RESULT</div>
           {answer.map((item)=>

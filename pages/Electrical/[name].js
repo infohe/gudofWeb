@@ -56,7 +56,7 @@ export default function Instrumentation({params,functions,toolType,names}){
           <title>{router.query.name} Electrical Tools</title>
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
           
-          {functions!==undefined && functions.map(item => stringSpaceToHyphen(item.display) === router.query.name
+          {names!==undefined && names.map(item => stringSpaceToHyphen(item.display) === router.query.name
           && <meta key="description" name="description"content={item.desc}/>) }
         </Head>
         <Navbar showDrawer={showDrawer}/>
@@ -142,7 +142,7 @@ export async function getStaticPaths() {
       {name:"eff1",display:"Eff Tension from HP & FPM",id:68,type:"electrical",category:"electrical"},
       {name:"eff2",display:"Eff Tension from Torque and Radius",id:69,type:"electrical",category:"electrical"},
 
-      {display:"Color code Resistance",id:30},
+      {display:"Color code Resistance",id:30,descp:""},
 
     
     

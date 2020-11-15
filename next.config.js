@@ -10,6 +10,7 @@ const themeVariables = lessToJS(
 )
 
 module.exports = withFonts(withLess({
+  target: 'serverless',
   lessLoaderOptions: {
     javascriptEnabled: true,
     modifyVars: themeVariables, // make your antd custom effective
@@ -60,21 +61,7 @@ module.exports = withFonts(withLess({
   },
 }));
 
-const nextConfig = {
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' },
-      // '/Mechanical/Belt-Length': { page: '/Mechanical/Belt-Length' },
 
-      '/Mechanical/Belt-Length': { page: '/Mechanical/[name]', query: { name: 'Belt-Length' } },
-      '/Mechanical/Weber-Number': { page: '/Mechanical/[name]', query: { name: 'Weber-Number' } },
-
-          }
-  },
-}
 // const withCSS = require("@zeit/next-css");
 
 // module.exports = withCSS({

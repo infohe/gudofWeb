@@ -1,5 +1,6 @@
 import React from 'react';
 import { Select,Row,Col ,Button } from 'antd';
+import Head from 'next/head';
 
 
 const Colorcode  = ({names,toolType}) => {
@@ -21,10 +22,13 @@ const Colorcode  = ({names,toolType}) => {
           setAnswer2( Number(w))
    
      }
-     const descp = "";
+     const descp = "So by using the color code in a resistor we can determine the resistance and for this we need the color code of first, second, third and fourth strip.";
   return (
     
    <div className="toolbox-layout">
+       <Head>
+       <meta key="description" name="description"content={descp}/>
+       </Head>
        <div className="toolbox">
         <div className="toolbox-heading">Color Code Resistance</div>
           <div>

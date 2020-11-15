@@ -29,7 +29,7 @@ export default function Instrumentation({params,functions,toolType,names}){
       setVisible(false)
   })
     const [question,setQuestion] = React.useState();
-
+  const [desc,setDesc] = React.useState()
     const [result,setResult] = React.useState(0);
 
     let vari;
@@ -66,8 +66,10 @@ React.useEffect(()=>{
             setQuestion(vari.a)
             setName(vari.name)
             setb(vari.b)
-            setDisplay(vari.display)}
-            
+            setDisplay(vari.display)
+            setDesc(vari.desc)
+
+          }
            setId(item.id)
             
             console.log("id",id)
@@ -103,7 +105,7 @@ React.useEffect(()=>{
             {/* toolpart */}
             <Layout className="toolbox-layout">
                 {question!==undefined && category==="instrumentation" &&
-                    <Slidertools desc="" display={display} a={a} b={b} res={result} qn={question} name={name}/>
+                    <Slidertools desc={desc} display={display} a={a} b={b} res={result} qn={question} name={name}/>
                 }
                 {category==="electrical" &&
                                       <Functions id={id}/>}
@@ -155,10 +157,10 @@ export async function getStaticPaths() {
     // params contains the post `id`.
     // If the route is like /posts/1, then params.id is 1
     const res = [
-      {stringId:"1",a:0,b:20,name:"mA",display:"0-20 mA",desc:"This measurement to current converter tool will convert any linear input measurement reading into the ideal current output signal over a linear range of 0 to 20 milliamps, and display a 0-20mA conversion scale for the chosen measurement range."},
-      {stringId:"2",a:4,b:20,name:"mA",display:"4-20 mA",desc:"This measurement to current converter tool will convert any linear input measurement reading into the ideal current output signal over a linear range of 4 to 20 milliamps, and display a 4-20mA conversion scale for the chosen measurement range."},
-      {stringId:"3",a:0,b:25,name:"mA",display:"0-25 mA",desc:"This measurement to current converter tool will convert any linear input measurement reading into the ideal current output signal over a linear range of 0 to 25 milliamps, and display a 0-25mA conversion scale for the chosen measurement range."},
-      {stringId:"0",a:3,b:15,name:"PSI",display:"3-15 PSI",desc:"This measurement to current converter tool will convert any linear input measurement reading into the ideal current output signal over a linear range of 0 to 20 milliamps, and display a 0-20mA conversion scale for the chosen measurement range."},
+      {stringId:"1",a:0,b:20,name:"mA",display:"0-20 mA",desc:"The 0-20mA is current output signal, in this the 0 ma is 0% and 20ma is 100%, so if we give a value like 5 in this then it is the 25%. This will do the conversion of 0-20ma into 0-100%"},
+      {stringId:"2",a:4,b:20,name:"mA",display:"4-20 mA",desc:"This is an analog signal and can be seen in many industrial process for electronic signaling and the 4-20mA shows the measurement of the control in the range from 0-100% and 4 is the lowest and 20 is the maximum value. The 4-20ma will be converted into 0-100% so if we give a value 12 then this tool shows how much percentage in 4-20ma."},
+      {stringId:"3",a:0,b:25,name:"mA",display:"0-25 mA",desc:"By using this tool we can convert the 0-25mA into 0-100%, in this the 0 will be zero percent and 25 will be hundred percent. "},
+      {stringId:"0",a:3,b:15,name:"PSI",display:"3-15 PSI",desc:"A three to fifteen PSI is an instrumentation signal it shows the pressure value and the lowest value is three and the highest value is fifteen. The 3-15 Psi input will be converted to the 0-100 range. If we give a value 9 then it is the 50% in 3-15 PSI. So if we consider the 4-20ma, 4 is the zero percent which is three and 20 is 100% that is 15. In reverse action 4ma will be 15psi and 20ma will be 3psi. "},
     ]
       
     
