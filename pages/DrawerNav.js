@@ -35,7 +35,7 @@ const handleShow = (id) => {
   const [bool,setBool] = React.useState(true)
   const [tools,setTools] = React.useState(names)
     return (
-    <div className="body">
+    <div className="body"  style={{fontFamily:'Nexalight'}}>
       
         {/* hello
         <Button onClick={console.log(ToolType)}>Click</Button> */}

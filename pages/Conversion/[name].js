@@ -82,7 +82,7 @@ const Conversion= ({names,toolType}) => {
     const descriptions = [
       {name:"area",descp:"The area conversion or calculation can be done by this, for example we can convert the Hector into square kilometer and to Acre"},
       {name:"force",descp:"The force can be calculated by using this tool by giving the input and it can be calculated in newtons, Kilonewtons, dynes, poundals etc."},
-      {name:"energy",descp:""},
+      {name:"energy",descp:"The energy can be calculated by using this tool by giving the input and it can be calculated in Btu (th) , Btu (mean),Calories etc."},
       {name:"fuel_consumption",descp:"This tool will help us to do the calculation and conversions related to volume in cubic meter, US gal, US quart, US pint etc."},
       {name:"time",descp:""},
       {name:"mass",descp:"With the help of this tool we can calculate the mass in kilogram, gram, milligram etc."},
@@ -136,7 +136,7 @@ const Conversion= ({names,toolType}) => {
           console.log("input",e.target.value)
           setInput1(e.target.value)}}/></Col>
         <Col style={{flex:1}}>
-               <Select  style={{width:"100px",border:"1px solid gray"}} className="box" class="box"  value={inn} onSelect={(e)=>{
+               <Select  style={{width:"150px",border:"1px solid gray"}} className="box"  value={inn} onSelect={(e)=>{
                    setIn(e)
                    console.log(e)
                }} placeholder="Input">
@@ -150,7 +150,7 @@ const Conversion= ({names,toolType}) => {
         <Col style={{flex:1}}><Input  className="input box" type="number"  value={answer} disabled/></Col>
         <Col style={{flex:1}}>
 
-<Select className="box"  style={{width:"100px",border:"1px solid gray"}}  value={out} onSelect={(e)=>{
+<Select className="box"  style={{width:"150px",border:"1px solid gray"}}  value={out} onSelect={(e)=>{
 setOut(e)
 }} placeholder="Output">
 {conversion_fn[ conversion_fn.findIndex(item => item.id===router.query.name)].units.map(item=>

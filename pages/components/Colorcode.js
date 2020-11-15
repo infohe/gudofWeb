@@ -25,7 +25,7 @@ const Colorcode  = ({names,toolType}) => {
      const descp = "So by using the color code in a resistor we can determine the resistance and for this we need the color code of first, second, third and fourth strip.";
   return (
     
-   <div className="toolbox-layout">
+   <div>
        <Head>
        <meta key="description" name="description"content={descp}/>
        </Head>
